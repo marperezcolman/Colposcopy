@@ -22,11 +22,11 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.1.2",
+      "sem_ver" : "0.1.3",
       "is_singleton" : "ehr",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F",
-      "MD5-CAM-1.0.1" : "d0cf245bac1b188aa8475296cc5d6b96"
+      "MD5-CAM-1.0.1" : "8d4b3b9f3aaef46e7fd383ef441272bc"
     },
     "details" : {
       "de" : {
@@ -1312,6 +1312,40 @@
           } ],
           "attributeTuples" : [ ]
         } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "description",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0002.0.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
+              "nodeId" : "at0015.0.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0014.0.1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
       } ],
       "attributeTuples" : [ ]
     },
@@ -1319,7 +1353,15 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000.1",
       "termDefinitions" : {
-        "en" : { }
+        "en" : {
+          "at0014.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014.0.1",
+            "text" : "Additional comments",
+            "description" : "Reason that the care pathway step for the identified Review Activity was carried out.",
+            "comment" : "For example, the reason for the cancellation or suspension of the Review Activity"
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
