@@ -11,7 +11,7 @@
     },
     "otherContributors" : [ ],
     "lifecycleState" : {
-      "codeString" : "unmanaged"
+      "codeString" : "in_development"
     },
     "ipAcknowledgements" : { },
     "references" : { },
@@ -22,9 +22,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.1.0",
+      "sem_ver" : "0.1.1",
+      "is_singleton" : "ehr",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "b1f73e5e9c0a8c6840c89e28e3b3ec95",
+      "MD5-CAM-1.0.1" : "12e19a6b9e9a242f6cc91ad80880368e",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -202,8 +203,49 @@
       "children" : [ {
         "@type" : "C_COMPLEX_OBJECT",
         "rmTypeName" : "EVENT_CONTEXT",
-        "attributes" : [ ],
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "other_context",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ITEM_TREE",
+            "nodeId" : "at0001",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0005.0.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
         "attributeTuples" : [ ]
+      } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "content",
+      "existence" : "0..1",
+      "cardinality" : {
+        "@type" : "CARDINALITY",
+        "interval" : "1..*",
+        "ordered" : false,
+        "unique" : false
+      },
+      "children" : [ {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "SECTION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.0.2",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-SECTION.ovl-adhoc-001.v1",
+        "referenceType" : "archetypeOverlay"
       } ]
     } ],
     "attributeTuples" : [ ]
@@ -265,6 +307,12 @@
           "code" : "at0000.1.1",
           "text" : "Colposcopy form",
           "description" : "Documento para comunicar informações aos outros sobre qualquer procedimento isolado ou operação executada."
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "Estado",
+          "description" : "O estado de todo o relatório. Nota: este não é o estado de qualquer dos componentes do relatório."
         }
       },
       "de" : {
@@ -298,6 +346,12 @@
           "code" : "at0000.1.1",
           "text" : "Colposcopy form",
           "description" : "Ein Dokument, um Informationen über jedes eigenständige Verfahren oder jeden durchgeführten Vorgang zu übermitteln."
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "Status",
+          "description" : "Der Status des gesamten Berichts. Hinweis: Dies ist nicht der Status einer Berichtskomponente."
         }
       },
       "ar-sy" : {
@@ -337,6 +391,18 @@
           "code" : "at0000.1.1",
           "text" : "Colposcopy form",
           "description" : "وثيقة لتوصيل المعلومات للآخرين, عادة كاستجابة لطلب من طرف آخر."
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "تقرير",
+          "description" : "وثيقة لتوصيل المعلومات للآخرين, عادة كاستجابة لطلب من طرف آخر."
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "الحالة",
+          "description" : "حالة التقرير بشكل كلي. و لا تمثل هذه الحالة جزءا من التقرير و إنما جميعه ككل."
         }
       },
       "sl" : {
@@ -376,6 +442,18 @@
           "code" : "at0000.1.1",
           "text" : "Colposcopy form",
           "description" : "*Document to communicate information to others, commonly in response to a request from another party.(en)"
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Poročilo",
+          "description" : "*Document to communicate information to others, commonly in response to a request from another party.(en)"
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "Status",
+          "description" : "*The status of the entire report. Note: This is not the status of any of the report components.(en)"
         }
       },
       "es-ar" : {
@@ -409,6 +487,18 @@
           "code" : "at0000.1.1",
           "text" : "Colposcopy form",
           "description" : "Documento para comunicar información a otros, comunmente en respuesta a la solicitud de un tercero."
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Informe",
+          "description" : "Documento para comunicar información a otros, comunmente en respuesta a la solicitud de un tercero."
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "Estado",
+          "description" : "El estado del informe como un todo. Nota: no se refiere al estado de alguno de los componentes del informe."
         }
       },
       "ko" : {
@@ -442,6 +532,18 @@
           "code" : "at0000.1.1",
           "text" : "Colposcopy form",
           "description" : "일반적으로 다른 상대의 요청에 대한 응답으로, 다른 사람들과 정보를 통신하는 문서."
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "*Report(en)",
+          "description" : "일반적으로 다른 상대의 요청에 대한 응답으로, 다른 사람들과 정보를 통신하는 문서."
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "*Status(en)",
+          "description" : "전체 리포트의 상태. 주의: 이것은 리포트 컴포넌트들 중 어떤 부분의 상태가 아님."
         }
       },
       "fi" : {
@@ -475,6 +577,18 @@
           "code" : "at0000.1.1",
           "text" : "Colposcopy form",
           "description" : "Asiakirja tiedon välittämiseksi muille, vastauksena yleensä toisen osapuolen pyyntöön."
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Raportti",
+          "description" : "Asiakirja tiedon välittämiseksi muille, vastauksena yleensä toisen osapuolen pyyntöön."
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "Status",
+          "description" : "Koko raportin tila. Huomaa: Tämä ei ole minkään raporttiosien tila."
         }
       },
       "it" : {
@@ -508,6 +622,18 @@
           "code" : "at0000.1.1",
           "text" : "Colposcopy form",
           "description" : "Documento per comunicare informazioni ad altri, comunemente in risposta ad una richiesta di un altro soggetto."
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Rapporto",
+          "description" : "Documento per comunicare informazioni ad altri, comunemente in risposta ad una richiesta di un altro soggetto."
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "Stato",
+          "description" : "Lo stato dell'intero rapporto. Nota: Questo non è lo stato di alcuna delle componenti del rapporto."
         }
       },
       "nl" : {
@@ -541,6 +667,18 @@
           "code" : "at0000.1.1",
           "text" : "Colposcopy form",
           "description" : "Document om informatie met anderen te communiceren, vaak op verzoek van een andere partij."
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Rapportage",
+          "description" : "Document om informatie met anderen te communiceren, vaak op verzoek van een andere partij."
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "Status",
+          "description" : "De status van de rapportage. Let op, dit is niet de status van een van de onderdelen van de rapportage."
         }
       },
       "sv" : {
@@ -574,6 +712,18 @@
           "code" : "at0000.1.1",
           "text" : "Colposcopy form",
           "description" : "Dokument för att förmedla information till andra, vanligen som svar på en begäran från en annan part."
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Rapport",
+          "description" : "Dokument för att förmedla information till andra, vanligen som svar på en begäran från en annan part."
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "Status",
+          "description" : "Status för hela rapporten. Observera att detta inte är status för någon av rapportkomponenterna."
         }
       },
       "zh" : {
@@ -607,6 +757,18 @@
           "code" : "at0000.1.1",
           "text" : "Colposcopy form",
           "description" : "用于交流信息的文件，通常是为了响应某一方的请求"
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "报告",
+          "description" : "用于交流信息的文件，通常是为了响应某一方的请求"
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "状态",
+          "description" : "整份报告的状态。注意：这不是指报告的任何一个组成部分的状态"
         }
       }
     },
@@ -615,13 +777,425 @@
     "valueSets" : { }
   },
   "adlVersion" : "1.4",
-  "buildUid" : "6bdb4297-66de-3dd5-8375-d2c3efc0b91e",
+  "buildUid" : "2c583fd9-1c55-30fa-b490-9d15b6af37f4",
   "rmName" : "openehr",
   "rmRelease" : "1.1.0",
   "generated" : true,
   "templateId" : "Colposcopy form",
   "otherMetaData" : { },
-  "templateOverlays" : [ ],
+  "templateOverlays" : [ {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "7de49b29-da9a-4196-a0c5-832af59c46d3",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "8FE80F3E80C594AAF99D3BA540A53D73"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-SECTION.adhoc.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-SECTION.ovl-adhoc-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "SECTION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "existence" : "0..1",
+        "cardinality" : {
+          "@type" : "CARDINALITY",
+          "interval" : "1..*",
+          "ordered" : false,
+          "unique" : false
+        },
+        "children" : [ {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "ACTION",
+          "occurrences" : "0..1",
+          "nodeId" : "at0.4",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-ACTION.ovl-review-001.v0",
+          "referenceType" : "archetypeOverlay"
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Patient management status",
+            "description" : "A generic section header which should be renamed in a template to suit a specific clinical context."
+          }
+        },
+        "ru" : { },
+        "es-ar" : { },
+        "sl" : { },
+        "nb" : { },
+        "pt-br" : { },
+        "sv" : { },
+        "de" : { },
+        "it" : { },
+        "fr" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "46fe0e95-f5cc-44c8-8616-3b9fd0ca6e61",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Ramona Wellmann",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "wellmann.ramona@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ru"
+      },
+      "author" : {
+        "name" : "Art Latyp Латыпов Артур Шамилевич",
+        "organisation" : "RusBITech РусБИТех, Москва"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Daniel Hall",
+        "organisation" : "Region Östergötland",
+        "email" : "daniel.hall@regionostergotland.se"
+      },
+      "accreditation" : "Åsa Skagerhult, Lisa Axelsson",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es-ar"
+      },
+      "author" : {
+        "name" : "Alan March",
+        "organisation" : "Hospital Universitario Austral, Buenos Aires, Argentina"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "einar.fosse@unn.no" : "einar.fosse@unn.no",
+        "name" : "Einar Fosse",
+        "organisation" : "Norwegian Centre for Integrated Care and Telemedicine, Tromsø, Norway"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Vladimir Pizzo",
+        "organisation" : "Hospital Sírio Libanês, São Paulo, Brazil",
+        "email" : "vladimir.pizzo@hsl.org.br"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sl"
+      },
+      "author" : {
+        "name" : "?"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "it"
+      },
+      "author" : {
+        "name" : "Paolo Anedda",
+        "organisation" : "Inpeco",
+        "email" : "paolo.anedda@inpeco.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fr"
+      },
+      "author" : {
+        "name" : "Vanessa Pereira",
+        "organisation" : "Better - Pathfinder",
+        "email" : "vanessapereira@protonmail.com"
+      },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "196eb088-b636-4a61-a19a-24dfcb21b773",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "04B78D1D0BE812327814EB8704AE1877"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-ACTION.review.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-ACTION.ovl-review-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "ACTION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "ism_transition",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0019.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "529" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0019" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0006.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "245" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0006" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "occurrences" : "0..0",
+          "nodeId" : "at0016.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "532" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0016" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "e33b4092-0267-4036-bdfc-5c968e1a57e6",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
+  } ],
   "originalLanguage" : {
     "terminologyId" : {
       "value" : "ISO_639-1"
