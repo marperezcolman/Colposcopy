@@ -33,7 +33,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"5af982343666065eedf9f340fd3f589f">
+		["MD5-CAM-1.0.1"] = <"9dd3c0fd13d3b0c0a84f53bbd5852801">
 		["build_uid"] = <"e33b4092-0267-4036-bdfc-5c968e1a57e6">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -73,7 +73,7 @@ definition
 					}
 				}
 			}
-			ISM_TRANSITION[at0012] matches {    -- Review cancelled
+			ISM_TRANSITION[at0012] matches {    -- DNA discharge
 				current_state matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
@@ -84,7 +84,7 @@ definition
 				careflow_step matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
-							[local::at0012]    -- Review cancelled
+							[local::at0012]    -- DNA discharge
 						}
 					}
 				}
@@ -185,6 +185,38 @@ definition
 					}
 				}
 			}
+			ISM_TRANSITION[at0.1] matches {    -- CNA discharged
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::528]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0.1]    -- CNA discharged
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0.2] matches {    -- Did not attend
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::528]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0.2]    -- Did not attend
+						}
+					}
+				}
+			}
 		}
 		description matches {
 			ITEM_TREE[at0001] matches {    -- Tree
@@ -258,8 +290,8 @@ ontology
 					description = <"The review activity has been suspended.">
 				>
 				["at0012"] = <
-					text = <"Review cancelled">
-					description = <"The review activity has been cancelled.">
+					text = <"DNA discharge">
+					description = <"The patient did not attend and got discharged of the pathway. The review activity has been cancelled.">
 				>
 				["at0013"] = <
 					text = <"Review aborted">
@@ -300,6 +332,14 @@ ontology
 				["at0000.1"] = <
 					text = <"Review">
 					description = <"Clinical activity regarding the performance of a formal clinical review of a subject's clinical situation, a specific aspect of their clinical care or a specified part of the health record.">
+				>
+				["at0.1"] = <
+					text = <"CNA discharged">
+					description = <"Patient could not attend and got discharged of the pathway.">
+				>
+				["at0.2"] = <
+					text = <"Did not attend">
+					description = <"">
 				>
 			>
 		>
