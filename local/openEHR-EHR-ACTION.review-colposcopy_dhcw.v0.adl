@@ -33,13 +33,13 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"0341716bd4e7b1638421d4c59d118f44">
+		["MD5-CAM-1.0.1"] = <"1f6ab3ab3f0eb77c3a7c0c2486c4452b">
 		["build_uid"] = <"e33b4092-0267-4036-bdfc-5c968e1a57e6">
 		["revision"] = <"0.0.1-alpha">
 	>
 
 definition
-	ACTION[at0000.1] matches {    -- Review
+	ACTION[at0000.1] matches {    -- Colposcopy Management DHCW
 		ism_transition matches {
 			ISM_TRANSITION[at0003] matches {    -- Review planned
 				current_state matches {
@@ -57,7 +57,7 @@ definition
 					}
 				}
 			}
-			ISM_TRANSITION[at0010] matches {    -- Could not attend (CNA)
+			ISM_TRANSITION[at0010] matches {    -- Review postponed
 				current_state matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
@@ -68,7 +68,23 @@ definition
 				careflow_step matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
-							[local::at0010]    -- Could not attend (CNA)
+							[local::at0010]    -- Review postponed
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0012] matches {    -- Review cancelled
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::528]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0012]    -- Review cancelled
 						}
 					}
 				}
@@ -137,18 +153,34 @@ definition
 					}
 				}
 			}
-			ISM_TRANSITION[at0012] matches {    -- Hospital cancelled
+			ISM_TRANSITION[at0013] matches {    -- Review aborted
 				current_state matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
-							[openehr::528]
+							[openehr::531]
 						}
 					}
 				}
 				careflow_step matches {
 					DV_CODED_TEXT matches {
 						defining_code matches {
-							[local::at0012]    -- Hospital cancelled
+							[local::at0013]    -- Review aborted
+						}
+					}
+				}
+			}
+			ISM_TRANSITION[at0016] matches {    -- Review completed
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[openehr::532]
+						}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {
+							[local::at0016]    -- Review completed
 						}
 					}
 				}
@@ -181,38 +213,6 @@ definition
 					DV_CODED_TEXT matches {
 						defining_code matches {
 							[local::at0.2]    -- DNA discharge
-						}
-					}
-				}
-			}
-			ISM_TRANSITION[at0013] matches {    -- Review aborted
-				current_state matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[openehr::531]
-						}
-					}
-				}
-				careflow_step matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[local::at0013]    -- Review aborted
-						}
-					}
-				}
-			}
-			ISM_TRANSITION[at0016] matches {    -- Review completed
-				current_state matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[openehr::532]
-						}
-					}
-				}
-				careflow_step matches {
-					DV_CODED_TEXT matches {
-						defining_code matches {
-							[local::at0016]    -- Review completed
 						}
 					}
 				}
@@ -276,6 +276,34 @@ ontology
 	term_definitions = <
 		["en"] = <
 			items = <
+				["at0010"] = <
+					text = <"Review postponed">
+					description = <"The review has been postponed.">
+				>
+				["at0012"] = <
+					text = <"Review cancelled">
+					description = <"The review activity has been cancelled.">
+				>
+				["at0000.1"] = <
+					text = <"Colposcopy Management DHCW">
+					description = <"Clinical activity regarding the performance of a formal clinical review of a subject's clinical situation, a specific aspect of their clinical care or a specified part of the health record.">
+				>
+				["at0.1"] = <
+					text = <"CNA discharged">
+					description = <"Patient could not attend appointment and got discharged of pathway.">
+				>
+				["at0.2"] = <
+					text = <"DNA discharge">
+					description = <"Patient did not attend and got discharged. Generally occurs after several events of patient DNA.">
+				>
+				["at0.3"] = <
+					text = <"Did not attend (DNA)">
+					description = <"Patient did not attend the scheduled appointment.">
+				>
+				["at0000"] = <
+					text = <"Review">
+					description = <"Clinical activity regarding the performance of a formal clinical review of a subject's clinical situation, a specific aspect of their clinical care or a specified part of the health record.">
+				>
 				["at0001"] = <
 					text = <"Tree">
 					description = <"@ internal @">
@@ -297,17 +325,9 @@ ontology
 					text = <"Review performed">
 					description = <"The review activity has been performed.">
 				>
-				["at0010"] = <
-					text = <"Could not attend (CNA)">
-					description = <"Patient could not attend - patient gave notice. The review has been postponed.">
-				>
 				["at0011"] = <
 					text = <"Review suspended">
 					description = <"The review activity has been suspended.">
-				>
-				["at0012"] = <
-					text = <"Hospital cancelled">
-					description = <"The review activity has been cancelled by the hospital.">
 				>
 				["at0013"] = <
 					text = <"Review aborted">
@@ -344,22 +364,6 @@ ontology
 					text = <"Extension">
 					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
 					comment = <"For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.">
-				>
-				["at0000.1"] = <
-					text = <"Review">
-					description = <"Clinical activity regarding the performance of a formal clinical review of a subject's clinical situation, a specific aspect of their clinical care or a specified part of the health record.">
-				>
-				["at0.1"] = <
-					text = <"CNA discharged">
-					description = <"Patient could not attend appointment and got discharged of pathway.">
-				>
-				["at0.2"] = <
-					text = <"DNA discharge">
-					description = <"Patient did not attend and got discharged. Generally occurs after several events of patient DNA.">
-				>
-				["at0.3"] = <
-					text = <"Did not attend (DNA)">
-					description = <"Patient did not attend the scheduled appointment.">
 				>
 			>
 		>
