@@ -233,13 +233,13 @@ Let op dat er in het openEHR Referentiemodel een attribuut 'Tijd' is, dat bedoel
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"9be69ad14136208add7f63f5e1dfe954">
+		["MD5-CAM-1.0.1"] = <"37cee658528296232be8e927eb34e5f5">
 		["build_uid"] = <"f596dd3a-2cba-4dec-9d40-ecfefe33b142">
 		["revision"] = <"1.0.1">
 	>
 
 definition
-	ACTION[at0000.1] matches {    -- Service
+	ACTION[at0000.1] matches {    -- Colposcopy - Patient management status
 		ism_transition matches {
 			ISM_TRANSITION[at0002] matches {    -- Service planned
 				current_state matches {
@@ -693,7 +693,7 @@ ontology
 					description = <"Additional structured details about the service.">
 				>
 				["at0000.1"] = <
-					text = <"Service">
+					text = <"Colposcopy - Patient management status">
 					description = <"A simple health-related service or activity delivered by a clinician, organisation or agency.">
 				>
 				["at0.1"] = <
@@ -841,7 +841,7 @@ ontology
 					description = <"*Additional structured details about the service. (en)">
 				>
 				["at0000.1"] = <
-					text = <"Serviço">
+					text = <"*Colposcopy - Patient management status (en)">
 					description = <"*A health-related service or activity delivered by a clinician, organisation or agency. (en)">
 				>
 				["at0.1"] = <
@@ -987,7 +987,7 @@ ontology
 					description = <"Zusätzliche strukturierte Details zur Dienstleistung.">
 				>
 				["at0000.1"] = <
-					text = <"Dienstleistung">
+					text = <"*Colposcopy - Patient management status (en)">
 					description = <"Eine einfache gesundheitsbezogene Dienstleistung oder Aktivität, die von einem Kliniker, einer Organisation oder einer Behörde bereitgestellt wird.">
 				>
 				["at0.1"] = <
@@ -1133,7 +1133,7 @@ ontology
 					description = <"Ytterligere strukturerte detaljer om tjenesten.">
 				>
 				["at0000.1"] = <
-					text = <"Helsetjenesteaktivitet">
+					text = <"*Colposcopy - Patient management status (en)">
 					description = <"En helserelatert tjeneste eller aktivitet utført av en kliniker, organisasjon eller virksomhet.">
 				>
 				["at0.1"] = <
@@ -1279,7 +1279,7 @@ ontology
 					description = <"Extra gestructureerde details over de service.">
 				>
 				["at0000.1"] = <
-					text = <"Dienst">
+					text = <"*Colposcopy - Patient management status (en)">
 					description = <"Een eenvoudige gezondheidsgerelateerde dienst of activiteit geleverd door een arts, organisatie of instantie.">
 				>
 				["at0.1"] = <
