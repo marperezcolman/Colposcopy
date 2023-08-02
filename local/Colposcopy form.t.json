@@ -22,11 +22,11 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.1.6",
+      "sem_ver" : "0.1.7",
       "is_singleton" : "ehr",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F",
-      "MD5-CAM-1.0.1" : "85cab081feea31fa6a257352b441e0d8"
+      "MD5-CAM-1.0.1" : "385e9268a8d6320b6a1865733e4c03c1"
     },
     "details" : {
       "de" : {
@@ -1162,6 +1162,15 @@
                   "attributes" : [ ],
                   "attributeTuples" : [ ],
                   "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-organisation_cc-001.v0",
+                  "referenceType" : "archetypeOverlay"
+                }, {
+                  "@type" : "C_ARCHETYPE_ROOT",
+                  "rmTypeName" : "CLUSTER",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0132.3",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ],
+                  "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-discharged-001.v0",
                   "referenceType" : "archetypeOverlay"
                 } ]
               } ],
@@ -3769,8 +3778,26 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0009.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0010.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..1",
+          "nodeId" : "at0011.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0011.2",
           "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
@@ -3801,6 +3828,24 @@
             "text" : "(Synthesized)",
             "code" : "ac0.6",
             "description" : ""
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011.1",
+            "text" : "First name",
+            "description" : "Given name, not always first and includes middle name(s)."
+          },
+          "at0011.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011.2",
+            "text" : "Middle name",
+            "description" : "Given name, not always first and includes middle name(s)."
+          },
+          "at0010.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0010.1",
+            "text" : "Family name",
+            "description" : "Family name or surname."
           }
         }
       },
@@ -4067,6 +4112,57 @@
     },
     "adlVersion" : "1.4",
     "buildUid" : "f520ff83-5512-4d8e-b00d-1716f3f1ef43",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "dc41edf9-ddcb-4bbc-a067-36dcf293ee2e",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "de92753547f7ecbb12606b4bec611c2b"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.discharged.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-discharged-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "1441320b-01ba-369e-a60e-84537558b565",
     "rmName" : "openehr",
     "rmRelease" : "1.1.0",
     "generated" : true,
