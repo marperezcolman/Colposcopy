@@ -26,7 +26,7 @@
       "is_singleton" : "ehr",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F",
-      "MD5-CAM-1.0.1" : "19533382115c3c0fb8333c85f848f5cd"
+      "MD5-CAM-1.0.1" : "8005c44b0f765d43aa40c8e37730be3e"
     },
     "details" : {
       "de" : {
@@ -15650,6 +15650,18 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
               "occurrences" : "1..1",
+              "defaultValue" : {
+                "defining_code" : {
+                  "terminology_id" : {
+                    "value" : "local_terms",
+                    "@type" : "TERMINOLOGY_ID"
+                  },
+                  "code_string" : "SCT code ask TF",
+                  "@type" : "CODE_PHRASE"
+                },
+                "value" : "Female reproductive system",
+                "@type" : "DV_CODED_TEXT"
+              },
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
