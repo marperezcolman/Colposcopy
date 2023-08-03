@@ -26,7 +26,7 @@
       "is_singleton" : "ehr",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F",
-      "MD5-CAM-1.0.1" : "dd5cae50a343ac1d3ac6a692b3fd17fe"
+      "MD5-CAM-1.0.1" : "387b169ee96065f006faef5e10d4faad"
     },
     "details" : {
       "de" : {
@@ -10961,7 +10961,14 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { },
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Smoking status",
+            "description" : "Summary or persistent information about the tobacco smoking habits of an individual."
+          }
+        },
         "nb" : { },
         "sv" : { },
         "de" : { },
