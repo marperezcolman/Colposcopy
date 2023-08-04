@@ -26,14 +26,14 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"c08e000492b126bdf67d9239818a5989">
+		["MD5-CAM-1.0.1"] = <"17ccde41ccb5716d5ac981248b0952e1">
 		["build_uid"] = <"2f1b3d44-78c4-3996-b5a6-49cd88c1885a">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- Colposcopy details DHCW
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0007] occurrences matches {0..1} matches {    -- Exam performed
+			ELEMENT[at0007] occurrences matches {0..1} matches {    -- Examination performed
 				value matches {
 					DV_BOOLEAN matches {
 						value matches {true}
@@ -122,7 +122,7 @@ ontology
 					description = <"">
 				>
 				["at0007"] = <
-					text = <"Exam performed">
+					text = <"Examination performed">
 					description = <"">
 				>
 				["at0008"] = <
