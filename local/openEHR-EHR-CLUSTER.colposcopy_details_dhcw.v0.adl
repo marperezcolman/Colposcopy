@@ -1,0 +1,150 @@
+archetype (adl_version=1.4; uid=0756c49b-b9ef-4d8d-adf3-284c8dd6e093)
+	openEHR-EHR-CLUSTER.colposcopy_details_dhcw.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2023-08-04">
+		["name"] = <"Marlene Pérez Colman">
+		["organisation"] = <"Digital Health and Care Wales">
+		["email"] = <"marlene.perezcolman@wales.nhs.uk">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"c08e000492b126bdf67d9239818a5989">
+		["build_uid"] = <"2f1b3d44-78c4-3996-b5a6-49cd88c1885a">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Colposcopy details DHCW
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0007] occurrences matches {0..1} matches {    -- Exam performed
+				value matches {
+					DV_BOOLEAN matches {
+						value matches {true}
+					}
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			allow_archetype CLUSTER[at0006] occurrences matches {0..*} matches {    -- Examination not done
+				include
+					archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.exclusion_exam\.v1/}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Cervix completely seen
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Punctation
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Schiller iodine test
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Transformation Zone (TZ) type
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0008] occurrences matches {0..1} matches {    -- Mosaic
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0009] occurrences matches {0..1} matches {    -- Ectopy
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0010] occurrences matches {0..1} matches {    -- Acetowhite epithelium (AWE)
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0011] occurrences matches {0..1} matches {    -- Abnormal vasculature
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0012] occurrences matches {0..1} matches {    -- Lesion size (quadrants)
+				value matches {
+					DV_QUANTITY matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Colposcopy details DHCW">
+					description = <"Colposcopy details DHCW">
+				>
+				["at0002"] = <
+					text = <"Cervix completely seen">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Punctation">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Schiller iodine test">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Transformation Zone (TZ) type">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Examination not done">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Exam performed">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Mosaic">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"Ectopy">
+					description = <"">
+				>
+				["at0010"] = <
+					text = <"Acetowhite epithelium (AWE)">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Abnormal vasculature">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Lesion size (quadrants)">
+					description = <"">
+				>
+			>
+		>
+	>
