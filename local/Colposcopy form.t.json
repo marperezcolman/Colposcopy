@@ -22,10 +22,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.1.33",
+      "sem_ver" : "0.1.34",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F",
-      "MD5-CAM-1.0.1" : "8f03571032c2f42478880c701cfed1a4"
+      "MD5-CAM-1.0.1" : "aff7a1a87c2691035f9d6de296757f75"
     },
     "details" : {
       "de" : {
@@ -14896,6 +14896,7 @@
                             "children" : [ {
                               "@type" : "C_TERMINOLOGY_CODE",
                               "rmTypeName" : "TERMINOLOGY_CODE",
+                              "occurrences" : "0..1",
                               "terminologyId" : {
                                 "value" : "local_terms"
                               },
@@ -14932,7 +14933,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.6" ],
+                              "constraint" : [ "ac0.8" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -15071,34 +15072,34 @@
             "description" : "Is there a history of any issues, problems or diagnoses relevant for the screening purpose?",
             "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
           },
-          "ac0.6" : {
+          "ac0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.6",
+            "code" : "ac0.8",
             "description" : ""
           }
         },
         "nb" : {
-          "ac0.6" : {
+          "ac0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.6",
+            "code" : "ac0.8",
             "description" : ""
           }
         },
         "de" : {
-          "ac0.6" : {
+          "ac0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.6",
+            "code" : "ac0.8",
             "description" : ""
           }
         },
         "nl" : {
-          "ac0.6" : {
+          "ac0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.6",
+            "code" : "ac0.8",
             "description" : ""
           }
         }
@@ -15134,6 +15135,16 @@
         "ac0.6" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.6",
+          "members" : [ "at0031", "at0032", "at0033" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
+          "members" : [ "at0031", "at0032", "at0033" ]
+        },
+        "ac0.8" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.8",
           "members" : [ "at0031", "at0032", "at0033" ]
         }
       }
@@ -18105,7 +18116,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Colposcopy",
+            "text" : "Colposcopy findings",
             "description" : "Findings observed during the physical examination of a subject of care."
           }
         },
@@ -23214,7 +23225,6 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
                       "nodeId" : "at0006.1",
                       "attributes" : [ ],
                       "attributeTuples" : [ ]
