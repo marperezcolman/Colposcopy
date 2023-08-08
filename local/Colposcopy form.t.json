@@ -22,11 +22,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.1.30",
-      "is_singleton" : "ehr",
+      "sem_ver" : "0.1.31",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F",
-      "MD5-CAM-1.0.1" : "c5010fb0d3f5ab4c742bc58f2d070b81"
+      "MD5-CAM-1.0.1" : "c84a3b1b37896968a6ce6b895e7697a2"
     },
     "details" : {
       "de" : {
@@ -1765,6 +1764,102 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ISM_TRANSITION",
+          "nodeId" : "at0008.0.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "527" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0008" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
+          "nodeId" : "at0009.0.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "current_state",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "528" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          }, {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "careflow_step",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "defining_code",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "rmTypeName" : "CODE_PHRASE",
+                  "occurrences" : "1..1",
+                  "terminologyId" : {
+                    "value" : "local"
+                  },
+                  "constraint" : [ "at0009" ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ISM_TRANSITION",
           "occurrences" : "0..0",
           "nodeId" : "at0003.0.1",
           "attributes" : [ {
@@ -2272,6 +2367,18 @@
             "text" : "Additional comments",
             "description" : "Reason that the activity or care pathway step for the identified service was carried out.",
             "comment" : "For example: the reason for the cancellation or suspension of the service. It is not necessary to record the reason for each pathway step that is expected. Rather this data element is intended to capture the reason for any divergence from a typical service provision process, such as 'Postponed' due to 'Patient had a fever', or a scheduled provision as part of a series may be 'Cancelled' due to 'Patient changed their mind'. Note: The clinical indication for triggering the service provision process may be recorded using the INSTRUCTION.service_request archetype."
+          },
+          "at0008.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008.0.1",
+            "text" : "Could not attend (CNA)",
+            "description" : "The planned service has been postponed."
+          },
+          "at0009.0.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009.0.1",
+            "text" : "Did not attend (DNA) discharge",
+            "description" : "The planned service has been cancelled prior to commencement."
           }
         },
         "pt-br" : {
