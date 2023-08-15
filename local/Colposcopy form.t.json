@@ -22,10 +22,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.2.5",
+      "sem_ver" : "0.2.6",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F",
-      "MD5-CAM-1.0.1" : "515dae1c28b6143908c15adb0130073d"
+      "MD5-CAM-1.0.1" : "24ea5b94f867d4e34e51f68440dcc598"
     },
     "details" : {
       "de" : {
@@ -15140,8 +15140,8 @@
                               "selectedTerminologies" : [ "local_terms" ],
                               "includedExternalTerminologyCodes" : [ {
                                 "terminologyId" : "local_terms",
-                                "code" : "Ask TF",
-                                "value" : "Abnormal bleeding"
+                                "code" : "312984006",
+                                "value" : "Abnormal uterine bleeding unrelated to menstrual cycle (disorder)"
                               } ]
                             } ]
                           } ],
