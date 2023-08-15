@@ -22,10 +22,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.2.4",
+      "sem_ver" : "0.2.5",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F",
-      "MD5-CAM-1.0.1" : "75267f8a0e835dc617dfa5a9c463d6ac"
+      "MD5-CAM-1.0.1" : "515dae1c28b6143908c15adb0130073d"
     },
     "details" : {
       "de" : {
@@ -7979,6 +7979,18 @@
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_CODED_TEXT",
+                      "defaultValue" : {
+                        "defining_code" : {
+                          "terminology_id" : {
+                            "value" : "SCT",
+                            "@type" : "TERMINOLOGY_ID"
+                          },
+                          "code_string" : "268458002",
+                          "@type" : "CODE_PHRASE"
+                        },
+                        "value" : "Uses combined oral contraception (finding)",
+                        "@type" : "DV_CODED_TEXT"
+                      },
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "defining_code",
@@ -7987,10 +7999,15 @@
                           "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "1..1",
                           "terminologyId" : {
-                            "value" : "local"
+                            "value" : "SCT"
                           },
-                          "constraint" : [ "ac0.18" ],
-                          "selectedTerminologies" : [ ]
+                          "constraint" : [ ],
+                          "selectedTerminologies" : [ "SCT" ],
+                          "includedExternalTerminologyCodes" : [ {
+                            "terminologyId" : "SCT",
+                            "code" : "268458002",
+                            "value" : "Uses combined oral contraception (finding)"
+                          } ]
                         } ]
                       } ],
                       "attributeTuples" : [ ]
@@ -8170,18 +8187,26 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0151.4",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "value",
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "DV_TEXT",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_CODED_TEXT",
+                      "defaultValue" : {
+                        "defining_code" : {
+                          "terminology_id" : {
+                            "value" : "SCT",
+                            "@type" : "TERMINOLOGY_ID"
+                          },
+                          "code_string" : "169467008",
+                          "@type" : "CODE_PHRASE"
+                        },
+                        "value" : "Uses progestogen only oral contraception (finding)",
+                        "@type" : "DV_CODED_TEXT"
+                      },
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "defining_code",
@@ -8190,10 +8215,15 @@
                           "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "1..1",
                           "terminologyId" : {
-                            "value" : "local"
+                            "value" : "SCT"
                           },
-                          "constraint" : [ "ac0.6" ],
-                          "selectedTerminologies" : [ ]
+                          "constraint" : [ ],
+                          "selectedTerminologies" : [ "SCT" ],
+                          "includedExternalTerminologyCodes" : [ {
+                            "terminologyId" : "SCT",
+                            "code" : "169467008",
+                            "value" : "Uses progestogen only oral contraception (finding)"
+                          } ]
                         } ]
                       } ],
                       "attributeTuples" : [ ]
@@ -8203,7 +8233,6 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
                   "nodeId" : "at0144.4",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -8216,12 +8245,13 @@
                         "rmAttributeName" : "defining_code",
                         "children" : [ {
                           "@type" : "C_TERMINOLOGY_CODE",
-                          "rmTypeName" : "CODE_PHRASE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "1..1",
                           "terminologyId" : {
                             "value" : "local"
                           },
-                          "constraint" : [ "at0145", "at0146", "at0147" ]
+                          "constraint" : [ "ac0.141" ],
+                          "selectedTerminologies" : [ ]
                         } ]
                       } ],
                       "attributeTuples" : [ ]
@@ -8379,12 +8409,19 @@
                     "rmAttributeName" : "value",
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "DV_TEXT",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_CODED_TEXT",
+                      "defaultValue" : {
+                        "defining_code" : {
+                          "terminology_id" : {
+                            "value" : "SCT",
+                            "@type" : "TERMINOLOGY_ID"
+                          },
+                          "code_string" : "268460000",
+                          "@type" : "CODE_PHRASE"
+                        },
+                        "value" : "Intrauterine contraceptive device (physical object)",
+                        "@type" : "DV_CODED_TEXT"
+                      },
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "defining_code",
@@ -8393,10 +8430,15 @@
                           "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "1..1",
                           "terminologyId" : {
-                            "value" : "local"
+                            "value" : "SCT"
                           },
-                          "constraint" : [ "ac0.5" ],
-                          "selectedTerminologies" : [ ]
+                          "constraint" : [ ],
+                          "selectedTerminologies" : [ "SCT" ],
+                          "includedExternalTerminologyCodes" : [ {
+                            "terminologyId" : "SCT",
+                            "code" : "268460000",
+                            "value" : "Intrauterine contraceptive device (physical object)"
+                          } ]
                         } ]
                       } ],
                       "attributeTuples" : [ ]
@@ -8406,7 +8448,6 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
                   "nodeId" : "at0144.3",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -8419,12 +8460,13 @@
                         "rmAttributeName" : "defining_code",
                         "children" : [ {
                           "@type" : "C_TERMINOLOGY_CODE",
-                          "rmTypeName" : "CODE_PHRASE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "1..1",
                           "terminologyId" : {
                             "value" : "local"
                           },
-                          "constraint" : [ "at0145", "at0146", "at0147" ]
+                          "constraint" : [ "ac0.133" ],
+                          "selectedTerminologies" : [ ]
                         } ]
                       } ],
                       "attributeTuples" : [ ]
@@ -8582,12 +8624,19 @@
                     "rmAttributeName" : "value",
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "DV_TEXT",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_CODED_TEXT",
+                      "defaultValue" : {
+                        "defining_code" : {
+                          "terminology_id" : {
+                            "value" : "SCT",
+                            "@type" : "TERMINOLOGY_ID"
+                          },
+                          "code_string" : "9459301000001100",
+                          "@type" : "CODE_PHRASE"
+                        },
+                        "value" : "Mirena (product)",
+                        "@type" : "DV_CODED_TEXT"
+                      },
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "defining_code",
@@ -8596,10 +8645,15 @@
                           "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "1..1",
                           "terminologyId" : {
-                            "value" : "local"
+                            "value" : "SCT"
                           },
-                          "constraint" : [ "ac0.7" ],
-                          "selectedTerminologies" : [ ]
+                          "constraint" : [ ],
+                          "selectedTerminologies" : [ "SCT" ],
+                          "includedExternalTerminologyCodes" : [ {
+                            "terminologyId" : "SCT",
+                            "code" : "9459301000001100",
+                            "value" : "Mirena (product)"
+                          } ]
                         } ]
                       } ],
                       "attributeTuples" : [ ]
@@ -8609,7 +8663,6 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
                   "nodeId" : "at0144.5",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -8622,12 +8675,13 @@
                         "rmAttributeName" : "defining_code",
                         "children" : [ {
                           "@type" : "C_TERMINOLOGY_CODE",
-                          "rmTypeName" : "CODE_PHRASE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "1..1",
                           "terminologyId" : {
                             "value" : "local"
                           },
-                          "constraint" : [ "at0145", "at0146", "at0147" ]
+                          "constraint" : [ "ac0.125" ],
+                          "selectedTerminologies" : [ ]
                         } ]
                       } ],
                       "attributeTuples" : [ ]
@@ -8785,12 +8839,19 @@
                     "rmAttributeName" : "value",
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
-                      "rmTypeName" : "DV_TEXT",
-                      "attributes" : [ ],
-                      "attributeTuples" : [ ]
-                    }, {
-                      "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_CODED_TEXT",
+                      "defaultValue" : {
+                        "defining_code" : {
+                          "terminology_id" : {
+                            "value" : "SCT",
+                            "@type" : "TERMINOLOGY_ID"
+                          },
+                          "code_string" : "706506000",
+                          "@type" : "CODE_PHRASE"
+                        },
+                        "value" : "Condom (physical object)",
+                        "@type" : "DV_CODED_TEXT"
+                      },
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "defining_code",
@@ -8799,10 +8860,15 @@
                           "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "1..1",
                           "terminologyId" : {
-                            "value" : "local"
+                            "value" : "SCT"
                           },
-                          "constraint" : [ "ac0.8" ],
-                          "selectedTerminologies" : [ ]
+                          "constraint" : [ ],
+                          "selectedTerminologies" : [ "SCT" ],
+                          "includedExternalTerminologyCodes" : [ {
+                            "terminologyId" : "SCT",
+                            "code" : "706506000",
+                            "value" : "Condom (physical object)"
+                          } ]
                         } ]
                       } ],
                       "attributeTuples" : [ ]
@@ -8812,7 +8878,6 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
                   "nodeId" : "at0144.6",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -8825,12 +8890,13 @@
                         "rmAttributeName" : "defining_code",
                         "children" : [ {
                           "@type" : "C_TERMINOLOGY_CODE",
-                          "rmTypeName" : "CODE_PHRASE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "1..1",
                           "terminologyId" : {
                             "value" : "local"
                           },
-                          "constraint" : [ "at0145", "at0146", "at0147" ]
+                          "constraint" : [ "ac0.117" ],
+                          "selectedTerminologies" : [ ]
                         } ]
                       } ],
                       "attributeTuples" : [ ]
@@ -8982,6 +9048,7 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0151.7",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -9197,6 +9264,7 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0151.8",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -9404,6 +9472,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
               "nodeId" : "at0029.9",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -9411,6 +9480,7 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0151.9",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -9618,6 +9688,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
               "nodeId" : "at0029.10",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -9625,6 +9696,7 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0151.10",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -9832,6 +9904,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
               "nodeId" : "at0029.11",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -9839,6 +9912,7 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0151.11",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -10046,6 +10120,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
               "nodeId" : "at0029.12",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -10053,6 +10128,7 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0151.12",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -10260,6 +10336,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
               "nodeId" : "at0029.13",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -10267,6 +10344,7 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0151.13",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -10474,6 +10552,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
               "nodeId" : "at0029.14",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -10481,6 +10560,7 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0151.14",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -10688,6 +10768,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
               "nodeId" : "at0029.15",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -10695,6 +10776,7 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0151.15",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -10902,6 +10984,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
               "nodeId" : "at0029.16",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -10909,6 +10992,7 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0151.16",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -11116,6 +11200,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..1",
               "nodeId" : "at0029.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -11123,6 +11208,7 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0151.1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -11432,12 +11518,6 @@
             "text" : "Other",
             "description" : "Details about use of a specified type of contraception."
           },
-          "ac0.18" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.18",
-            "description" : ""
-          },
           "at0029.9" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0029.9",
@@ -11551,6 +11631,30 @@
             "text" : "(Synthesized)",
             "code" : "ac0.114",
             "description" : ""
+          },
+          "ac0.117" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.117",
+            "description" : ""
+          },
+          "ac0.125" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.125",
+            "description" : ""
+          },
+          "ac0.133" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.133",
+            "description" : ""
+          },
+          "ac0.141" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.141",
+            "description" : ""
           }
         },
         "nb" : {
@@ -11606,12 +11710,6 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.17",
-            "description" : ""
-          },
-          "ac0.18" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.18",
             "description" : ""
           },
           "at0029.9" : {
@@ -11726,6 +11824,30 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.114",
+            "description" : ""
+          },
+          "ac0.117" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.117",
+            "description" : ""
+          },
+          "ac0.125" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.125",
+            "description" : ""
+          },
+          "ac0.133" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.133",
+            "description" : ""
+          },
+          "ac0.141" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.141",
             "description" : ""
           }
         }
@@ -12247,6 +12369,166 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.114",
           "members" : [ "at0145" ]
+        },
+        "ac0.115" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.115",
+          "members" : [ "at0145", "at0146", "at0147" ]
+        },
+        "ac0.116" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.116",
+          "members" : [ "at0145", "at0146" ]
+        },
+        "ac0.117" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.117",
+          "members" : [ "at0145" ]
+        },
+        "ac0.118" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.118",
+          "members" : [ "at0155", "at0157", "at0156", "at0158", "at0159", "at0160", "at0169", "at0163", "at0161", "at0162", "at0154", "at0167", "at0153", "at0152", "at0164", "at0165", "at0166" ]
+        },
+        "ac0.120" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.120",
+          "members" : [ "at0155", "at0157", "at0156", "at0158", "at0159", "at0160", "at0169", "at0163", "at0161", "at0162", "at0154", "at0167", "at0153", "at0152", "at0164", "at0165", "at0166" ]
+        },
+        "ac0.121" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.121",
+          "members" : [ ]
+        },
+        "ac0.122" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.122",
+          "members" : [ ]
+        },
+        "ac0.123" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.123",
+          "members" : [ "at0145", "at0146", "at0147" ]
+        },
+        "ac0.124" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.124",
+          "members" : [ "at0145", "at0147" ]
+        },
+        "ac0.125" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.125",
+          "members" : [ "at0145" ]
+        },
+        "ac0.126" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.126",
+          "members" : [ "at0155", "at0157", "at0156", "at0158", "at0159", "at0160", "at0169", "at0163", "at0161", "at0162", "at0154", "at0167", "at0153", "at0152", "at0164", "at0165", "at0166" ]
+        },
+        "ac0.128" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.128",
+          "members" : [ "at0155", "at0157", "at0156", "at0158", "at0159", "at0160", "at0169", "at0163", "at0161", "at0162", "at0154", "at0167", "at0153", "at0152", "at0164", "at0165", "at0166" ]
+        },
+        "ac0.129" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.129",
+          "members" : [ ]
+        },
+        "ac0.130" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.130",
+          "members" : [ ]
+        },
+        "ac0.131" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.131",
+          "members" : [ "at0145", "at0146", "at0147" ]
+        },
+        "ac0.132" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.132",
+          "members" : [ "at0145", "at0147" ]
+        },
+        "ac0.133" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.133",
+          "members" : [ "at0145" ]
+        },
+        "ac0.134" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.134",
+          "members" : [ "at0155", "at0157", "at0156", "at0158", "at0159", "at0160", "at0169", "at0163", "at0161", "at0162", "at0154", "at0167", "at0153", "at0152", "at0164", "at0165", "at0166" ]
+        },
+        "ac0.136" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.136",
+          "members" : [ "at0155", "at0157", "at0156", "at0158", "at0159", "at0160", "at0169", "at0163", "at0161", "at0162", "at0154", "at0167", "at0153", "at0152", "at0164", "at0165", "at0166" ]
+        },
+        "ac0.137" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.137",
+          "members" : [ ]
+        },
+        "ac0.138" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.138",
+          "members" : [ ]
+        },
+        "ac0.139" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.139",
+          "members" : [ "at0145", "at0146", "at0147" ]
+        },
+        "ac0.140" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.140",
+          "members" : [ "at0145", "at0147" ]
+        },
+        "ac0.141" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.141",
+          "members" : [ "at0145" ]
+        },
+        "ac0.142" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.142",
+          "members" : [ "at0155", "at0157", "at0156", "at0158", "at0159", "at0160", "at0169", "at0163", "at0161", "at0162", "at0154", "at0167", "at0153", "at0152", "at0164", "at0165", "at0166" ]
+        },
+        "ac0.143" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.143",
+          "members" : [ "at0155", "at0157", "at0156", "at0158", "at0159", "at0160", "at0169", "at0163", "at0161", "at0162", "at0154", "at0167", "at0153", "at0152", "at0164", "at0165", "at0166" ]
+        },
+        "ac0.145" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.145",
+          "members" : [ "at0155", "at0157", "at0156", "at0158", "at0159", "at0160", "at0169", "at0163", "at0161", "at0162", "at0154", "at0167", "at0153", "at0152", "at0164", "at0165", "at0166" ]
+        },
+        "ac0.146" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.146",
+          "members" : [ ]
+        },
+        "ac0.147" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.147",
+          "members" : [ ]
+        },
+        "ac0.149" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.149",
+          "members" : [ "at0155", "at0157", "at0156", "at0158", "at0159", "at0160", "at0169", "at0163", "at0161", "at0162", "at0154", "at0167", "at0153", "at0152", "at0164", "at0165", "at0166" ]
+        },
+        "ac0.150" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.150",
+          "members" : [ ]
+        },
+        "ac0.151" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.151",
+          "members" : [ ]
         }
       }
     },
