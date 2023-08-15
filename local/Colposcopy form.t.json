@@ -22,10 +22,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.2.6",
+      "sem_ver" : "0.2.7",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F",
-      "MD5-CAM-1.0.1" : "24ea5b94f867d4e34e51f68440dcc598"
+      "MD5-CAM-1.0.1" : "632e13c1d7487639fd46f5d23f005983"
     },
     "details" : {
       "de" : {
@@ -13915,20 +13915,7 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_CODED_TEXT",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "TERMINOLOGY_CODE",
-                      "occurrences" : "1..1",
-                      "terminologyId" : {
-                        "value" : "local"
-                      },
-                      "constraint" : [ "ac0.1" ],
-                      "selectedTerminologies" : [ ]
-                    } ]
-                  } ],
+                  "attributes" : [ ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -14084,7 +14071,6 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
-                      "occurrences" : "0..0",
                       "nodeId" : "at0030.1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -14097,19 +14083,15 @@
                             "rmAttributeName" : "defining_code",
                             "children" : [ {
                               "@type" : "C_TERMINOLOGY_CODE",
-                              "rmTypeName" : "CODE_PHRASE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
                               "occurrences" : "1..1",
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "at0083", "at0084" ]
+                              "constraint" : [ "ac0.12" ],
+                              "selectedTerminologies" : [ ]
                             } ]
                           } ],
-                          "attributeTuples" : [ ]
-                        }, {
-                          "@type" : "C_COMPLEX_OBJECT",
-                          "rmTypeName" : "DV_TEXT",
-                          "attributes" : [ ],
                           "attributeTuples" : [ ]
                         } ]
                       } ],
@@ -14117,6 +14099,7 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
                       "nodeId" : "at0023.1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -14426,7 +14409,17 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
                   "nodeId" : "at0069.1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "DV_CODED_TEXT",
+                      "occurrences" : "1..1",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -14750,99 +14743,98 @@
             "text" : "Smoking status",
             "description" : "Summary or persistent information about the tobacco smoking habits of an individual."
           },
-          "at0023.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0023.1",
-            "text" : "Smoking frequency",
-            "description" : "Estimate of number of units of the specified type of tobacco consumed.",
-            "comment" : "For example: the number of 'sticks' or 'full pipes' per day or per week. This data element is redundant if a value is recorded for 'Typical use(mass)'."
-          },
           "at0069.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0069.1",
             "text" : "Smoking cessation advice given?",
             "description" : "Additional narrative about smoking of the specified type of tobacco, not captured in other fields."
           },
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
             "code" : "ac0.8",
+            "description" : ""
+          },
+          "at0030.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030.1",
+            "text" : "Smoking frequency",
+            "description" : "The typical pattern of smoking for the specified type of tobacco."
+          },
+          "ac0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.12",
             "description" : ""
           }
         },
         "nb" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.8",
+            "description" : ""
+          },
+          "ac0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.12",
             "description" : ""
           }
         },
         "sv" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.8",
+            "description" : ""
+          },
+          "ac0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.12",
             "description" : ""
           }
         },
         "de" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.8",
+            "description" : ""
+          },
+          "ac0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.12",
             "description" : ""
           }
         },
         "fr" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.8",
+            "description" : ""
+          },
+          "ac0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.12",
             "description" : ""
           }
         },
         "nl" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          },
           "ac0.8" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.8",
+            "description" : ""
+          },
+          "ac0.12" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.12",
             "description" : ""
           }
         }
@@ -14889,6 +14881,21 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.8",
           "members" : [ "at0054" ]
+        },
+        "ac0.10" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.10",
+          "members" : [ "at0006", "at0003", "at0005" ]
+        },
+        "ac0.11" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.11",
+          "members" : [ "at0083", "at0084" ]
+        },
+        "ac0.12" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.12",
+          "members" : [ "at0083", "at0084" ]
         }
       }
     },
@@ -15224,6 +15231,7 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..1",
                       "nodeId" : "at0022.1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -15245,10 +15253,10 @@
                                     "value" : "local_terms",
                                     "@type" : "TERMINOLOGY_ID"
                                   },
-                                  "code_string" : "SCT code ASK TF",
+                                  "code_string" : "48880000",
                                   "@type" : "CODE_PHRASE"
                                 },
-                                "value" : "Postcoital",
+                                "value" : "Postcoital bleeding (finding)",
                                 "@type" : "DV_CODED_TEXT"
                               },
                               "attributes" : [ {
@@ -15259,14 +15267,14 @@
                                   "rmTypeName" : "TERMINOLOGY_CODE",
                                   "occurrences" : "0..1",
                                   "terminologyId" : {
-                                    "value" : "local_terms"
+                                    "value" : "SCT"
                                   },
                                   "constraint" : [ ],
-                                  "selectedTerminologies" : [ "local_terms" ],
+                                  "selectedTerminologies" : [ "SCT" ],
                                   "includedExternalTerminologyCodes" : [ {
-                                    "terminologyId" : "local_terms",
-                                    "code" : "SCT code ASK TF",
-                                    "value" : "Postcoital"
+                                    "terminologyId" : "SCT",
+                                    "code" : "48880000",
+                                    "value" : "Postcoital bleeding (finding)"
                                   } ]
                                 } ]
                               } ],
@@ -15351,6 +15359,7 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..1",
                       "nodeId" : "at0022.2",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -15372,10 +15381,10 @@
                                     "value" : "local_terms",
                                     "@type" : "TERMINOLOGY_ID"
                                   },
-                                  "code_string" : "SCT code ask",
+                                  "code_string" : "237130006",
                                   "@type" : "CODE_PHRASE"
                                 },
-                                "value" : "Intermenstrual",
+                                "value" : "Bleeding between periods (finding)",
                                 "@type" : "DV_CODED_TEXT"
                               },
                               "attributes" : [ {
@@ -15386,14 +15395,14 @@
                                   "rmTypeName" : "TERMINOLOGY_CODE",
                                   "occurrences" : "0..1",
                                   "terminologyId" : {
-                                    "value" : "local_terms"
+                                    "value" : "SCT"
                                   },
                                   "constraint" : [ ],
-                                  "selectedTerminologies" : [ "local_terms" ],
+                                  "selectedTerminologies" : [ "SCT" ],
                                   "includedExternalTerminologyCodes" : [ {
-                                    "terminologyId" : "local_terms",
-                                    "code" : "SCT code ask",
-                                    "value" : "Intermenstrual"
+                                    "terminologyId" : "SCT",
+                                    "code" : "237130006",
+                                    "value" : "Bleeding between periods (finding)"
                                   } ]
                                 } ]
                               } ],
@@ -15478,6 +15487,7 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
+                      "occurrences" : "0..1",
                       "nodeId" : "at0022.3",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -15496,13 +15506,13 @@
                               "defaultValue" : {
                                 "defining_code" : {
                                   "terminology_id" : {
-                                    "value" : "local_terms",
+                                    "value" : "SCT",
                                     "@type" : "TERMINOLOGY_ID"
                                   },
-                                  "code_string" : "ASK SCT code",
+                                  "code_string" : "76742009",
                                   "@type" : "CODE_PHRASE"
                                 },
-                                "value" : "Postmenopausal",
+                                "value" : "Postmenopausal bleeding (finding)",
                                 "@type" : "DV_CODED_TEXT"
                               },
                               "attributes" : [ {
@@ -15513,14 +15523,14 @@
                                   "rmTypeName" : "TERMINOLOGY_CODE",
                                   "occurrences" : "0..1",
                                   "terminologyId" : {
-                                    "value" : "local_terms"
+                                    "value" : "SCT"
                                   },
                                   "constraint" : [ ],
-                                  "selectedTerminologies" : [ "local_terms" ],
+                                  "selectedTerminologies" : [ "SCT" ],
                                   "includedExternalTerminologyCodes" : [ {
-                                    "terminologyId" : "local_terms",
-                                    "code" : "ASK SCT code",
-                                    "value" : "Postmenopausal"
+                                    "terminologyId" : "SCT",
+                                    "code" : "76742009",
+                                    "value" : "Postmenopausal bleeding (finding)"
                                   } ]
                                 } ]
                               } ],
@@ -16085,6 +16095,7 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "POINT_EVENT",
+              "occurrences" : "0..1",
               "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -16107,6 +16118,18 @@
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_CODED_TEXT",
                           "occurrences" : "1..1",
+                          "defaultValue" : {
+                            "defining_code" : {
+                              "terminology_id" : {
+                                "value" : "local_terms",
+                                "@type" : "TERMINOLOGY_ID"
+                              },
+                              "code_string" : "74996004",
+                              "@type" : "CODE_PHRASE"
+                            },
+                            "value" : "Confirmation of (contextual qualifier) (qualifier value)",
+                            "@type" : "DV_CODED_TEXT"
+                          },
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
                             "rmAttributeName" : "defining_code",
@@ -16121,8 +16144,8 @@
                               "selectedTerminologies" : [ "local_terms" ],
                               "includedExternalTerminologyCodes" : [ {
                                 "terminologyId" : "local_terms",
-                                "code" : "Confirmation",
-                                "value" : "Confirmation of Adverse reaction"
+                                "code" : "74996004",
+                                "value" : "Confirmation of (contextual qualifier) (qualifier value)"
                               } ]
                             } ]
                           } ],
@@ -17810,6 +17833,7 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "1..1",
               "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -17824,10 +17848,10 @@
                         "value" : "local_terms",
                         "@type" : "TERMINOLOGY_ID"
                       },
-                      "code_string" : "SCT code",
+                      "code_string" : "392003006",
                       "@type" : "CODE_PHRASE"
                     },
-                    "value" : "Colposcopy",
+                    "value" : "Colposcopy (procedure)",
                     "@type" : "DV_CODED_TEXT"
                   },
                   "attributes" : [ {
@@ -17844,8 +17868,8 @@
                       "selectedTerminologies" : [ "local_terms" ],
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "local_terms",
-                        "code" : "SCT code",
-                        "value" : "Colposcopy"
+                        "code" : "392003006",
+                        "value" : "Colposcopy (procedure)"
                       } ]
                     } ]
                   } ],
@@ -17975,7 +17999,8 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "CLUSTER",
-              "nodeId" : "at0033",
+              "occurrences" : "0..0",
+              "nodeId" : "at0033.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "items",
