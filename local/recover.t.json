@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.1.0",
+      "sem_ver" : "0.1.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "db87472c339d37367357850fca61daeb",
+      "MD5-CAM-1.0.1" : "632b4345a60368a77ed70614948238b3",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -202,7 +202,28 @@
       "children" : [ {
         "@type" : "C_COMPLEX_OBJECT",
         "rmTypeName" : "EVENT_CONTEXT",
-        "attributes" : [ ],
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "other_context",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ITEM_TREE",
+            "nodeId" : "at0001",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0005.0.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
         "attributeTuples" : [ ]
       } ]
     } ],
@@ -265,6 +286,12 @@
           "code" : "at0000.1.1",
           "text" : "recover",
           "description" : "Documento para comunicar informações aos outros sobre qualquer procedimento isolado ou operação executada."
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "Estado",
+          "description" : "O estado de todo o relatório. Nota: este não é o estado de qualquer dos componentes do relatório."
         }
       },
       "de" : {
@@ -298,6 +325,12 @@
           "code" : "at0000.1.1",
           "text" : "recover",
           "description" : "Ein Dokument, um Informationen über jedes eigenständige Verfahren oder jeden durchgeführten Vorgang zu übermitteln."
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "Status",
+          "description" : "Der Status des gesamten Berichts. Hinweis: Dies ist nicht der Status einer Berichtskomponente."
         }
       },
       "ar-sy" : {
@@ -337,6 +370,18 @@
           "code" : "at0000.1.1",
           "text" : "recover",
           "description" : "وثيقة لتوصيل المعلومات للآخرين, عادة كاستجابة لطلب من طرف آخر."
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "تقرير",
+          "description" : "وثيقة لتوصيل المعلومات للآخرين, عادة كاستجابة لطلب من طرف آخر."
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "الحالة",
+          "description" : "حالة التقرير بشكل كلي. و لا تمثل هذه الحالة جزءا من التقرير و إنما جميعه ككل."
         }
       },
       "sl" : {
@@ -376,6 +421,18 @@
           "code" : "at0000.1.1",
           "text" : "recover",
           "description" : "*Document to communicate information to others, commonly in response to a request from another party.(en)"
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Poročilo",
+          "description" : "*Document to communicate information to others, commonly in response to a request from another party.(en)"
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "Status",
+          "description" : "*The status of the entire report. Note: This is not the status of any of the report components.(en)"
         }
       },
       "es-ar" : {
@@ -409,6 +466,18 @@
           "code" : "at0000.1.1",
           "text" : "recover",
           "description" : "Documento para comunicar información a otros, comunmente en respuesta a la solicitud de un tercero."
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Informe",
+          "description" : "Documento para comunicar información a otros, comunmente en respuesta a la solicitud de un tercero."
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "Estado",
+          "description" : "El estado del informe como un todo. Nota: no se refiere al estado de alguno de los componentes del informe."
         }
       },
       "ko" : {
@@ -442,6 +511,18 @@
           "code" : "at0000.1.1",
           "text" : "recover",
           "description" : "일반적으로 다른 상대의 요청에 대한 응답으로, 다른 사람들과 정보를 통신하는 문서."
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "*Report(en)",
+          "description" : "일반적으로 다른 상대의 요청에 대한 응답으로, 다른 사람들과 정보를 통신하는 문서."
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "*Status(en)",
+          "description" : "전체 리포트의 상태. 주의: 이것은 리포트 컴포넌트들 중 어떤 부분의 상태가 아님."
         }
       },
       "fi" : {
@@ -475,6 +556,18 @@
           "code" : "at0000.1.1",
           "text" : "recover",
           "description" : "Asiakirja tiedon välittämiseksi muille, vastauksena yleensä toisen osapuolen pyyntöön."
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Raportti",
+          "description" : "Asiakirja tiedon välittämiseksi muille, vastauksena yleensä toisen osapuolen pyyntöön."
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "Status",
+          "description" : "Koko raportin tila. Huomaa: Tämä ei ole minkään raporttiosien tila."
         }
       },
       "it" : {
@@ -508,6 +601,18 @@
           "code" : "at0000.1.1",
           "text" : "recover",
           "description" : "Documento per comunicare informazioni ad altri, comunemente in risposta ad una richiesta di un altro soggetto."
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Rapporto",
+          "description" : "Documento per comunicare informazioni ad altri, comunemente in risposta ad una richiesta di un altro soggetto."
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "Stato",
+          "description" : "Lo stato dell'intero rapporto. Nota: Questo non è lo stato di alcuna delle componenti del rapporto."
         }
       },
       "nl" : {
@@ -541,6 +646,18 @@
           "code" : "at0000.1.1",
           "text" : "recover",
           "description" : "Document om informatie met anderen te communiceren, vaak op verzoek van een andere partij."
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Rapportage",
+          "description" : "Document om informatie met anderen te communiceren, vaak op verzoek van een andere partij."
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "Status",
+          "description" : "De status van de rapportage. Let op, dit is niet de status van een van de onderdelen van de rapportage."
         }
       },
       "sv" : {
@@ -574,6 +691,18 @@
           "code" : "at0000.1.1",
           "text" : "recover",
           "description" : "Dokument för att förmedla information till andra, vanligen som svar på en begäran från en annan part."
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Rapport",
+          "description" : "Dokument för att förmedla information till andra, vanligen som svar på en begäran från en annan part."
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "Status",
+          "description" : "Status för hela rapporten. Observera att detta inte är status för någon av rapportkomponenterna."
         }
       },
       "zh" : {
@@ -607,6 +736,18 @@
           "code" : "at0000.1.1",
           "text" : "recover",
           "description" : "用于交流信息的文件，通常是为了响应某一方的请求"
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "报告",
+          "description" : "用于交流信息的文件，通常是为了响应某一方的请求"
+        },
+        "at0005.0.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005.0.1",
+          "text" : "状态",
+          "description" : "整份报告的状态。注意：这不是指报告的任何一个组成部分的状态"
         }
       }
     },
