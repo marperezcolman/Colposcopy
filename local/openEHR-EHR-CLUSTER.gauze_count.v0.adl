@@ -26,22 +26,18 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"e002aa7b059471c5940daf650bd37701">
+		["MD5-CAM-1.0.1"] = <"d70c463e552655bd5280145fb9c2c67d">
 		["build_uid"] = <"99a41231-03e6-3110-a97e-c4efe9d0fa62">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- Gauze count
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Count performed
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Used
 				value matches {
 					DV_BOOLEAN matches {*}
 					DV_CODED_TEXT matches {*}
 				}
-			}
-			allow_archetype CLUSTER[at0002] occurrences matches {0..*} matches {    -- Count not performed
-				include
-					archetype_id/value matches {/.*|openEHR-EHR-CLUSTER\.exclusion_exam\.v1/}
 			}
 			CLUSTER[at0005] occurrences matches {0..*} matches {    -- Element
 				items cardinality matches {1..*; unordered} matches {
@@ -88,11 +84,7 @@ ontology
 					description = <"Gauze count">
 				>
 				["at0001"] = <
-					text = <"Count performed">
-					description = <"">
-				>
-				["at0002"] = <
-					text = <"Count not performed">
+					text = <"Used">
 					description = <"">
 				>
 				["at0003"] = <
