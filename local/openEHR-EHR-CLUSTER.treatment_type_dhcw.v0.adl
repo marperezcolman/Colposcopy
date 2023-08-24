@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"3fe6a5b61d0675c02712d7ae40414ec1">
+		["MD5-CAM-1.0.1"] = <"cd6fe8e6efe8cc29b1347d02dae12083">
 		["build_uid"] = <"96b493df-c6f1-3cf9-a41f-0c5b88b6f447">
 	>
 
@@ -36,6 +36,11 @@ definition
 			ELEMENT[at0001] occurrences matches {0..*} matches {    -- Treatment type
 				value matches {
 					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Other (specify)
+				value matches {
+					DV_TEXT matches {*}
 				}
 			}
 		}
@@ -51,6 +56,10 @@ ontology
 				>
 				["at0001"] = <
 					text = <"Treatment type">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Other (specify)">
 					description = <"">
 				>
 			>
