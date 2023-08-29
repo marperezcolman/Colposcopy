@@ -22,10 +22,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.2.9",
+      "sem_ver" : "0.2.10",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F",
-      "MD5-CAM-1.0.1" : "f70d15e4897a8a7caf294f4a1cea879e"
+      "MD5-CAM-1.0.1" : "404c83b07516e9fc9bfd30d6710faa6b"
     },
     "details" : {
       "de" : {
@@ -9579,10 +9579,10 @@
                             "value" : "SCT",
                             "@type" : "TERMINOLOGY_ID"
                           },
-                          "code_string" : "275572005",
+                          "code_string" : "60890002",
                           "@type" : "CODE_PHRASE"
                         },
-                        "value" : "History of female sterilization (situation)",
+                        "value" : "Female sterilization (procedure)",
                         "@type" : "DV_CODED_TEXT"
                       },
                       "attributes" : [ {
@@ -9599,8 +9599,8 @@
                           "selectedTerminologies" : [ "SCT" ],
                           "includedExternalTerminologyCodes" : [ {
                             "terminologyId" : "SCT",
-                            "code" : "275572005",
-                            "value" : "History of female sterilization (situation)"
+                            "code" : "60890002",
+                            "value" : "Female sterilization (procedure)"
                           } ]
                         } ]
                       } ],
@@ -16235,12 +16235,12 @@
                               "rmTypeName" : "TERMINOLOGY_CODE",
                               "occurrences" : "0..1",
                               "terminologyId" : {
-                                "value" : "local_terms"
+                                "value" : "SCT"
                               },
                               "constraint" : [ ],
-                              "selectedTerminologies" : [ "local_terms" ],
+                              "selectedTerminologies" : [ "SCT" ],
                               "includedExternalTerminologyCodes" : [ {
-                                "terminologyId" : "local_terms",
+                                "terminologyId" : "SCT",
                                 "code" : "74996004",
                                 "value" : "Confirmation of (contextual qualifier) (qualifier value)"
                               } ]
@@ -20008,6 +20008,18 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_CODED_TEXT",
+                  "defaultValue" : {
+                    "defining_code" : {
+                      "terminology_id" : {
+                        "value" : "local_terms",
+                        "@type" : "TERMINOLOGY_ID"
+                      },
+                      "code_string" : "257263000",
+                      "@type" : "CODE_PHRASE"
+                    },
+                    "value" : "Cotton wool ball (physical object)",
+                    "@type" : "DV_CODED_TEXT"
+                  },
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
@@ -26594,6 +26606,18 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
               "occurrences" : "1..1",
+              "defaultValue" : {
+                "defining_code" : {
+                  "terminology_id" : {
+                    "value" : "local_terms",
+                    "@type" : "TERMINOLOGY_ID"
+                  },
+                  "code_string" : "SCT code",
+                  "@type" : "CODE_PHRASE"
+                },
+                "value" : "Vulva",
+                "@type" : "DV_CODED_TEXT"
+              },
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
