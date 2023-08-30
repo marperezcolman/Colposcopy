@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.4.21",
+      "sem_ver" : "0.5.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "0318919eaf490174d890b85b5e69aff3",
+      "MD5-CAM-1.0.1" : "f77c40e8b3ec36f14a3b5b7b9eda6733",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -1110,12 +1110,12 @@
                           "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "0..1",
                           "terminologyId" : {
-                            "value" : "local_terms"
+                            "value" : "SCT"
                           },
                           "constraint" : [ ],
-                          "selectedTerminologies" : [ "local_terms" ],
+                          "selectedTerminologies" : [ "SCT" ],
                           "includedExternalTerminologyCodes" : [ {
-                            "terminologyId" : "local_terms",
+                            "terminologyId" : "SCT",
                             "code" : "129271007",
                             "value" : "Management - action (qualifier value)"
                           } ]
@@ -6654,6 +6654,18 @@
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_CODED_TEXT",
                               "occurrences" : "1..1",
+                              "defaultValue" : {
+                                "defining_code" : {
+                                  "terminology_id" : {
+                                    "value" : "SCT",
+                                    "@type" : "TERMINOLOGY_ID"
+                                  },
+                                  "code_string" : "911000221103",
+                                  "@type" : "CODE_PHRASE"
+                                },
+                                "value" : "Vaccine product containing only Human papillomavirus antigen (medicinal product)",
+                                "@type" : "DV_CODED_TEXT"
+                              },
                               "attributes" : [ {
                                 "@type" : "C_ATTRIBUTE",
                                 "rmAttributeName" : "defining_code",
@@ -6691,7 +6703,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.33" ],
+                                  "constraint" : [ "ac0.37" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -6803,10 +6815,10 @@
             "code" : "ac0.21",
             "description" : ""
           },
-          "ac0.33" : {
+          "ac0.37" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.33",
+            "code" : "ac0.37",
             "description" : ""
           }
         }
@@ -6977,6 +6989,26 @@
         "ac0.33" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.33",
+          "members" : [ "at0044", "at0045" ]
+        },
+        "ac0.34" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.34",
+          "members" : [ "at0044", "at0045" ]
+        },
+        "ac0.35" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.35",
+          "members" : [ "at0044", "at0045" ]
+        },
+        "ac0.36" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.36",
+          "members" : [ "at0044", "at0045" ]
+        },
+        "ac0.37" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.37",
           "members" : [ "at0044", "at0045" ]
         }
       }
@@ -7548,6 +7580,7 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0151.2",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -7770,6 +7803,7 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0151.4",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -7992,6 +8026,7 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0151.17",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -8214,6 +8249,7 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0151.3",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -8436,6 +8472,7 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0151.5",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -8658,6 +8695,7 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0151.6",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -8880,6 +8918,7 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0151.7",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -9102,6 +9141,7 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0151.8",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -9115,10 +9155,10 @@
                             "value" : "SCT",
                             "@type" : "TERMINOLOGY_ID"
                           },
-                          "code_string" : "275572005",
+                          "code_string" : "60890002",
                           "@type" : "CODE_PHRASE"
                         },
-                        "value" : "History of female sterilization (situation)",
+                        "value" : "Female sterilization (procedure)",
                         "@type" : "DV_CODED_TEXT"
                       },
                       "attributes" : [ {
@@ -9135,8 +9175,8 @@
                           "selectedTerminologies" : [ "SCT" ],
                           "includedExternalTerminologyCodes" : [ {
                             "terminologyId" : "SCT",
-                            "code" : "275572005",
-                            "value" : "History of female sterilization (situation)"
+                            "code" : "60890002",
+                            "value" : "Female sterilization (procedure)"
                           } ]
                         } ]
                       } ],
@@ -9324,6 +9364,7 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0151.9",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -9546,6 +9587,7 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0151.10",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -9768,6 +9810,7 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0151.11",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -9990,6 +10033,7 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0151.12",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -10212,6 +10256,7 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0151.13",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -10434,6 +10479,7 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0151.14",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -10656,6 +10702,7 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0151.15",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -10878,6 +10925,7 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0151.1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -10885,6 +10933,18 @@
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_CODED_TEXT",
+                      "defaultValue" : {
+                        "defining_code" : {
+                          "terminology_id" : {
+                            "value" : "SCT",
+                            "@type" : "TERMINOLOGY_ID"
+                          },
+                          "code_string" : "74964007",
+                          "@type" : "CODE_PHRASE"
+                        },
+                        "value" : "Other",
+                        "@type" : "DV_CODED_TEXT"
+                      },
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "defining_code",
@@ -14593,6 +14653,7 @@
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
+                      "occurrences" : "1..1",
                       "nodeId" : "at0034.1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -15604,10 +15665,10 @@
                                 "value" : "local_terms",
                                 "@type" : "TERMINOLOGY_ID"
                               },
-                              "code_string" : "74996004",
+                              "code_string" : "Confirmation",
                               "@type" : "CODE_PHRASE"
                             },
-                            "value" : "Confirmation of (contextual qualifier) (qualifier value)",
+                            "value" : "Confirmation of adverse reactions with patient.",
                             "@type" : "DV_CODED_TEXT"
                           },
                           "attributes" : [ {
@@ -15624,8 +15685,8 @@
                               "selectedTerminologies" : [ "local_terms" ],
                               "includedExternalTerminologyCodes" : [ {
                                 "terminologyId" : "local_terms",
-                                "code" : "74996004",
-                                "value" : "Confirmation of (contextual qualifier) (qualifier value)"
+                                "code" : "Confirmation",
+                                "value" : "Confirmation of adverse reactions with patient."
                               } ]
                             } ]
                           } ],
@@ -15636,6 +15697,7 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..1",
                       "nodeId" : "at0028.1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
@@ -15653,7 +15715,7 @@
                               "terminologyId" : {
                                 "value" : "local"
                               },
-                              "constraint" : [ "ac0.8" ],
+                              "constraint" : [ "ac0.10" ],
                               "selectedTerminologies" : [ ]
                             } ]
                           } ],
@@ -15792,34 +15854,34 @@
             "description" : "Is there a history of any issues, problems or diagnoses relevant for the screening purpose?",
             "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
           },
-          "ac0.8" : {
+          "ac0.10" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.8",
+            "code" : "ac0.10",
             "description" : ""
           }
         },
         "nb" : {
-          "ac0.8" : {
+          "ac0.10" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.10",
             "description" : ""
           }
         },
         "de" : {
-          "ac0.8" : {
+          "ac0.10" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.10",
             "description" : ""
           }
         },
         "nl" : {
-          "ac0.8" : {
+          "ac0.10" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.8",
+            "code" : "ac0.10",
             "description" : ""
           }
         }
@@ -15865,6 +15927,16 @@
         "ac0.8" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.8",
+          "members" : [ "at0031", "at0032", "at0033" ]
+        },
+        "ac0.9" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.9",
+          "members" : [ "at0031", "at0032", "at0033" ]
+        },
+        "ac0.10" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.10",
           "members" : [ "at0031", "at0032", "at0033" ]
         }
       }
@@ -17341,12 +17413,12 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "local_terms"
+                        "value" : "SCT"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "local_terms" ],
+                      "selectedTerminologies" : [ "SCT" ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "local_terms",
+                        "terminologyId" : "SCT",
                         "code" : "392003006",
                         "value" : "Colposcopy (procedure)"
                       } ]
@@ -18205,10 +18277,10 @@
                     "value" : "local_terms",
                     "@type" : "TERMINOLOGY_ID"
                   },
-                  "code_string" : "119223006",
+                  "code_string" : "23043003",
                   "@type" : "CODE_PHRASE"
                 },
-                "value" : "Female genital organ part (body structure)",
+                "value" : "Uterine adnexae structure (body structure)",
                 "@type" : "DV_CODED_TEXT"
               },
               "attributes" : [ {
@@ -18225,8 +18297,8 @@
                   "selectedTerminologies" : [ "local_terms" ],
                   "includedExternalTerminologyCodes" : [ {
                     "terminologyId" : "local_terms",
-                    "code" : "119223006",
-                    "value" : "Female genital organ part (body structure)"
+                    "code" : "23043003",
+                    "value" : "Uterine adnexae structure (body structure)"
                   } ]
                 } ]
               } ],
@@ -24058,9 +24130,14 @@
               "rmTypeName" : "DV_CODED_TEXT",
               "defaultValue" : {
                 "defining_code" : {
-                  "code_string" : "at0.0.1",
+                  "terminology_id" : {
+                    "value" : "SCT",
+                    "@type" : "TERMINOLOGY_ID"
+                  },
+                  "code_string" : "71252005",
                   "@type" : "CODE_PHRASE"
                 },
+                "value" : "Cervix uteri structure (body structure)",
                 "@type" : "DV_CODED_TEXT"
               },
               "attributes" : [ {
@@ -24071,10 +24148,15 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "1..1",
                   "terminologyId" : {
-                    "value" : "local"
+                    "value" : "SCT"
                   },
-                  "constraint" : [ "at0.0.1" ],
-                  "selectedTerminologies" : [ ]
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "SCT" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "SCT",
+                    "code" : "71252005",
+                    "value" : "Cervix uteri structure (body structure)"
+                  } ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -25473,9 +25555,14 @@
               "rmTypeName" : "DV_CODED_TEXT",
               "defaultValue" : {
                 "defining_code" : {
-                  "code_string" : "at0.0.1",
+                  "terminology_id" : {
+                    "value" : "SCT",
+                    "@type" : "TERMINOLOGY_ID"
+                  },
+                  "code_string" : "76784001",
                   "@type" : "CODE_PHRASE"
                 },
+                "value" : "Vaginal structure (body structure)",
                 "@type" : "DV_CODED_TEXT"
               },
               "attributes" : [ {
@@ -25486,10 +25573,15 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "1..1",
                   "terminologyId" : {
-                    "value" : "local"
+                    "value" : "SCT"
                   },
-                  "constraint" : [ "at0.0.1" ],
-                  "selectedTerminologies" : [ ]
+                  "constraint" : [ ],
+                  "selectedTerminologies" : [ "SCT" ],
+                  "includedExternalTerminologyCodes" : [ {
+                    "terminologyId" : "SCT",
+                    "code" : "76784001",
+                    "value" : "Vaginal structure (body structure)"
+                  } ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -28304,6 +28396,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
               "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -29228,7 +29321,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "1..1",
+              "occurrences" : "0..0",
               "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -29530,7 +29623,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "1..1",
+              "occurrences" : "0..0",
               "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
