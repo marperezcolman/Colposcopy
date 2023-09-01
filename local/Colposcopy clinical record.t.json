@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.5.1",
+      "sem_ver" : "0.5.2",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "a771a88f6d9c991e8312c779e071d8b1",
+      "MD5-CAM-1.0.1" : "556a7f5c2d0428ebc1016d5ee250cf2c",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -29786,7 +29786,7 @@
           "at0001.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001.1",
-            "text" : "Assisting Nurse",
+            "text" : "Assisting nurse",
             "description" : ""
           },
           "at0001.2" : {
