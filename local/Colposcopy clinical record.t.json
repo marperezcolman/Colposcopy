@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.5.0",
+      "sem_ver" : "0.5.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "f77c40e8b3ec36f14a3b5b7b9eda6733",
+      "MD5-CAM-1.0.1" : "a771a88f6d9c991e8312c779e071d8b1",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -4136,6 +4136,7 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "1..1",
                   "nodeId" : "at0148.1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -4156,25 +4157,7 @@
                         "value" : "Colposcopy service (qualifier value)",
                         "@type" : "DV_CODED_TEXT"
                       },
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "defining_code",
-                        "children" : [ {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "rmTypeName" : "TERMINOLOGY_CODE",
-                          "occurrences" : "0..1",
-                          "terminologyId" : {
-                            "value" : "SCT"
-                          },
-                          "constraint" : [ ],
-                          "selectedTerminologies" : [ "SCT" ],
-                          "includedExternalTerminologyCodes" : [ {
-                            "terminologyId" : "SCT",
-                            "code" : "310024000",
-                            "value" : "Colposcopy service (qualifier value)"
-                          } ]
-                        } ]
-                      } ],
+                      "attributes" : [ ],
                       "attributeTuples" : [ ]
                     } ]
                   } ],
