@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.6.2",
+      "sem_ver" : "0.6.3",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "7238b131e9f45cbd2afde7d5376cb087",
+      "MD5-CAM-1.0.1" : "a49591ec79718e87c198caa46a67309e",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -7161,7 +7161,19 @@
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_CODED_TEXT",
-                          "attributes" : [ ],
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "CODE_PHRASE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "at0005", "at0006", "at0007", "at0008" ]
+                            } ]
+                          } ],
                           "attributeTuples" : [ ]
                         } ]
                       } ],
@@ -7608,7 +7620,6 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "CLUSTER",
-              "occurrences" : "0..1",
               "nodeId" : "at0029.2",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -7669,13 +7680,6 @@
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_CODED_TEXT",
-                      "defaultValue" : {
-                        "defining_code" : {
-                          "code_string" : "at0145",
-                          "@type" : "CODE_PHRASE"
-                        },
-                        "@type" : "DV_CODED_TEXT"
-                      },
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "defining_code",
@@ -7686,7 +7690,7 @@
                           "terminologyId" : {
                             "value" : "local"
                           },
-                          "constraint" : [ "ac0.121" ],
+                          "constraint" : [ "ac0.136" ],
                           "selectedTerminologies" : [ ]
                         } ]
                       } ],
@@ -11243,12 +11247,6 @@
             "code" : "ac0.118",
             "description" : ""
           },
-          "ac0.121" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.121",
-            "description" : ""
-          },
           "at0029.17" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0029.17",
@@ -11338,6 +11336,12 @@
             "code" : "at0053.1",
             "text" : "Other",
             "description" : "Narrative summary about the use of the specified type of contraception."
+          },
+          "ac0.136" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.136",
+            "description" : ""
           }
         },
         "nb" : {
@@ -11363,12 +11367,6 @@
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.118",
-            "description" : ""
-          },
-          "ac0.121" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.121",
             "description" : ""
           },
           "at0029.17" : {
@@ -11448,6 +11446,12 @@
             "code" : "at0029.1",
             "text" : "Per type (15)",
             "description" : "Detaljer om bruken for en spesifikk type antikonsepsjon."
+          },
+          "ac0.136" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.136",
+            "description" : ""
           }
         }
       },
@@ -12067,6 +12071,11 @@
         "ac0.135" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.135",
+          "members" : [ "at0145" ]
+        },
+        "ac0.136" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.136",
           "members" : [ "at0145" ]
         }
       }
