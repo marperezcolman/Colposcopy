@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.6.4",
+      "sem_ver" : "0.7.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "51ddbd178d54ddb6795004652905f028",
+      "MD5-CAM-1.0.1" : "c53fa2370f941426bfe50797b6d93455",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -7600,10 +7600,23 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "1..1",
                       "terminologyId" : {
-                        "value" : "local"
+                        "value" : "local_terms"
                       },
-                      "constraint" : [ "ac0.109" ],
-                      "selectedTerminologies" : [ ]
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "local_terms" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "local_terms",
+                        "code" : "Current user",
+                        "value" : "Current user"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "Not current user",
+                        "value" : "Not current user"
+                      }, {
+                        "terminologyId" : "local_terms",
+                        "code" : "Not recorded",
+                        "value" : "Not recorded"
+                      } ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -11236,12 +11249,6 @@
             "text" : "PO pill",
             "description" : "Details about use of a specified type of contraception."
           },
-          "ac0.109" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.109",
-            "description" : ""
-          },
           "ac0.118" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
@@ -11357,12 +11364,6 @@
             "code" : "at0029.1",
             "text" : "Per type (4)",
             "description" : "Detaljer om bruken for en spesifikk type antikonsepsjon."
-          },
-          "ac0.109" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.109",
-            "description" : ""
           },
           "ac0.118" : {
             "@type" : "ARCHETYPE_TERM",
@@ -12078,6 +12079,21 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.136",
           "members" : [ "at0145" ]
+        },
+        "ac0.138" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.138",
+          "members" : [ "at0003", "at0005" ]
+        },
+        "ac0.139" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.139",
+          "members" : [ ]
+        },
+        "ac0.140" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.140",
+          "members" : [ ]
         }
       }
     },
