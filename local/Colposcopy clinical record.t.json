@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.7.2",
+      "sem_ver" : "0.7.3",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "9135e4272ab10d5534145c619723f839",
+      "MD5-CAM-1.0.1" : "7e50199456d9b57d76b5e41be60b6f17",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -4144,18 +4144,6 @@
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_CODED_TEXT",
                       "occurrences" : "1..1",
-                      "defaultValue" : {
-                        "defining_code" : {
-                          "terminology_id" : {
-                            "value" : "SCT",
-                            "@type" : "TERMINOLOGY_ID"
-                          },
-                          "code_string" : "310024000",
-                          "@type" : "CODE_PHRASE"
-                        },
-                        "value" : "Colposcopy service (qualifier value)",
-                        "@type" : "DV_CODED_TEXT"
-                      },
                       "attributes" : [ ],
                       "attributeTuples" : [ ]
                     } ]
@@ -29952,18 +29940,6 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_CODED_TEXT",
                   "occurrences" : "1..1",
-                  "defaultValue" : {
-                    "defining_code" : {
-                      "terminology_id" : {
-                        "value" : "SCT",
-                        "@type" : "TERMINOLOGY_ID"
-                      },
-                      "code_string" : "314231002",
-                      "@type" : "CODE_PHRASE"
-                    },
-                    "value" : "Chaperone present (finding)",
-                    "@type" : "DV_CODED_TEXT"
-                  },
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
