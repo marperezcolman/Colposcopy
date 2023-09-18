@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.7.8",
+      "sem_ver" : "0.7.9",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "5767318b5c7dffd4dd7615f14e067fc8",
+      "MD5-CAM-1.0.1" : "d747acefaf22df6c094e156538d6f9f4",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -18566,18 +18566,6 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
               "occurrences" : "1..1",
-              "defaultValue" : {
-                "defining_code" : {
-                  "terminology_id" : {
-                    "value" : "SCT",
-                    "@type" : "TERMINOLOGY_ID"
-                  },
-                  "code_string" : "385658003",
-                  "@type" : "CODE_PHRASE"
-                },
-                "value" : "Done (qualifier value)",
-                "@type" : "DV_CODED_TEXT"
-              },
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
@@ -18792,10 +18780,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_BOOLEAN",
-              "defaultValue" : {
-                "value" : true,
-                "@type" : "DV_BOOLEAN"
-              },
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
