@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"17ccde41ccb5716d5ac981248b0952e1">
+		["MD5-CAM-1.0.1"] = <"49c8c21379a9c7b2a61ea8dbddfa6566">
 		["build_uid"] = <"2f1b3d44-78c4-3996-b5a6-49cd88c1885a">
 	>
 
@@ -88,6 +88,7 @@ definition
 			ELEMENT[at0012] occurrences matches {0..1} matches {    -- Lesion size (quadrants)
 				value matches {
 					DV_QUANTITY matches {*}
+					DV_CODED_TEXT matches {*}
 				}
 			}
 		}
