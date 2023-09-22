@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"cd6fe8e6efe8cc29b1347d02dae12083">
+		["MD5-CAM-1.0.1"] = <"6a69e6d4576d49c66537e02ff18d2c26">
 		["build_uid"] = <"96b493df-c6f1-3cf9-a41f-0c5b88b6f447">
 	>
 
@@ -39,6 +39,16 @@ definition
 				}
 			}
 			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Other (specify)
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Anaesthetic
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Other (specify)
 				value matches {
 					DV_TEXT matches {*}
 				}
@@ -59,6 +69,14 @@ ontology
 					description = <"">
 				>
 				["at0002"] = <
+					text = <"Other (specify)">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Anaesthetic">
+					description = <"">
+				>
+				["at0004"] = <
 					text = <"Other (specify)">
 					description = <"">
 				>
