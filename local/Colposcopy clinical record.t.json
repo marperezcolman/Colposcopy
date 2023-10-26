@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.9.0",
+      "sem_ver" : "0.9.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "d9fafedef8a0d3f38e7e53eaffa89803",
+      "MD5-CAM-1.0.1" : "e439c95762dcc3394b6823bf01bfd73b",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -3202,6 +3202,13 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0065.2",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
                   "occurrences" : "0..0",
                   "nodeId" : "at0068.1",
                   "attributes" : [ {
@@ -3471,6 +3478,13 @@
             "text" : "Other referral reason",
             "description" : "Narrative description about the reason for request.",
             "comment" : "For example: 'The patient's diabetes has recently become more difficult to stabilise and renal function is deteriorating'."
+          },
+          "at0065.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065.2",
+            "text" : "Other Intended visit type",
+            "description" : "Description of the intent for the request.",
+            "comment" : "For example: a referral to a specialist may have the intent of the specialist taking over responsibility for care of the patient, or it may be to provide a second opinion on treatment options. Coding of the 'Intent' with a coding system is desirable, if available. This data element allows multiple occurrences to enable the user to record a multiple responses, if required."
           }
         },
         "nb" : {
@@ -3479,6 +3493,13 @@
             "code" : "at0000.1",
             "text" : "Helsetjenesteforespørsel (2)",
             "description" : "Forespørsel om utførelse av en helsetjeneste, til annet helsepersonell eller andre organisasjoner."
+          },
+          "at0065.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065",
+            "text" : "Hensikt (2)",
+            "description" : "Beskrivelse av hensikten med forespørselen.",
+            "comment" : "For eksempel kan en henvisning til en spesialist ha som hensikt at spesialisten tar over oppfølgingsansvaret for pasienten, eller det kan være å få en second opinion for behandlingsmuligheteter. Koding av hensikten med et kodeverk er ønskelig, dersom tilgjengelig. Dette dataelementet tillater flere forekomster, for å gjøre det mulig for brukeren å registrere flere svar om nødvendig."
           }
         },
         "it" : {
@@ -3487,6 +3508,13 @@
             "code" : "at0000.1",
             "text" : "Richiesta di un servizio. (2)",
             "description" : "Richiesta di un servizio o di un'attività sanitaria da parte di un clinico, di un'organizzazione o di un'agenzia."
+          },
+          "at0065.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065",
+            "text" : "Intento (2)",
+            "description" : "Descrizione dell'intento della richiesta.",
+            "comment" : "Ad esempio: un indirizzamento a uno specialista può avere l'intento di far assumere allo specialista la responsabilità della cura del paziente, oppure può essere quello di fornire una seconda opinione sulle opzioni di trattamento. È auspicabile una codifica dell'\"Intento\" con un sistema di codifica, se disponibile. Questo dato consente di registrare più occorrenze per consentire all'utente di annotare una risposta multipla, se necessario."
           }
         },
         "de" : {
@@ -3495,6 +3523,13 @@
             "code" : "at0000.1",
             "text" : "Dienstleistung (2)",
             "description" : "Antrag auf eine gesundheitsbezogene Dienstleistung oder Aktivität, die von einem Kliniker, einer Klinik oder einer Einrichtung erbracht werden soll."
+          },
+          "at0065.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065",
+            "text" : "Intention (2)",
+            "description" : "Beschreibung der Intention für die Anfrage.",
+            "comment" : "Zum Beispiel: Eine Überweisung an einen Spezialisten kann die Absicht haben, dass der Spezialist die Verantwortung für die Betreuung des Patienten übernimmt, oder es kann die Absicht sein, eine zweite Meinung zu Behandlungsmöglichkeiten abzugeben. Eine Kodierung der \"Absicht\" mit einem Kodierungssystem ist wünschenswert, sofern verfügbar. Dieses Datenelement erlaubt mehrfaches Vorkommen, so dass der Benutzer bei Bedarf eine Mehrfachnennung der Antworten vornehmen kann."
           }
         },
         "sv" : {
@@ -3503,6 +3538,13 @@
             "code" : "at0000.1",
             "text" : "Förfrågan om hälso-och sjukvårdsrelaterad tjänst (2)",
             "description" : "Förfrågan om en hälso- och sjukvårdsrelaterad tjänst eller aktivitet som behöver genomföras av en kliniker, organisation eller myndighet. \r\n"
+          },
+          "at0065.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065",
+            "text" : "Avsikt (2)",
+            "description" : "Beskrivning av avsikten med förfrågan",
+            "comment" : "Till exempel en remiss till en specialist kan ha avsikten att specialisten tar över ansvaret för vården av patienten, eller att komma med en second opinion på behandlingsförslag. Kodning av avsikten är att föredra. Denna datapunkt tillåter flera möjliga värden, för att möjliggöra att användaren kan registrera flera svar om så behövs."
           }
         },
         "pt-br" : {
@@ -3511,6 +3553,13 @@
             "code" : "at0000.1",
             "text" : "Solicitação de serviço (2)",
             "description" : "Solicitação de um serviço ou atividade relacionada à saúde a ser prestado por um médico, organização ou agência."
+          },
+          "at0065.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065",
+            "text" : "Intenção (2)",
+            "description" : "Descrição da intenção para a solicitação.",
+            "comment" : "Por exemplo: uma referência a um especialista pode ter a intenção de que o especialista assuma a responsabilidade pelo cuidado do paciente, ou pode ser para fornecer uma segunda opinião sobre as opções de tratamento. A codificação da 'Intenção' com um sistema de codificação é desejável, se disponível. Este elemento de dados permite várias ocorrências para permitir que o usuário registre várias respostas, se necessário."
           }
         },
         "nl" : {
@@ -3519,6 +3568,13 @@
             "code" : "at0000.1",
             "text" : "Serviceverzoek (2)",
             "description" : "Verzoek om een gezondheidsgerelateerde dienst of activiteit te leveren door een arts, organisatie of instantie."
+          },
+          "at0065.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065",
+            "text" : "Bedoeling (2)",
+            "description" : "Beschrijving van de bedoeling van het verzoek.",
+            "comment" : "Bijvoorbeeld: De bedoeling van een verwijzing naar een specialist kan zijn dat de specialist de zorg voor de patiënt overneemt, of het kan zijn om een second opinion te geven over behandelmogelijkheden. Codering van de 'Bedoeling' met een coderingssysteem is wenselijk, indien aanwezig. In dit gegevenselement kunnen meerdere gebeurtenissen voorkomen, zodat de gebruiker, indien nodig, meerdere antwoorden kan registreren."
           }
         }
       },
