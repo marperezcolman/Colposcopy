@@ -119,6 +119,20 @@ Kliniker kanske ibland vill dokumentera en sammanfattande fras som 'kronisk otit
 
 Ska inte användas för att registrera enskilda kliniska observationer - använd specifik OBSERVATION arketyp för det. Exempelvis OBSERVATION.blood_pressure, OBSERVATION.body_weight, eller OBSERVATION.height.">
 		>
+		["es-ar"] = <
+			language = <[ISO_639-1::es-ar]>
+			purpose = <"Para registrar una descripcion narrativa e interpretacion clinica de los hallazgos observados durante el examen fisico completo de una persona, y proveer un marco de referencia para anidar CLUSTER de arquetipos detallados, cada uno de los cuales posibilita registrar en detalle aspectos especificos del examen fisico">
+			keywords = <"examen","fisico","examen","hallazgos","clinicos">
+			copyright = <"© openEHR Foundation, Nasjonal IKT HF">
+			use = <"Utilizar para registrar una descripcion narrativa de los hallazgos observados durante el examen fisico general de una persona.
+
+Utilizar para incorporar la descripcion narrativa de hallazgos clinicos dentro de sistemas clinicos actuales o legados a un formato de arquetipos, utilizando el elemento de data \"Descripcion Clinica\". 
+
+Utilizar como un arquetipo contenedor - para proveer un arquetipo ENTRY consultable en el cual, puedan ser anidados arquetipos CLUSTER especificos de examenes, incluidos aquellos que detallan la inspeccion, palpacion, asucultacion, percusion y movimiento de los sistemas o estructuras anatomicas del cuerpo">
+			misuse = <"No debe ser utilizado para registrar observaciones de la toma de historia -utilizar arquetipos especificos de OBSERVACION y CLUSTER. Por ejemplo OBSERVACION.historia y CLUSTER.sintoma.
+
+No debe ser utilizado para registrar observaciones clinicas autonomas - utilizar arquetipos especificos OBSERVATION. Por ejemplo OBSERVATION.presion_arterial, OBSERVATION.peso_corporal, u OBSERVATION.altura. ">
+		>
 		["nb"] = <
 			language = <[ISO_639-1::nb]>
 			purpose = <"For registrering av funn ved fysisk undersøkelse av en helsetjenestemottaker.">
@@ -135,20 +149,6 @@ Skal ikke anvendes for å registrere frittstående observasjoner - bruk spesifik
 
 Skal ikke anvendes til å registrere satte diagnoser, til dette brukes EVALUATION.problem_diagnosis.">
 		>
-		["es-ar"] = <
-			language = <[ISO_639-1::es-ar]>
-			purpose = <"Para registrar una descripcion narrativa e interpretacion clinica de los hallazgos observados durante el examen fisico completo de una persona, y proveer un marco de referencia para anidar CLUSTER de arquetipos detallados, cada uno de los cuales posibilita registrar en detalle aspectos especificos del examen fisico">
-			keywords = <"examen","fisico","examen","hallazgos","clinicos">
-			copyright = <"© openEHR Foundation, Nasjonal IKT HF">
-			use = <"Utilizar para registrar una descripcion narrativa de los hallazgos observados durante el examen fisico general de una persona.
-
-Utilizar para incorporar la descripcion narrativa de hallazgos clinicos dentro de sistemas clinicos actuales o legados a un formato de arquetipos, utilizando el elemento de data \"Descripcion Clinica\". 
-
-Utilizar como un arquetipo contenedor - para proveer un arquetipo ENTRY consultable en el cual, puedan ser anidados arquetipos CLUSTER especificos de examenes, incluidos aquellos que detallan la inspeccion, palpacion, asucultacion, percusion y movimiento de los sistemas o estructuras anatomicas del cuerpo">
-			misuse = <"No debe ser utilizado para registrar observaciones de la toma de historia -utilizar arquetipos especificos de OBSERVACION y CLUSTER. Por ejemplo OBSERVACION.historia y CLUSTER.sintoma.
-
-No debe ser utilizado para registrar observaciones clinicas autonomas - utilizar arquetipos especificos OBSERVATION. Por ejemplo OBSERVATION.presion_arterial, OBSERVATION.peso_corporal, u OBSERVATION.altura. ">
-		>
 		["pt-br"] = <
 			language = <[ISO_639-1::pt-br]>
 			purpose = <"Para registro de detalhes sobre os resultados no exame físico do sujeito do cuidado.">
@@ -164,12 +164,17 @@ Os clínicos às vezes podem querer gravar uma frase resumida, como \"otite méd
 
 Não deve ser utilizado pra gravar observações clínicas isoladas - use arquétipos específicos OBSERVATION. Por exemplo: OBSERVATION.blood_pressure, OBSERVATION.body_weight, ou OBSERVATION.height.">
 		>
-		["ar-sy"] = <
-			language = <[ISO_639-1::ar-sy]>
-			purpose = <"لتسجيل الموجودات التي تم العثور عليها عند الفحص البدني">
-			keywords = <"الفحص","البدني">
+		["sl"] = <
+			language = <[ISO_639-1::sl]>
+			purpose = <"Za beleženje znakov izmerjenih v okviru fizikalnega pregleda">
+			keywords = <"pregled","fizikalni">
 			copyright = <"© openEHR Foundation, Nasjonal IKT HF">
-			use = <"تم تصميم النموذج ليحتوي على عناقيد مفصلة متعلقة بالفحص بما في ذلك الاكتشاف, الجس, التسمع و القرع بما في هذه العناقيد من تخصيصات.">
+			use = <"\"Container\" za gnezdenje \"cluster\"-jev, ki podrobno opisujejo posamezne elemente fizikalnega pregleda vključujoč pregled, tipanje, avskultacijo (osluškovanje) in udarjanje (skupine vključno z njihovimi specializacijami).
+
+cluster - skupina, grozd">
+			misuse = <"*Not to be used for recording history-taking observations - use specific OBSERVATION and CLUSTER archetypes. For example OBSERVATION.story and CLUSTER.symptom.
+
+Not to be used to record stand-alone clinical observations - use specific OBSERVATION archetypes. For example OBSERVATION.blood_pressure, OBSERVATION.body_weight, or OBSERVATION.height.(en)">
 		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
@@ -187,17 +192,12 @@ Clinicians may sometimes want to record a summative phrase such as 'chronic otit
 
 Not to be used to record stand-alone clinical observations - use specific OBSERVATION archetypes. For example OBSERVATION.blood_pressure, OBSERVATION.body_weight, or OBSERVATION.height.">
 		>
-		["sl"] = <
-			language = <[ISO_639-1::sl]>
-			purpose = <"Za beleženje znakov izmerjenih v okviru fizikalnega pregleda">
-			keywords = <"pregled","fizikalni">
+		["ar-sy"] = <
+			language = <[ISO_639-1::ar-sy]>
+			purpose = <"لتسجيل الموجودات التي تم العثور عليها عند الفحص البدني">
+			keywords = <"الفحص","البدني">
 			copyright = <"© openEHR Foundation, Nasjonal IKT HF">
-			use = <"\"Container\" za gnezdenje \"cluster\"-jev, ki podrobno opisujejo posamezne elemente fizikalnega pregleda vključujoč pregled, tipanje, avskultacijo (osluškovanje) in udarjanje (skupine vključno z njihovimi specializacijami).
-
-cluster - skupina, grozd">
-			misuse = <"*Not to be used for recording history-taking observations - use specific OBSERVATION and CLUSTER archetypes. For example OBSERVATION.story and CLUSTER.symptom.
-
-Not to be used to record stand-alone clinical observations - use specific OBSERVATION archetypes. For example OBSERVATION.blood_pressure, OBSERVATION.body_weight, or OBSERVATION.height.(en)">
+			use = <"تم تصميم النموذج ليحتوي على عناقيد مفصلة متعلقة بالفحص بما في ذلك الاكتشاف, الجس, التسمع و القرع بما في هذه العناقيد من تخصيصات.">
 		>
 		["zh-cn"] = <
 			language = <[ISO_639-1::zh-cn]>
@@ -235,7 +235,7 @@ No se debe utilizar para registrar observaciones independientes y signos, para e
 		["original_namespace"] = <"no.nasjonalikt">
 		["original_publisher"] = <"Nasjonal IKT">
 		["custodian_namespace"] = <"no.nasjonalikt">
-		["MD5-CAM-1.0.1"] = <"F0AC9F88A21D5F059F7B8C1B00C2C70E">
+		["MD5-CAM-1.0.1"] = <"a49843ef08bc0c7393da9efb21d9be8a">
 		["build_uid"] = <"d2459c2d-5285-44c7-926c-8af6da564f19">
 		["revision"] = <"1.1.3">
 	>
