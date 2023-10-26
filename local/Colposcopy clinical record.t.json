@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.9.1",
+      "sem_ver" : "0.9.2",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "e439c95762dcc3394b6823bf01bfd73b",
+      "MD5-CAM-1.0.1" : "195e35b6245bba2214775c59bd448bb6",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -12857,19 +12857,7 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_CODED_TEXT",
-                  "attributes" : [ {
-                    "@type" : "C_ATTRIBUTE",
-                    "rmAttributeName" : "defining_code",
-                    "children" : [ {
-                      "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "CODE_PHRASE",
-                      "occurrences" : "1..1",
-                      "terminologyId" : {
-                        "value" : "local"
-                      },
-                      "constraint" : [ "at0006", "at0003", "at0005" ]
-                    } ]
-                  } ],
+                  "attributes" : [ ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -13032,19 +13020,7 @@
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_CODED_TEXT",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "defining_code",
-                            "children" : [ {
-                              "@type" : "C_TERMINOLOGY_CODE",
-                              "rmTypeName" : "CODE_PHRASE",
-                              "occurrences" : "1..1",
-                              "terminologyId" : {
-                                "value" : "local"
-                              },
-                              "constraint" : [ "at0083", "at0084" ]
-                            } ]
-                          } ],
+                          "attributes" : [ ],
                           "attributeTuples" : [ ]
                         } ]
                       } ],
@@ -13842,6 +13818,16 @@
         "ac0.22" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.22",
+          "members" : [ "at0083", "at0084" ]
+        },
+        "ac0.24" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.24",
+          "members" : [ "at0006", "at0003", "at0005" ]
+        },
+        "ac0.26" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.26",
           "members" : [ "at0083", "at0084" ]
         }
       }
