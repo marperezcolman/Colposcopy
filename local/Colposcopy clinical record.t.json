@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.8.7",
+      "sem_ver" : "0.9.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "0e7ff9e6b7b5094916408e362d464961",
+      "MD5-CAM-1.0.1" : "d9fafedef8a0d3f38e7e53eaffa89803",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -3172,7 +3172,6 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
-                  "occurrences" : "0..0",
                   "nodeId" : "at0064.1",
                   "attributes" : [ ],
                   "attributeTuples" : [ ]
@@ -3465,6 +3464,13 @@
             "text" : "Intended visit type",
             "description" : "Description of the intent for the request.",
             "comment" : "For example: a referral to a specialist may have the intent of the specialist taking over responsibility for care of the patient, or it may be to provide a second opinion on treatment options. Coding of the 'Intent' with a coding system is desirable, if available. This data element allows multiple occurrences to enable the user to record a multiple responses, if required."
+          },
+          "at0064.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0064.1",
+            "text" : "Other referral reason",
+            "description" : "Narrative description about the reason for request.",
+            "comment" : "For example: 'The patient's diabetes has recently become more difficult to stabilise and renal function is deteriorating'."
           }
         },
         "nb" : {
