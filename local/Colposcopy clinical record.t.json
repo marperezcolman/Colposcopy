@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.8.2",
+      "sem_ver" : "0.8.3",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "d7c74f82fc96d0743ea6c031edb5faff",
+      "MD5-CAM-1.0.1" : "b1f939a46442dcee8d86ee5e247f962e",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -6248,19 +6248,7 @@
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_CODED_TEXT",
-                          "attributes" : [ {
-                            "@type" : "C_ATTRIBUTE",
-                            "rmAttributeName" : "defining_code",
-                            "children" : [ {
-                              "@type" : "C_TERMINOLOGY_CODE",
-                              "rmTypeName" : "CODE_PHRASE",
-                              "occurrences" : "1..1",
-                              "terminologyId" : {
-                                "value" : "local"
-                              },
-                              "constraint" : [ "at0005", "at0006", "at0007", "at0008" ]
-                            } ]
-                          } ],
+                          "attributes" : [ ],
                           "attributeTuples" : [ ]
                         } ]
                       } ],
@@ -6430,6 +6418,11 @@
         "ac0.22" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.22",
+          "members" : [ "at0005", "at0006", "at0007", "at0008" ]
+        },
+        "ac0.24" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.24",
           "members" : [ "at0005", "at0006", "at0007", "at0008" ]
         }
       }
