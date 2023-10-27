@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.9.3",
+      "sem_ver" : "0.10.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "9fab211f7eaea46c13237941dcba6193",
+      "MD5-CAM-1.0.1" : "d617152d9c104fc9447bfce9e3c076c3",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -6332,12 +6332,34 @@
                             "rmAttributeName" : "defining_code",
                             "children" : [ {
                               "@type" : "C_TERMINOLOGY_CODE",
-                              "rmTypeName" : "CODE_PHRASE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
                               "occurrences" : "1..1",
                               "terminologyId" : {
-                                "value" : "local"
+                                "value" : "local_terms"
                               },
-                              "constraint" : [ "at0005", "at0006", "at0007", "at0008" ]
+                              "constraint" : [ ],
+                              "selectedTerminologies" : [ "local_terms" ],
+                              "includedExternalTerminologyCodes" : [ {
+                                "terminologyId" : "local_terms",
+                                "code" : "Yes",
+                                "value" : "Yes"
+                              }, {
+                                "terminologyId" : "local_terms",
+                                "code" : "No",
+                                "value" : "No"
+                              }, {
+                                "terminologyId" : "local_terms",
+                                "code" : "Query",
+                                "value" : "Query (test requested)"
+                              }, {
+                                "terminologyId" : "local_terms",
+                                "code" : "Not stated",
+                                "value" : "Not stated (patient asked but declined to provide a response)"
+                              }, {
+                                "terminologyId" : "local_terms",
+                                "code" : "Unknown",
+                                "value" : "Unknown or not recorded"
+                              } ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
@@ -6529,6 +6551,21 @@
         "ac0.28" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.28",
+          "members" : [ ]
+        },
+        "ac0.30" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.30",
+          "members" : [ "at0005", "at0006", "at0007", "at0008" ]
+        },
+        "ac0.31" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.31",
+          "members" : [ ]
+        },
+        "ac0.32" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.32",
           "members" : [ ]
         }
       }
@@ -12857,7 +12894,19 @@
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_CODED_TEXT",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "CODE_PHRASE",
+                      "occurrences" : "1..1",
+                      "terminologyId" : {
+                        "value" : "local"
+                      },
+                      "constraint" : [ "at0006", "at0003", "at0005" ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
@@ -13020,7 +13069,19 @@
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_CODED_TEXT",
-                          "attributes" : [ ],
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "CODE_PHRASE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "at0083", "at0084" ]
+                            } ]
+                          } ],
                           "attributeTuples" : [ ]
                         } ]
                       } ],
