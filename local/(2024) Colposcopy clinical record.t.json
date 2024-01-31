@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.3.0",
+      "sem_ver" : "0.3.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "c06962bbbe0fcd8e2b2d2b7c93f567dd",
+      "MD5-CAM-1.0.1" : "16fdd67a1cd5769d032ba80a6c9813e5",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -12555,12 +12555,12 @@
                               "rmTypeName" : "TERMINOLOGY_CODE",
                               "occurrences" : "0..1",
                               "terminologyId" : {
-                                "value" : "local_terms"
+                                "value" : "SNOMED CT"
                               },
                               "constraint" : [ ],
-                              "selectedTerminologies" : [ "local_terms" ],
+                              "selectedTerminologies" : [ "SNOMED CT" ],
                               "includedExternalTerminologyCodes" : [ {
-                                "terminologyId" : "local_terms",
+                                "terminologyId" : "SNOMED CT",
                                 "code" : "312984006",
                                 "value" : "Abnormal uterine bleeding unrelated to menstrual cycle (disorder)"
                               } ]
@@ -12681,12 +12681,12 @@
                                   "rmTypeName" : "TERMINOLOGY_CODE",
                                   "occurrences" : "0..1",
                                   "terminologyId" : {
-                                    "value" : "local_terms"
+                                    "value" : "SNOMED CT"
                                   },
                                   "constraint" : [ ],
-                                  "selectedTerminologies" : [ "local_terms" ],
+                                  "selectedTerminologies" : [ "SNOMED CT" ],
                                   "includedExternalTerminologyCodes" : [ {
-                                    "terminologyId" : "local_terms",
+                                    "terminologyId" : "SNOMED CT",
                                     "code" : "48880000",
                                     "value" : "Postcoital bleeding (finding)"
                                   } ]
@@ -12809,12 +12809,12 @@
                                   "rmTypeName" : "TERMINOLOGY_CODE",
                                   "occurrences" : "0..1",
                                   "terminologyId" : {
-                                    "value" : "local_terms"
+                                    "value" : "SNOMED CT"
                                   },
                                   "constraint" : [ ],
-                                  "selectedTerminologies" : [ "local_terms" ],
+                                  "selectedTerminologies" : [ "SNOMED CT" ],
                                   "includedExternalTerminologyCodes" : [ {
-                                    "terminologyId" : "local_terms",
+                                    "terminologyId" : "SNOMED CT",
                                     "code" : "237130006",
                                     "value" : "Bleeding between periods (finding)"
                                   } ]
@@ -12937,12 +12937,12 @@
                                   "rmTypeName" : "TERMINOLOGY_CODE",
                                   "occurrences" : "0..1",
                                   "terminologyId" : {
-                                    "value" : "local_terms"
+                                    "value" : "SNOMED CT"
                                   },
                                   "constraint" : [ ],
-                                  "selectedTerminologies" : [ "local_terms" ],
+                                  "selectedTerminologies" : [ "SNOMED CT" ],
                                   "includedExternalTerminologyCodes" : [ {
-                                    "terminologyId" : "local_terms",
+                                    "terminologyId" : "SNOMED CT",
                                     "code" : "76742009",
                                     "value" : "Postmenopausal bleeding (finding)"
                                   } ]
@@ -13552,12 +13552,34 @@
                     "rmAttributeName" : "defining_code",
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
-                      "rmTypeName" : "CODE_PHRASE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "1..1",
                       "terminologyId" : {
-                        "value" : "local"
+                        "value" : "SNOMED CT"
                       },
-                      "constraint" : [ "at0006", "at0003", "at0005" ]
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "SNOMED CT" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "SNOMED CT",
+                        "code" : "Current",
+                        "value" : "Current smoker"
+                      }, {
+                        "terminologyId" : "SNOMED CT",
+                        "code" : "Former",
+                        "value" : "Ex-smoker"
+                      }, {
+                        "terminologyId" : "SNOMED CT",
+                        "code" : "Vaper",
+                        "value" : "Current vaper"
+                      }, {
+                        "terminologyId" : "SNOMED CT",
+                        "code" : "Never",
+                        "value" : "Never smoked"
+                      }, {
+                        "terminologyId" : "SNOMED CT",
+                        "code" : "Unknown",
+                        "value" : "Unknown or not recorded"
+                      } ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -13727,12 +13749,34 @@
                             "rmAttributeName" : "defining_code",
                             "children" : [ {
                               "@type" : "C_TERMINOLOGY_CODE",
-                              "rmTypeName" : "CODE_PHRASE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
                               "occurrences" : "1..1",
                               "terminologyId" : {
-                                "value" : "local"
+                                "value" : "SNOMED CT"
                               },
-                              "constraint" : [ "at0083", "at0084" ]
+                              "constraint" : [ ],
+                              "selectedTerminologies" : [ "SNOMED CT" ],
+                              "includedExternalTerminologyCodes" : [ {
+                                "terminologyId" : "SNOMED CT",
+                                "code" : "230059006",
+                                "value" : "Occasional less than 1 daily"
+                              }, {
+                                "terminologyId" : "SNOMED CT",
+                                "code" : "230060001",
+                                "value" : "Light 1-9 per day"
+                              }, {
+                                "terminologyId" : "SNOMED CT",
+                                "code" : "230062009",
+                                "value" : "Moderate 10-19 per day"
+                              }, {
+                                "terminologyId" : "SNOMED CT",
+                                "code" : "230063004",
+                                "value" : "Heavy 20-39 per day"
+                              }, {
+                                "terminologyId" : "SNOMED CT",
+                                "code" : "230064005",
+                                "value" : "Very heavy 40+ per day"
+                              } ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
@@ -14059,7 +14103,32 @@
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_CODED_TEXT",
                       "occurrences" : "1..1",
-                      "attributes" : [ ],
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "defining_code",
+                        "children" : [ {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
+                          "terminologyId" : {
+                            "value" : "local_terms"
+                          },
+                          "constraint" : [ ],
+                          "selectedTerminologies" : [ "local_terms" ],
+                          "includedExternalTerminologyCodes" : [ {
+                            "terminologyId" : "local_terms",
+                            "code" : "Yes",
+                            "value" : "Yes"
+                          }, {
+                            "terminologyId" : "local_terms",
+                            "code" : "No",
+                            "value" : "No"
+                          }, {
+                            "terminologyId" : "local_terms",
+                            "code" : "Unknown",
+                            "value" : "Unknown or not recorded"
+                          } ]
+                        } ]
+                      } ],
                       "attributeTuples" : [ ]
                     } ]
                   } ],
@@ -14553,6 +14622,36 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.30",
           "members" : [ "at0083", "at0084" ]
+        },
+        "ac0.32" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.32",
+          "members" : [ "at0006", "at0003", "at0005" ]
+        },
+        "ac0.33" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.33",
+          "members" : [ ]
+        },
+        "ac0.34" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.34",
+          "members" : [ ]
+        },
+        "ac0.36" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.36",
+          "members" : [ "at0083", "at0084" ]
+        },
+        "ac0.37" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.37",
+          "members" : [ ]
+        },
+        "ac0.38" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.38",
+          "members" : [ ]
         }
       }
     },
