@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.2.1",
+      "sem_ver" : "0.2.2",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "1369eb13e219847eace53a75d9011c6a",
+      "MD5-CAM-1.0.1" : "433ce4366ad1e64e76a3750845bcbb2a",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -7566,12 +7566,12 @@
                           "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "1..1",
                           "terminologyId" : {
-                            "value" : "SCT"
+                            "value" : "SNOMED CT"
                           },
                           "constraint" : [ ],
-                          "selectedTerminologies" : [ "SCT" ],
+                          "selectedTerminologies" : [ "SNOMED CT" ],
                           "includedExternalTerminologyCodes" : [ {
-                            "terminologyId" : "SCT",
+                            "terminologyId" : "SNOMED CT",
                             "code" : "268458002",
                             "value" : "Uses combined oral contraception (finding)"
                           } ]
@@ -7782,12 +7782,12 @@
                           "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "1..1",
                           "terminologyId" : {
-                            "value" : "SCT"
+                            "value" : "SNOMED CT"
                           },
                           "constraint" : [ ],
-                          "selectedTerminologies" : [ "SCT" ],
+                          "selectedTerminologies" : [ "SNOMED CT" ],
                           "includedExternalTerminologyCodes" : [ {
-                            "terminologyId" : "SCT",
+                            "terminologyId" : "SNOMED CT",
                             "code" : "169467008",
                             "value" : "Uses progestogen only oral contraception (finding)"
                           } ]
@@ -7998,12 +7998,12 @@
                           "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "1..1",
                           "terminologyId" : {
-                            "value" : "SCT"
+                            "value" : "SNOMED CT"
                           },
                           "constraint" : [ ],
-                          "selectedTerminologies" : [ "SCT" ],
+                          "selectedTerminologies" : [ "SNOMED CT" ],
                           "includedExternalTerminologyCodes" : [ {
-                            "terminologyId" : "SCT",
+                            "terminologyId" : "SNOMED CT",
                             "code" : "268460000",
                             "value" : "Intrauterine contraceptive device (physical object)"
                           } ]
@@ -8214,12 +8214,12 @@
                           "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "1..1",
                           "terminologyId" : {
-                            "value" : "SCT"
+                            "value" : "SNOMED CT"
                           },
                           "constraint" : [ ],
-                          "selectedTerminologies" : [ "SCT" ],
+                          "selectedTerminologies" : [ "SNOMED CT" ],
                           "includedExternalTerminologyCodes" : [ {
-                            "terminologyId" : "SCT",
+                            "terminologyId" : "SNOMED CT",
                             "code" : "9459301000001100",
                             "value" : "Mirena (product)"
                           } ]
@@ -8430,12 +8430,12 @@
                           "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "1..1",
                           "terminologyId" : {
-                            "value" : "SCT"
+                            "value" : "SNOMED CT"
                           },
                           "constraint" : [ ],
-                          "selectedTerminologies" : [ "SCT" ],
+                          "selectedTerminologies" : [ "SNOMED CT" ],
                           "includedExternalTerminologyCodes" : [ {
-                            "terminologyId" : "SCT",
+                            "terminologyId" : "SNOMED CT",
                             "code" : "706506000",
                             "value" : "Condom (physical object)"
                           } ]
@@ -8646,12 +8646,12 @@
                           "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "1..1",
                           "terminologyId" : {
-                            "value" : "SCT"
+                            "value" : "SNOMED CT"
                           },
                           "constraint" : [ ],
-                          "selectedTerminologies" : [ "SCT" ],
+                          "selectedTerminologies" : [ "SNOMED CT" ],
                           "includedExternalTerminologyCodes" : [ {
-                            "terminologyId" : "SCT",
+                            "terminologyId" : "SNOMED CT",
                             "code" : "20359006",
                             "value" : "Contraceptive diaphragm, device (physical object)"
                           } ]
@@ -8862,12 +8862,12 @@
                           "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "1..1",
                           "terminologyId" : {
-                            "value" : "SCT"
+                            "value" : "SNOMED CT"
                           },
                           "constraint" : [ ],
-                          "selectedTerminologies" : [ "SCT" ],
+                          "selectedTerminologies" : [ "SNOMED CT" ],
                           "includedExternalTerminologyCodes" : [ {
-                            "terminologyId" : "SCT",
+                            "terminologyId" : "SNOMED CT",
                             "code" : "399141000",
                             "value" : "Male sterilization (procedure)"
                           } ]
@@ -9078,12 +9078,12 @@
                           "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "1..1",
                           "terminologyId" : {
-                            "value" : "SCT"
+                            "value" : "SNOMED CT"
                           },
                           "constraint" : [ ],
-                          "selectedTerminologies" : [ "SCT" ],
+                          "selectedTerminologies" : [ "SNOMED CT" ],
                           "includedExternalTerminologyCodes" : [ {
-                            "terminologyId" : "SCT",
+                            "terminologyId" : "SNOMED CT",
                             "code" : "60890002",
                             "value" : "Female sterilization (procedure)"
                           } ]
@@ -9294,12 +9294,12 @@
                           "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "1..1",
                           "terminologyId" : {
-                            "value" : "SCT"
+                            "value" : "SNOMED CT"
                           },
                           "constraint" : [ ],
-                          "selectedTerminologies" : [ "SCT" ],
+                          "selectedTerminologies" : [ "SNOMED CT" ],
                           "includedExternalTerminologyCodes" : [ {
-                            "terminologyId" : "SCT",
+                            "terminologyId" : "SNOMED CT",
                             "code" : "225371000",
                             "value" : "Uses natural method of contraception (finding)"
                           } ]
@@ -9510,12 +9510,12 @@
                           "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "1..1",
                           "terminologyId" : {
-                            "value" : "SCT"
+                            "value" : "SNOMED CT"
                           },
                           "constraint" : [ ],
-                          "selectedTerminologies" : [ "SCT" ],
+                          "selectedTerminologies" : [ "SNOMED CT" ],
                           "includedExternalTerminologyCodes" : [ {
-                            "terminologyId" : "SCT",
+                            "terminologyId" : "SNOMED CT",
                             "code" : "169513000",
                             "value" : "Uses withdrawal method of contraception (finding)"
                           } ]
@@ -9726,12 +9726,12 @@
                           "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "1..1",
                           "terminologyId" : {
-                            "value" : "SCT"
+                            "value" : "SNOMED CT"
                           },
                           "constraint" : [ ],
-                          "selectedTerminologies" : [ "SCT" ],
+                          "selectedTerminologies" : [ "SNOMED CT" ],
                           "includedExternalTerminologyCodes" : [ {
-                            "terminologyId" : "SCT",
+                            "terminologyId" : "SNOMED CT",
                             "code" : "268464009",
                             "value" : "Uses depot contraception (finding)"
                           } ]
@@ -9942,12 +9942,12 @@
                           "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "1..1",
                           "terminologyId" : {
-                            "value" : "SCT"
+                            "value" : "SNOMED CT"
                           },
                           "constraint" : [ ],
-                          "selectedTerminologies" : [ "SCT" ],
+                          "selectedTerminologies" : [ "SNOMED CT" ],
                           "includedExternalTerminologyCodes" : [ {
-                            "terminologyId" : "SCT",
+                            "terminologyId" : "SNOMED CT",
                             "code" : "413116005",
                             "value" : "Uses transdermal contraception (finding)"
                           } ]
@@ -10158,12 +10158,12 @@
                           "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "1..1",
                           "terminologyId" : {
-                            "value" : "SCT"
+                            "value" : "SNOMED CT"
                           },
                           "constraint" : [ ],
-                          "selectedTerminologies" : [ "SCT" ],
+                          "selectedTerminologies" : [ "SNOMED CT" ],
                           "includedExternalTerminologyCodes" : [ {
-                            "terminologyId" : "SCT",
+                            "terminologyId" : "SNOMED CT",
                             "code" : "468312002",
                             "value" : "Drug-eluting contraceptive implant (physical object)"
                           } ]
@@ -10374,12 +10374,12 @@
                           "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "1..1",
                           "terminologyId" : {
-                            "value" : "SCT"
+                            "value" : "SNOMED CT"
                           },
                           "constraint" : [ ],
-                          "selectedTerminologies" : [ "SCT" ],
+                          "selectedTerminologies" : [ "SNOMED CT" ],
                           "includedExternalTerminologyCodes" : [ {
-                            "terminologyId" : "SCT",
+                            "terminologyId" : "SNOMED CT",
                             "code" : "450850003",
                             "value" : "Uses vaginal hormone releasing ring (finding)"
                           } ]
@@ -10590,12 +10590,12 @@
                           "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "1..1",
                           "terminologyId" : {
-                            "value" : "SCT"
+                            "value" : "SNOMED CT"
                           },
                           "constraint" : [ ],
-                          "selectedTerminologies" : [ "SCT" ],
+                          "selectedTerminologies" : [ "SNOMED CT" ],
                           "includedExternalTerminologyCodes" : [ {
-                            "terminologyId" : "SCT",
+                            "terminologyId" : "SNOMED CT",
                             "code" : "466945004",
                             "value" : "Spermicide (physical object)"
                           } ]
@@ -10806,12 +10806,12 @@
                           "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "1..1",
                           "terminologyId" : {
-                            "value" : "SCT"
+                            "value" : "SNOMED CT"
                           },
                           "constraint" : [ ],
-                          "selectedTerminologies" : [ "SCT" ],
+                          "selectedTerminologies" : [ "SNOMED CT" ],
                           "includedExternalTerminologyCodes" : [ {
-                            "terminologyId" : "SCT",
+                            "terminologyId" : "SNOMED CT",
                             "code" : "74964007",
                             "value" : "Other"
                           } ]
@@ -17010,7 +17010,54 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "F200E552FBEBD07302BB1962BF1396CA"
       },
-      "details" : { }
+      "details" : {
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "Para registrar el resultado de un un test de embarazo producido comercialmente.",
+          "keywords" : [ "embarazo", "test", "confirmación" ],
+          "use" : "Para usar con un producto comercial.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل اختبار حمل بمنتَج تجاري",
+          "keywords" : [ "الحمل", "اختبار", "تأكيد" ],
+          "use" : "يستخدم في وجود منتج تجاري",
+          "copyright" : "© 2011 openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the result of a simple test to detect early pregnancy, usually a commercial product tested on urine.",
+          "keywords" : [ "pregnancy", "test", "confirmation" ],
+          "use" : "A simple pregnancy test, usually testing urine, that provides a positive or negative result for early pregnancy. The test is not performed in a laboratory but by the woman or healthcare provider.",
+          "misuse" : "Providing the interpretation of a B-HCG or other assessment of pregnancy. Use the Pregnancy Summary archetype to record pregnancy.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.pregnancy_test.v0",
     "differential" : true,
@@ -17065,17 +17112,17 @@
                               "rmTypeName" : "TERMINOLOGY_CODE",
                               "occurrences" : "1..1",
                               "terminologyId" : {
-                                "value" : "local_terms"
+                                "value" : "SNOMED CT"
                               },
                               "constraint" : [ ],
-                              "selectedTerminologies" : [ "local_terms" ],
+                              "selectedTerminologies" : [ "SNOMED CT" ],
                               "includedExternalTerminologyCodes" : [ {
-                                "terminologyId" : "local_terms",
-                                "code" : "Positive",
+                                "terminologyId" : "SNOMED CT",
+                                "code" : "10828004",
                                 "value" : "Positive"
                               }, {
-                                "terminologyId" : "local_terms",
-                                "code" : "Negative",
+                                "terminologyId" : "SNOMED CT",
+                                "code" : "260385009",
                                 "value" : "Negative"
                               } ]
                             } ]
