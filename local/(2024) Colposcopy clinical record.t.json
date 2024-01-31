@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.3.1",
+      "sem_ver" : "0.3.2",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "16fdd67a1cd5769d032ba80a6c9813e5",
+      "MD5-CAM-1.0.1" : "d53df832d3e62f63000e43e9da58b073",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -13561,23 +13561,23 @@
                       "selectedTerminologies" : [ "SNOMED CT" ],
                       "includedExternalTerminologyCodes" : [ {
                         "terminologyId" : "SNOMED CT",
-                        "code" : "Current",
+                        "code" : "77176002",
                         "value" : "Current smoker"
                       }, {
                         "terminologyId" : "SNOMED CT",
-                        "code" : "Former",
+                        "code" : "8517006",
                         "value" : "Ex-smoker"
                       }, {
                         "terminologyId" : "SNOMED CT",
-                        "code" : "Vaper",
+                        "code" : "722499006",
                         "value" : "Current vaper"
                       }, {
                         "terminologyId" : "SNOMED CT",
-                        "code" : "Never",
+                        "code" : "266919005",
                         "value" : "Never smoked"
                       }, {
                         "terminologyId" : "SNOMED CT",
-                        "code" : "Unknown",
+                        "code" : "261665006",
                         "value" : "Unknown or not recorded"
                       } ]
                     } ]
@@ -14863,7 +14863,36 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_CODED_TEXT",
                   "occurrences" : "1..1",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "defining_code",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "rmTypeName" : "TERMINOLOGY_CODE",
+                      "terminologyId" : {
+                        "value" : "SNOMED CT"
+                      },
+                      "constraint" : [ ],
+                      "selectedTerminologies" : [ "SNOMED CT" ],
+                      "includedExternalTerminologyCodes" : [ {
+                        "terminologyId" : "SNOMED CT",
+                        "code" : "102877006",
+                        "value" : "Nulliparous"
+                      }, {
+                        "terminologyId" : "SNOMED CT",
+                        "code" : "14209008",
+                        "value" : "Primiparous"
+                      }, {
+                        "terminologyId" : "SNOMED CT",
+                        "code" : "28079008",
+                        "value" : "Multiparous"
+                      }, {
+                        "terminologyId" : "SNOMED CT",
+                        "code" : "261665006",
+                        "value" : "Unknown or not recorded"
+                      } ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ ]
                 } ]
               } ],
