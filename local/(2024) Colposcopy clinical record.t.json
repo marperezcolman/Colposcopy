@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.4.1",
+      "sem_ver" : "0.5.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "e3a897827d2f058b9eadac4927687c90",
+      "MD5-CAM-1.0.1" : "a888be1416dbcbe7332bcd0b8eb71ae3",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -361,7 +361,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "(2024) Colposcopy clinical record",
+          "text" : "(2024) Colposcopy clinical record - Event & history",
           "description" : "Document to communicate information to others, commonly in response to a request from another party."
         }
       },
@@ -17824,7 +17824,66 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "7229DFAFA43B2D9ABD13B0228E2F0181"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Statusdarstellung einer Anforderung oder Aufzeichnung der Einwilligungserklärung vor der Durchführung einer Prozedur, einer klinischen Studie/Prüfung oder einer Aktivität im Zusammenhang mit dem Gesundheitswesen.",
+          "keywords" : [ "Einwilligung", "Einverständnis", "Einverständniserklärung", "Aufklärung", "Zustimmung", "informiert", "Vorbehalt" ],
+          "use" : "Zur Statusdarstellung einer Anforderung, um eine Einverständniserklärung zu erhalten, einschließlich was geplant, angefordert, bereitgestellt oder zurückgezogen wurde.\r\n\r\nDieser Archetyp wurde als Framework entwickelt, das zum Anfordern und Aufzeichnen einer einfachen Einwilligung geeignet ist, es jedoch zulässt, dass zusätzliche Details optional im SLOT \"Details\" hinzugefügt werden, um die spezifischen Anforderungen eines komplexeren klinischen Szenarios zu erfüllen. Beispielsweise können zusätzliche Zustimmungsdetails unter Verwendung des Archetyps CLUSTER.consent_details eingefügt werden. Andere Archetypen können entwickelt und optional im selben SLOT enthalten sein, um spezifische Details über das Verfahren, den Versuch oder die Aktivität aufzuzeichnen.\r\n\r\nDer Status der Einwilligungserklärung spiegelt sich in den einzelnen Schritten wider - angefordert, abgelehnt, bereitgestellt, zurückgezogen usw.\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ru" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ru"
+          },
+          "purpose" : "Записать необходимость или наличие информированного согласия на выполнение процедуры, клинического теста или другой связанной со сдоровьем активности",
+          "keywords" : [ "согласие", "информированное", "отказ" ],
+          "use" : "Используется для записи статуса информированного согласия, включая планируемое, назначенное, запрошенное, предложенное, полученное. \r\nЭтот архетип разработан как рабочая зона, достаточная для того, чтобы  запросить и записать простое согласие, но, в то же время, позволяющая добавить специфические детали в слоте \"Детали\" при  необходимости более сложного клинического сценария. Например, такие детали могут содержать архетип КЛАСТЕР.детали_согласия. В этот же слот могут быть добавлены другие архетипы для описания процедуры, исследования или активности.\r\nСтатус информированного согласия отражает этапы его получения: необходимость, запрос, отказ, подписание и т.д.       ",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere informert samtykke eller status på en forespørsel om informert samtykke før en prosedyre, klinisk utprøving eller helserelatert aktivitet utføres.",
+          "keywords" : [ "samtykke", "informert", "cave" ],
+          "use" : "Brukes for å registrere status på forespørsel om informert samtykke, inkludert hva som er planlagt, forespurt, avgitt eller tilbaketrukket.\r\n\r\nDenne arketypen er utformet for å være et rammeverk som vil være tilstrekkelig for å be om og registrere et enkelt samtykke, men tillater også registrering av ytterligere detaljer i \"Detaljer\"-SLOTet for å møte de spesifikke kravene til et mer komplekst klinisk scenario. For eksempel kan ytterligere detaljer inkluderes ved å bruke arketypen CLUSTER.consent_details. Andre arketyper kan utvikles og eventuelt inkluderes i det samme SLOTet med formålet om å registrere spesifikke detaljer om prosedyren, utprøvingen eller aktiviteten.\r\n\r\nStatus til det informerte samtykket reflekteres av prosesstrinnene - forespurt, avslått, avgitt, tilbaketrukket.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the status of a request for, or record of, informed consent prior to performing a procedure, clinical trial or healthcare-related activity.",
+          "keywords" : [ "consent", "informed", "caveat" ],
+          "use" : "Use to record the status of an order to obtain informed consent, including what is planned, scheduled, requested, provided, or withdrawn.\r\n\r\nThis archetype has been designed to be a framework that will be adequate for requesting and recording a simple consent, but allow for additional details to be optionally added within the 'Details' SLOT to meet the specific requirements of a more complex clinical scenario.  For example, additional consent details can be included using the CLUSTER.consent_details archetype. Other archetypes can be developed and optionally included in the same SLOT for the purpose of recording specific details about the procedure, trial or activity. \r\n\r\nThe status of the informed consent is reflected by the pathway steps - requested, refused, provided, withdrawn etc.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-ACTION.informed_consent.v0",
     "differential" : true,
