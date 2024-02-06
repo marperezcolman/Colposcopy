@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.6.0",
+      "sem_ver" : "0.7.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "b5c0c3cbbff981dc1903eb0b031c721c",
+      "MD5-CAM-1.0.1" : "e10091c4173bb0521f3f8f92a91dbbb4",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -2694,7 +2694,7 @@
           "at0001.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0001.2",
-            "text" : "Supervised by",
+            "text" : "Supervisor",
             "description" : ""
           },
           "at0001.3" : {
