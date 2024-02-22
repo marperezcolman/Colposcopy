@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.7.0",
+      "sem_ver" : "0.7.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "e10091c4173bb0521f3f8f92a91dbbb4",
+      "MD5-CAM-1.0.1" : "71ab39f4ef9bf255772b5b921d03e032",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -3311,18 +3311,6 @@
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_CODED_TEXT",
                               "occurrences" : "1..1",
-                              "defaultValue" : {
-                                "defining_code" : {
-                                  "terminology_id" : {
-                                    "value" : "SCT",
-                                    "@type" : "TERMINOLOGY_ID"
-                                  },
-                                  "code_string" : "911000221103",
-                                  "@type" : "CODE_PHRASE"
-                                },
-                                "value" : "Vaccine product containing only Human papillomavirus antigen (medicinal product)",
-                                "@type" : "DV_CODED_TEXT"
-                              },
                               "attributes" : [ {
                                 "@type" : "C_ATTRIBUTE",
                                 "rmAttributeName" : "defining_code",
@@ -3337,8 +3325,8 @@
                                   "selectedTerminologies" : [ "SCT" ],
                                   "includedExternalTerminologyCodes" : [ {
                                     "terminologyId" : "SCT",
-                                    "code" : "911000221103",
-                                    "value" : "Vaccine product containing only Human papillomavirus antigen (medicinal product)"
+                                    "code" : "836379009",
+                                    "value" : "Vaccine product containing Human papillomavirus antigen (medicinal product)"
                                   } ]
                                 } ]
                               } ],
@@ -3360,7 +3348,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.85" ],
+                                  "constraint" : [ "ac0.95" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -3478,10 +3466,10 @@
             "text" : "Vaccine name",
             "description" : "Name of the vaccination."
           },
-          "ac0.85" : {
+          "ac0.95" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.85",
+            "code" : "ac0.95",
             "description" : ""
           }
         }
@@ -3912,6 +3900,56 @@
         "ac0.85" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.85",
+          "members" : [ "at0044" ]
+        },
+        "ac0.86" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.86",
+          "members" : [ "at0044" ]
+        },
+        "ac0.87" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.87",
+          "members" : [ "at0044" ]
+        },
+        "ac0.88" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.88",
+          "members" : [ "at0044" ]
+        },
+        "ac0.89" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.89",
+          "members" : [ "at0044" ]
+        },
+        "ac0.90" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.90",
+          "members" : [ "at0044" ]
+        },
+        "ac0.91" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.91",
+          "members" : [ "at0044" ]
+        },
+        "ac0.92" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.92",
+          "members" : [ "at0044" ]
+        },
+        "ac0.93" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.93",
+          "members" : [ "at0044" ]
+        },
+        "ac0.94" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.94",
+          "members" : [ "at0044" ]
+        },
+        "ac0.95" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.95",
           "members" : [ "at0044" ]
         }
       }
@@ -10839,23 +10877,23 @@
                               "selectedTerminologies" : [ "SNOMED CT" ],
                               "includedExternalTerminologyCodes" : [ {
                                 "terminologyId" : "SNOMED CT",
-                                "code" : "230059006",
+                                "code" : "266920004",
                                 "value" : "Occasional less than 1 daily"
                               }, {
                                 "terminologyId" : "SNOMED CT",
-                                "code" : "230060001",
+                                "code" : "160603005",
                                 "value" : "Light 1-9 per day"
                               }, {
                                 "terminologyId" : "SNOMED CT",
-                                "code" : "230062009",
+                                "code" : "160604004",
                                 "value" : "Moderate 10-19 per day"
                               }, {
                                 "terminologyId" : "SNOMED CT",
-                                "code" : "230063004",
+                                "code" : "160605003",
                                 "value" : "Heavy 20-39 per day"
                               }, {
                                 "terminologyId" : "SNOMED CT",
-                                "code" : "230064005",
+                                "code" : "160606002",
                                 "value" : "Very heavy 40+ per day"
                               } ]
                             } ]
