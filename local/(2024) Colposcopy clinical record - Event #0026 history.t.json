@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.8.1",
+      "sem_ver" : "0.8.2",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "c411e7c54c4d090ab2410e6208cd4c10",
+      "MD5-CAM-1.0.1" : "e1acdc7ffb86642bda2b9d46672853d1",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -5378,13 +5378,13 @@
                       "defaultValue" : {
                         "defining_code" : {
                           "terminology_id" : {
-                            "value" : "SCT",
+                            "value" : "SNOMED CT",
                             "@type" : "TERMINOLOGY_ID"
                           },
-                          "code_string" : "9459301000001100",
+                          "code_string" : "449038007",
                           "@type" : "CODE_PHRASE"
                         },
-                        "value" : "Mirena (product)",
+                        "value" : "Uses hormone releasing intrauterine device contraception",
                         "@type" : "DV_CODED_TEXT"
                       },
                       "attributes" : [ {
@@ -5401,8 +5401,8 @@
                           "selectedTerminologies" : [ "SNOMED CT" ],
                           "includedExternalTerminologyCodes" : [ {
                             "terminologyId" : "SNOMED CT",
-                            "code" : "9459301000001100",
-                            "value" : "Mirena (product)"
+                            "code" : "449038007",
+                            "value" : "Uses hormone releasing intrauterine device contraception"
                           } ]
                         } ]
                       } ],
@@ -8213,25 +8213,25 @@
           "at0029.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0029.2",
-            "text" : "CO pill",
+            "text" : "CO (combined oral contraceptive) pill",
             "description" : "Details about use of a specified type of contraception."
           },
           "at0029.4" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0029.4",
-            "text" : "PO pill",
+            "text" : "PO (progesterone only) pill",
             "description" : "Details about use of a specified type of contraception."
           },
           "at0029.17" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0029.17",
-            "text" : "IUCD",
+            "text" : "IUCD (intra uterine contraceptive device)",
             "description" : "Details about use of a specified type of contraception."
           },
           "at0029.3" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0029.3",
-            "text" : "Mirena coil",
+            "text" : "IUS (intra-uterine system)",
             "description" : "Details about use of a specified type of contraception."
           },
           "at0029.5" : {
@@ -8243,7 +8243,7 @@
           "at0029.6" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0029.6",
-            "text" : "Cap/Diaphragm",
+            "text" : "Cap or diaphragm",
             "description" : "Details about use of a specified type of contraception."
           },
           "at0029.7" : {
@@ -12050,6 +12050,7 @@
                     "children" : [ {
                       "@type" : "C_TERMINOLOGY_CODE",
                       "rmTypeName" : "TERMINOLOGY_CODE",
+                      "occurrences" : "0..1",
                       "terminologyId" : {
                         "value" : "SNOMED CT"
                       },
