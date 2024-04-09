@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.8.0",
+      "sem_ver" : "0.8.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "2176918202476b1333ce99c64e0f71e4",
+      "MD5-CAM-1.0.1" : "c411e7c54c4d090ab2410e6208cd4c10",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -2036,6 +2036,13 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0065.2",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                }, {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ELEMENT",
                   "occurrences" : "0..0",
                   "nodeId" : "at0068.1",
                   "attributes" : [ {
@@ -2312,14 +2319,69 @@
             "text" : "Other referral reason",
             "description" : "Narrative description about the reason for request.",
             "comment" : "For example: 'The patient's diabetes has recently become more difficult to stabilise and renal function is deteriorating'."
+          },
+          "at0065.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065.2",
+            "text" : "Other intended visit type",
+            "description" : "Description of the intent for the request.",
+            "comment" : "For example: a referral to a specialist may have the intent of the specialist taking over responsibility for care of the patient, or it may be to provide a second opinion on treatment options. Coding of the 'Intent' with a coding system is desirable, if available. This data element allows multiple occurrences to enable the user to record a multiple responses, if required."
           }
         },
-        "nb" : { },
-        "it" : { },
-        "de" : { },
-        "sv" : { },
-        "pt-br" : { },
-        "nl" : { }
+        "nb" : {
+          "at0065.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065",
+            "text" : "Hensikt (2)",
+            "description" : "Beskrivelse av hensikten med forespørselen.",
+            "comment" : "For eksempel kan en henvisning til en spesialist ha som hensikt at spesialisten tar over oppfølgingsansvaret for pasienten, eller det kan være å få en second opinion for behandlingsmuligheteter. Koding av hensikten med et kodeverk er ønskelig, dersom tilgjengelig. Dette dataelementet tillater flere forekomster, for å gjøre det mulig for brukeren å registrere flere svar om nødvendig."
+          }
+        },
+        "it" : {
+          "at0065.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065",
+            "text" : "Intento (2)",
+            "description" : "Descrizione dell'intento della richiesta.",
+            "comment" : "Ad esempio: un indirizzamento a uno specialista può avere l'intento di far assumere allo specialista la responsabilità della cura del paziente, oppure può essere quello di fornire una seconda opinione sulle opzioni di trattamento. È auspicabile una codifica dell'\"Intento\" con un sistema di codifica, se disponibile. Questo dato consente di registrare più occorrenze per consentire all'utente di annotare una risposta multipla, se necessario."
+          }
+        },
+        "de" : {
+          "at0065.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065",
+            "text" : "Intention (2)",
+            "description" : "Beschreibung der Intention für die Anfrage.",
+            "comment" : "Zum Beispiel: Eine Überweisung an einen Spezialisten kann die Absicht haben, dass der Spezialist die Verantwortung für die Betreuung des Patienten übernimmt, oder es kann die Absicht sein, eine zweite Meinung zu Behandlungsmöglichkeiten abzugeben. Eine Kodierung der \"Absicht\" mit einem Kodierungssystem ist wünschenswert, sofern verfügbar. Dieses Datenelement erlaubt mehrfaches Vorkommen, so dass der Benutzer bei Bedarf eine Mehrfachnennung der Antworten vornehmen kann."
+          }
+        },
+        "sv" : {
+          "at0065.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065",
+            "text" : "Avsikt (2)",
+            "description" : "Beskrivning av avsikten med förfrågan",
+            "comment" : "Till exempel en remiss till en specialist kan ha avsikten att specialisten tar över ansvaret för vården av patienten, eller att komma med en second opinion på behandlingsförslag. Kodning av avsikten är att föredra. Denna datapunkt tillåter flera möjliga värden, för att möjliggöra att användaren kan registrera flera svar om så behövs."
+          }
+        },
+        "pt-br" : {
+          "at0065.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065",
+            "text" : "Intenção (2)",
+            "description" : "Descrição da intenção para a solicitação.",
+            "comment" : "Por exemplo: uma referência a um especialista pode ter a intenção de que o especialista assuma a responsabilidade pelo cuidado do paciente, ou pode ser para fornecer uma segunda opinião sobre as opções de tratamento. A codificação da 'Intenção' com um sistema de codificação é desejável, se disponível. Este elemento de dados permite várias ocorrências para permitir que o usuário registre várias respostas, se necessário."
+          }
+        },
+        "nl" : {
+          "at0065.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0065",
+            "text" : "Bedoeling (2)",
+            "description" : "Beschrijving van de bedoeling van het verzoek.",
+            "comment" : "Bijvoorbeeld: De bedoeling van een verwijzing naar een specialist kan zijn dat de specialist de zorg voor de patiënt overneemt, of het kan zijn om een second opinion te geven over behandelmogelijkheden. Codering van de 'Bedoeling' met een coderingssysteem is wenselijk, indien aanwezig. In dit gegevenselement kunnen meerdere gebeurtenissen voorkomen, zodat de gebruiker, indien nodig, meerdere antwoorden kan registreren."
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
@@ -13982,6 +14044,42 @@
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "EVALUATION",
           "occurrences" : "0..1",
+          "nodeId" : "at0.45",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-last_menstrual_period-001.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "EVALUATION",
+          "occurrences" : "0..1",
+          "nodeId" : "at0.46",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-clinical_synopsis-003.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "OBSERVATION",
+          "occurrences" : "0..1",
+          "nodeId" : "at0.47",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-symptom_sign_screening-001.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "EVALUATION",
+          "occurrences" : "0..1",
+          "nodeId" : "at0.48",
+          "attributes" : [ ],
+          "attributeTuples" : [ ],
+          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-obstetric_summary-001.v1",
+          "referenceType" : "archetypeOverlay"
+        }, {
+          "@type" : "C_ARCHETYPE_ROOT",
+          "rmTypeName" : "EVALUATION",
+          "occurrences" : "0..1",
           "nodeId" : "at0.10",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -13991,46 +14089,10 @@
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "EVALUATION",
           "occurrences" : "0..1",
-          "nodeId" : "at0.12",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-last_menstrual_period-001.v1",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "EVALUATION",
-          "occurrences" : "0..1",
-          "nodeId" : "at0.44",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-clinical_synopsis-003.v1",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "OBSERVATION",
-          "occurrences" : "0..1",
-          "nodeId" : "at0.32",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-symptom_sign_screening-001.v1",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "EVALUATION",
-          "occurrences" : "0..1",
           "nodeId" : "at0.36",
           "attributes" : [ ],
           "attributeTuples" : [ ],
           "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-tobacco_smoking_summary-001.v1",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "EVALUATION",
-          "occurrences" : "0..1",
-          "nodeId" : "at0.14",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-obstetric_summary-001.v1",
           "referenceType" : "archetypeOverlay"
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
@@ -14397,6 +14459,17 @@
               "attributeTuples" : [ ]
             } ]
           } ],
+          "attributeTuples" : [ ]
+        } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_LIST",
+          "occurrences" : "0..0",
+          "nodeId" : "at0009.1",
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         } ]
       } ],
