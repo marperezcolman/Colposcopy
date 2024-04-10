@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.8.2",
+      "sem_ver" : "0.8.3",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "e1acdc7ffb86642bda2b9d46672853d1",
+      "MD5-CAM-1.0.1" : "64675503813d70e0f8f0235ddfe17fba",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -11290,6 +11290,7 @@
                         "children" : [ {
                           "@type" : "C_TERMINOLOGY_CODE",
                           "rmTypeName" : "TERMINOLOGY_CODE",
+                          "occurrences" : "0..1",
                           "terminologyId" : {
                             "value" : "local_terms"
                           },
@@ -13289,7 +13290,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Medications",
+            "text" : "Relevant medication history",
             "description" : "Narrative summary or overview about a patient, specifically from the perspective of a healthcare provider, and with or without associated interpretations."
           },
           "at0002.1" : {
@@ -13636,7 +13637,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Comments",
+            "text" : "Clinical notes and comments",
             "description" : "Narrative summary or overview about a patient, specifically from the perspective of a healthcare provider, and with or without associated interpretations."
           },
           "at0002.1" : {
