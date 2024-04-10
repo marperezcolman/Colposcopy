@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.8.4",
+      "sem_ver" : "0.8.5",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "c5f71a5fb957157996598165089504f7",
+      "MD5-CAM-1.0.1" : "6ea12fb3daeea21bfec3dffd69f10cf3",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -1533,7 +1533,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Tests requested or performed",
+            "text" : "Samples taken",
             "description" : "A generic section header which should be renamed in a template to suit a specific clinical context."
           }
         },
@@ -1961,7 +1961,7 @@
         }, {
           "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "EVALUATION",
-          "occurrences" : "0..1",
+          "occurrences" : "0..*",
           "nodeId" : "at0.6",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -1979,7 +1979,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Treatments",
+            "text" : "Treatments at visit",
             "description" : "A generic section header which should be renamed in a template to suit a specific clinical context."
           }
         },
@@ -6540,13 +6540,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
-          "nodeId" : "at0007.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ]
-        }, {
-          "@type" : "C_COMPLEX_OBJECT",
-          "rmTypeName" : "ELEMENT",
           "nodeId" : "at0006.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -6565,6 +6558,13 @@
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..1",
           "nodeId" : "at0006.2",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0007.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
@@ -9760,7 +9760,8 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "CLUSTER",
-              "nodeId" : "at0022",
+              "occurrences" : "0..0",
+              "nodeId" : "at0022.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "items",
@@ -10456,7 +10457,6 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0045.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
@@ -10484,6 +10484,13 @@
             "text" : "Sample date",
             "description" : "The date and time that collection has been ordered to take place or has taken place.",
             "comment" : "This datetime will be captured primarily in the INSTRUCTION timing, ACTION time or OBSERVATION times. However, as this is a critical piece of information, it can be useful to also associate it directly with the specimen itself."
+          },
+          "at0045.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0045.1",
+            "text" : "Clinical notes or comment",
+            "description" : "Additional narrative about the specimen not captured in other fields.",
+            "fhir_mapping" : "Specimen.note"
           }
         },
         "pt-br" : { },
@@ -11337,6 +11344,18 @@
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_CODED_TEXT",
                   "occurrences" : "1..1",
+                  "defaultValue" : {
+                    "defining_code" : {
+                      "terminology_id" : {
+                        "value" : "SNOMED CT",
+                        "@type" : "TERMINOLOGY_ID"
+                      },
+                      "code_string" : "392003006",
+                      "@type" : "CODE_PHRASE"
+                    },
+                    "value" : "Colposcopy (procedure)",
+                    "@type" : "DV_CODED_TEXT"
+                  },
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
                     "rmAttributeName" : "defining_code",
@@ -11855,7 +11874,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "6a69e6d4576d49c66537e02ff18d2c26"
+        "PARENT:MD5-CAM-1.0.1" : "2bf34e5d3ccb007133db87ab4a99d702"
       },
       "details" : {
         "en" : {
@@ -11882,14 +11901,67 @@
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "CLUSTER",
       "nodeId" : "at0000.1",
-      "attributes" : [ ],
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0002.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0003.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
       "attributeTuples" : [ ]
     },
     "terminology" : {
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { }
+        "en" : {
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000.1",
+            "text" : "Treatment type",
+            "description" : "Treatment type dhcw"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Other treatment (specify)",
+            "description" : ""
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
