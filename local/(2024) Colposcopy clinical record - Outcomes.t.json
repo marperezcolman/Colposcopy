@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.7.1",
+      "sem_ver" : "0.8.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "7d71f3e028380f722639990a47df0bbb",
+      "MD5-CAM-1.0.1" : "9bd5397f7141faab84d21ee701806f5f",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -1838,7 +1838,14 @@
           "at0002.2" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.2",
-            "text" : "Other contact type",
+            "text" : "Other visit type",
+            "description" : "Identification of the type, or administrative category, of healthcare sought or required by the subject of care.",
+            "comment" : "Coding of the 'Contact type' with a terminology is desirable, where possible. Examples include: pre-employment medical, routine antenatal visit, women's health check, pre-operative assessment, or annual medical check-up.\r\n"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Actual visit type",
             "description" : "Identification of the type, or administrative category, of healthcare sought or required by the subject of care.",
             "comment" : "Coding of the 'Contact type' with a terminology is desirable, where possible. Examples include: pre-employment medical, routine antenatal visit, women's health check, pre-operative assessment, or annual medical check-up.\r\n"
           }
@@ -2107,6 +2114,18 @@
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_CODED_TEXT",
                       "occurrences" : "1..1",
+                      "defaultValue" : {
+                        "defining_code" : {
+                          "terminology_id" : {
+                            "value" : "SNOMED CT",
+                            "@type" : "TERMINOLOGY_ID"
+                          },
+                          "code_string" : "18361600",
+                          "@type" : "CODE_PHRASE"
+                        },
+                        "value" : "Follow-up arranged (finding)",
+                        "@type" : "DV_CODED_TEXT"
+                      },
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "defining_code",
@@ -2351,6 +2370,15 @@
                   "attributes" : [ ],
                   "attributeTuples" : [ ],
                   "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-participations_dhcw-001.v1",
+                  "referenceType" : "archetypeOverlay"
+                }, {
+                  "@type" : "C_ARCHETYPE_ROOT",
+                  "rmTypeName" : "CLUSTER",
+                  "occurrences" : "0..1",
+                  "nodeId" : "at0132.4",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ],
+                  "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-treatment_type_dhcw-001.v0",
                   "referenceType" : "archetypeOverlay"
                 }, {
                   "@type" : "C_ARCHETYPE_ROOT",
@@ -4506,6 +4534,109 @@
       "accreditation" : "What goes here?",
       "otherDetails" : { }
     } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "28ec227f-178c-42da-89d4-dee03a33b2f9",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "2bf34e5d3ccb007133db87ab4a99d702"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.treatment_type_dhcw.v0",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-treatment_type_dhcw-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0001.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0002.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0003.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0004.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002.1",
+            "text" : "Other intended treatment (specify)",
+            "description" : ""
+          },
+          "at0001.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001.1",
+            "text" : "Intended treatment type",
+            "description" : ""
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "96b493df-c6f1-3cf9-a41f-0c5b88b6f447",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ ]
   } ],
   "originalLanguage" : {
     "terminologyId" : {
