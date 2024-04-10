@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.8.3",
+      "sem_ver" : "0.8.4",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "071e27952d4898640c2b8b8569e866af",
+      "MD5-CAM-1.0.1" : "c5f71a5fb957157996598165089504f7",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -6478,6 +6478,18 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
               "occurrences" : "1..1",
+              "defaultValue" : {
+                "defining_code" : {
+                  "terminology_id" : {
+                    "value" : "SNOMED CT",
+                    "@type" : "TERMINOLOGY_ID"
+                  },
+                  "code_string" : "71252005",
+                  "@type" : "CODE_PHRASE"
+                },
+                "value" : "Cervix uteri structure (body structure)",
+                "@type" : "DV_CODED_TEXT"
+              },
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
@@ -6511,6 +6523,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0003.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -6527,14 +6540,31 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0007.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0006.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..1",
+          "nodeId" : "at0006.2",
           "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
@@ -6555,23 +6585,57 @@
       "conceptCode" : "at0000",
       "termDefinitions" : {
         "en" : {
-          "at0003.1" : {
+          "at0006.1" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0003.1",
+            "code" : "at0006.1",
             "text" : "Colposcopic impression",
-            "description" : "Narrative description of the overall findings observed during the physical examination."
+            "description" : "Single word, phrase or brief description that represents the clinical meaning and significance of the physical examination findings.",
+            "comment" : "For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible."
           },
-          "at0007.1" : {
+          "at0006.2" : {
             "@type" : "ARCHETYPE_TERM",
-            "code" : "at0007.1",
-            "text" : "Other colposcopic impression(specify)",
-            "description" : "Additional narrative about the physical examination findings, not captured in other fields."
+            "code" : "at0006.2",
+            "text" : "Other Colposcopic impression",
+            "description" : "Single word, phrase or brief description that represents the clinical meaning and significance of the physical examination findings.",
+            "comment" : "For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible."
           }
         },
-        "nb" : { },
-        "pt-br" : { },
-        "de" : { },
-        "sv" : { }
+        "nb" : {
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Fortolkning (2)",
+            "description" : "Enkelt ord, setning, frase eller kort beskrivelse som representerer den kliniske betydning og viktigheten av funnene ved den fysiske undersøkelsen.",
+            "comment" : "For eksempel \"Uten anmerkning\" eller \"Moderat inflammasjon\". Det anbefales å kode \"Fortolkning\" med en terminologi dersom mulig."
+          }
+        },
+        "pt-br" : {
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Interpretação clínica (2)",
+            "description" : "Palavra, frase ou breve descrição que represente o significado clínico e o significado dos resultados do exame físico.",
+            "comment" : "*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)"
+          }
+        },
+        "de" : {
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Klinische Interpretation (2)",
+            "description" : "Ein einzelnes Wort, eine Phrase oder eine kurze Beschreibung, die die klinische Bedeutung und Wichtigkeit der Untersuchungsergebnisse darstellt.",
+            "comment" : "*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)"
+          }
+        },
+        "sv" : {
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Klinisk tolkning (2)",
+            "description" : "Ord, fras eller kort beskrivning av fyndens kliniska betydelse.",
+            "comment" : "*For example: 'No abnormality detected' or 'Moderate inflammation present'. Coding of the 'Clinical interpretation' with a terminology is preferred, where possible. (en)"
+          }
+        }
       },
       "termBindings" : {
         "SNOMED-CT" : {
@@ -7208,7 +7272,7 @@
           "at0007.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0007.1",
-            "text" : "Other (specify)",
+            "text" : "Extent Other (specify)",
             "description" : "Additional narrative about the examination findings, not captured in other fields."
           }
         },
@@ -7377,6 +7441,18 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
               "occurrences" : "1..1",
+              "defaultValue" : {
+                "defining_code" : {
+                  "terminology_id" : {
+                    "value" : "SNOMED CT",
+                    "@type" : "TERMINOLOGY_ID"
+                  },
+                  "code_string" : "76784001",
+                  "@type" : "CODE_PHRASE"
+                },
+                "value" : "Vaginal structure (body structure)",
+                "@type" : "DV_CODED_TEXT"
+              },
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
@@ -7432,6 +7508,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0007.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
@@ -7447,14 +7524,8 @@
           "at0003.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003.1",
-            "text" : "Colposcopic impression",
+            "text" : "Vaginal lesion seen",
             "description" : "Narrative description of the overall findings observed during the physical examination."
-          },
-          "at0007.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0007.1",
-            "text" : "Other (specify)",
-            "description" : "Additional narrative about the physical examination findings, not captured in other fields."
           },
           "at0012.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -7778,6 +7849,13 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0006.2",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
                       "occurrences" : "0..0",
                       "nodeId" : "at0011.1",
                       "attributes" : [ ],
@@ -7842,6 +7920,13 @@
             "code" : "at0000",
             "text" : "*Physical Examination Findings(en) (2)",
             "description" : "*Findings observed during the physical examination of a subject.(en)"
+          },
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "*Interpretation(en) (2)",
+            "description" : "*Single word, phrase or brief description represents the clinical meaning and significance of the physical examination findings.(en)",
+            "comment" : "*Coding with a terminology is preferred, if possible. For example, normal examination or chronic otitis media.(en)"
           }
         },
         "sl" : {
@@ -7850,6 +7935,13 @@
             "code" : "at0000",
             "text" : "Ugotovitve pregleda (2)",
             "description" : "Za dokumentiranje ugotovitev/znakov fizikalnega pregleda subjekta"
+          },
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "*Interpretation(en) (2)",
+            "description" : "*Single word, phrase or brief description represents the clinical meaning and significance of the physical examination findings.(en)",
+            "comment" : "*Coding with a terminology is preferred, if possible. For example, normal examination or chronic otitis media.(en)"
           }
         },
         "es-ar" : {
@@ -7858,6 +7950,13 @@
             "code" : "at0000",
             "text" : "Hallazgos del Examen Fisico (2)",
             "description" : "Hallazgos observados durante el examen fisico de una persona"
+          },
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Interpretacion (2)",
+            "description" : "Palabra, frase o descripcion breve que represente el significado clinico e importancia de los hallazgos del examen fisico",
+            "comment" : "Se prefiere la dodificacion con una terminologia. Por ejemplo, examen normal u otitis media cronica"
           }
         },
         "en" : {
@@ -7870,7 +7969,14 @@
           "at0006.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006.1",
-            "text" : "Lesion seen",
+            "text" : "Colposcopic impression",
+            "description" : "Single word, phrase or brief description which represents the clinical meaning and significance of the physical examination findings.",
+            "comment" : "Coding with a terminology is preferred, if possible. For example, 'normal examination' or 'tympanic membrane perforation'."
+          },
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.2",
+            "text" : "Other Colposcopic impression",
             "description" : "Single word, phrase or brief description which represents the clinical meaning and significance of the physical examination findings.",
             "comment" : "Coding with a terminology is preferred, if possible. For example, 'normal examination' or 'tympanic membrane perforation'."
           }
@@ -7881,6 +7987,13 @@
             "code" : "at0000",
             "text" : "Funn ved fysisk undersøkelse (2)",
             "description" : "Funn ved fysisk undersøkelse av en helsetjenestemottaker."
+          },
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Fortolkning (2)",
+            "description" : "Enkelt ord, setning, frase eller kort beskrivelse som representerer den kliniske betydning og viktigheten av funnene ved den kliniske undersøkelsen.",
+            "comment" : "Koding med terminologi foretrekkes når mulig. For eksempel \"normal undersøkelse\" eller \"tympanisk membran perforasjon\"."
           }
         },
         "es" : {
@@ -7889,6 +8002,13 @@
             "code" : "at0000",
             "text" : "Hallazgos de la examinación física (2)",
             "description" : "Hallazgos observados durante la examinación física del paciente"
+          },
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Interpretación (2)",
+            "description" : "Descripción corta que representa el significado clínico de los hallazgos",
+            "comment" : "*Coding with a terminology is preferred, if possible. For example, 'normal examination' or 'tympanic membrane perforation'.(en)"
           }
         },
         "pt-br" : {
@@ -7897,6 +8017,13 @@
             "code" : "at0000",
             "text" : "Achados de exame físico (2)",
             "description" : "Resultados observados durante o exame físico de um sujeito de atenção."
+          },
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Interpretação (2)",
+            "description" : "Palavra única, frase ou breve descrição que representa o significado clínico e dos achados do exame físico.",
+            "comment" : "A codificação com uma terminologia é preferida, se possível. Por exemplo, \"exame normal\" ou \"perfuração da membrana timpânica\"."
           }
         },
         "zh-cn" : {
@@ -7905,6 +8032,13 @@
             "code" : "at0000",
             "text" : "体格检查发现 (2)",
             "description" : "对于特定主体对象进行体格检查过程中所获得的发现。"
+          },
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "解释 (2)",
+            "description" : "用于表示体格检查发现的临床含义和意义的单个词语、短语或简要描述。",
+            "comment" : "在可能的情况下，首选采用特定的术语集进行编码。例如，“检查正常”或“鼓膜穿孔”。"
           }
         },
         "de" : {
@@ -7913,6 +8047,13 @@
             "code" : "at0000",
             "text" : "Ergebnisse der körperlichen Untersuchung (2)",
             "description" : "Während der körperlichen Untersuchung eines Patienten beobachtete Befunde."
+          },
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Interpretation (2)",
+            "description" : "Einzelnes Wort, Ausdruck oder Kurzbeschreibung der klinischen Bedeutung und Aussagekraft der körperlichen Untersuchungsbefunde.",
+            "comment" : "Eine Kodierung mit einer Terminologie wird, wenn möglich, bevorzugt. Zum Beispiel 'normale Untersuchung' oder 'Trommelfellperforation'."
           }
         },
         "sv" : {
@@ -7921,6 +8062,13 @@
             "code" : "at0000",
             "text" : "Fysiska undersökningsfynd (2)",
             "description" : "Observerade fynd under en fysisk undersökning av mottagaren av hälso- och sjukvård."
+          },
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Tolkning (2)",
+            "description" : "Enkelt ord, fras eller kort beskrivning som representerar den kliniska innebörden och betydelsen av de fysiska undersökningsfynden.",
+            "comment" : "Kodning med en terminologi är att föredra, om möjligt. Till exempel \"normal undersökning\" eller \"trumhinnans perforering\"."
           }
         }
       },
@@ -8183,6 +8331,18 @@
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_CODED_TEXT",
               "occurrences" : "1..1",
+              "defaultValue" : {
+                "defining_code" : {
+                  "terminology_id" : {
+                    "value" : "SNOMED CT",
+                    "@type" : "TERMINOLOGY_ID"
+                  },
+                  "code_string" : "45292006",
+                  "@type" : "CODE_PHRASE"
+                },
+                "value" : "Vulval structure (body structure)",
+                "@type" : "DV_CODED_TEXT"
+              },
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "defining_code",
@@ -8238,6 +8398,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0007.1",
           "attributes" : [ ],
           "attributeTuples" : [ ]
@@ -8253,14 +8414,8 @@
           "at0003.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003.1",
-            "text" : "Colposcopic impression",
+            "text" : "Lesion seen",
             "description" : "Narrative description of the overall findings observed during the physical examination."
-          },
-          "at0007.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0007.1",
-            "text" : "Other (specify)",
-            "description" : "Additional narrative about the physical examination findings, not captured in other fields."
           },
           "at0012.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -8584,6 +8739,13 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0006.2",
+                      "attributes" : [ ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
                       "occurrences" : "0..0",
                       "nodeId" : "at0011.1",
                       "attributes" : [ ],
@@ -8648,6 +8810,13 @@
             "code" : "at0000",
             "text" : "*Physical Examination Findings(en) (3)",
             "description" : "*Findings observed during the physical examination of a subject.(en)"
+          },
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "*Interpretation(en) (2)",
+            "description" : "*Single word, phrase or brief description represents the clinical meaning and significance of the physical examination findings.(en)",
+            "comment" : "*Coding with a terminology is preferred, if possible. For example, normal examination or chronic otitis media.(en)"
           }
         },
         "sl" : {
@@ -8656,6 +8825,13 @@
             "code" : "at0000",
             "text" : "Ugotovitve pregleda (3)",
             "description" : "Za dokumentiranje ugotovitev/znakov fizikalnega pregleda subjekta"
+          },
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "*Interpretation(en) (2)",
+            "description" : "*Single word, phrase or brief description represents the clinical meaning and significance of the physical examination findings.(en)",
+            "comment" : "*Coding with a terminology is preferred, if possible. For example, normal examination or chronic otitis media.(en)"
           }
         },
         "es-ar" : {
@@ -8664,6 +8840,13 @@
             "code" : "at0000",
             "text" : "Hallazgos del Examen Fisico (3)",
             "description" : "Hallazgos observados durante el examen fisico de una persona"
+          },
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Interpretacion (2)",
+            "description" : "Palabra, frase o descripcion breve que represente el significado clinico e importancia de los hallazgos del examen fisico",
+            "comment" : "Se prefiere la dodificacion con una terminologia. Por ejemplo, examen normal u otitis media cronica"
           }
         },
         "en" : {
@@ -8676,7 +8859,14 @@
           "at0006.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006.1",
-            "text" : "Lesion seen",
+            "text" : "Colposcopic impression",
+            "description" : "Single word, phrase or brief description which represents the clinical meaning and significance of the physical examination findings.",
+            "comment" : "Coding with a terminology is preferred, if possible. For example, 'normal examination' or 'tympanic membrane perforation'."
+          },
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.2",
+            "text" : "Other Colposcopic impression",
             "description" : "Single word, phrase or brief description which represents the clinical meaning and significance of the physical examination findings.",
             "comment" : "Coding with a terminology is preferred, if possible. For example, 'normal examination' or 'tympanic membrane perforation'."
           }
@@ -8687,6 +8877,13 @@
             "code" : "at0000",
             "text" : "Funn ved fysisk undersøkelse (3)",
             "description" : "Funn ved fysisk undersøkelse av en helsetjenestemottaker."
+          },
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Fortolkning (2)",
+            "description" : "Enkelt ord, setning, frase eller kort beskrivelse som representerer den kliniske betydning og viktigheten av funnene ved den kliniske undersøkelsen.",
+            "comment" : "Koding med terminologi foretrekkes når mulig. For eksempel \"normal undersøkelse\" eller \"tympanisk membran perforasjon\"."
           }
         },
         "es" : {
@@ -8695,6 +8892,13 @@
             "code" : "at0000",
             "text" : "Hallazgos de la examinación física (3)",
             "description" : "Hallazgos observados durante la examinación física del paciente"
+          },
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Interpretación (2)",
+            "description" : "Descripción corta que representa el significado clínico de los hallazgos",
+            "comment" : "*Coding with a terminology is preferred, if possible. For example, 'normal examination' or 'tympanic membrane perforation'.(en)"
           }
         },
         "pt-br" : {
@@ -8703,6 +8907,13 @@
             "code" : "at0000",
             "text" : "Achados de exame físico (3)",
             "description" : "Resultados observados durante o exame físico de um sujeito de atenção."
+          },
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Interpretação (2)",
+            "description" : "Palavra única, frase ou breve descrição que representa o significado clínico e dos achados do exame físico.",
+            "comment" : "A codificação com uma terminologia é preferida, se possível. Por exemplo, \"exame normal\" ou \"perfuração da membrana timpânica\"."
           }
         },
         "zh-cn" : {
@@ -8711,6 +8922,13 @@
             "code" : "at0000",
             "text" : "体格检查发现 (3)",
             "description" : "对于特定主体对象进行体格检查过程中所获得的发现。"
+          },
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "解释 (2)",
+            "description" : "用于表示体格检查发现的临床含义和意义的单个词语、短语或简要描述。",
+            "comment" : "在可能的情况下，首选采用特定的术语集进行编码。例如，“检查正常”或“鼓膜穿孔”。"
           }
         },
         "de" : {
@@ -8719,6 +8937,13 @@
             "code" : "at0000",
             "text" : "Ergebnisse der körperlichen Untersuchung (3)",
             "description" : "Während der körperlichen Untersuchung eines Patienten beobachtete Befunde."
+          },
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Interpretation (2)",
+            "description" : "Einzelnes Wort, Ausdruck oder Kurzbeschreibung der klinischen Bedeutung und Aussagekraft der körperlichen Untersuchungsbefunde.",
+            "comment" : "Eine Kodierung mit einer Terminologie wird, wenn möglich, bevorzugt. Zum Beispiel 'normale Untersuchung' oder 'Trommelfellperforation'."
           }
         },
         "sv" : {
@@ -8727,6 +8952,13 @@
             "code" : "at0000",
             "text" : "Fysiska undersökningsfynd (3)",
             "description" : "Observerade fynd under en fysisk undersökning av mottagaren av hälso- och sjukvård."
+          },
+          "at0006.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Tolkning (2)",
+            "description" : "Enkelt ord, fras eller kort beskrivning som representerar den kliniska innebörden och betydelsen av de fysiska undersökningsfynden.",
+            "comment" : "Kodning med en terminologi är att föredra, om möjligt. Till exempel \"normal undersökning\" eller \"trumhinnans perforering\"."
           }
         }
       },
