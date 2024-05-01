@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "1.0.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "6523c304ed845d75c6d8bd89e3783a68",
+      "MD5-CAM-1.0.1" : "3edb2293bb06b996fa2abe9323df5515",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -429,6 +429,12 @@
           "code" : "at0000.1.1",
           "text" : "Colposcopy clinical record",
           "description" : "وثيقة لتوصيل المعلومات للآخرين, عادة كاستجابة لطلب من طرف آخر."
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "تقرير",
+          "description" : "وثيقة لتوصيل المعلومات للآخرين, عادة كاستجابة لطلب من طرف آخر."
         }
       },
       "sl" : {
@@ -468,6 +474,12 @@
           "code" : "at0000.1.1",
           "text" : "Colposcopy clinical record",
           "description" : "*Document to communicate information to others, commonly in response to a request from another party.(en)"
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Poročilo",
+          "description" : "*Document to communicate information to others, commonly in response to a request from another party.(en)"
         }
       },
       "es-ar" : {
@@ -500,6 +512,12 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
           "text" : "Colposcopy clinical record",
+          "description" : "Documento para comunicar información a otros, comunmente en respuesta a la solicitud de un tercero."
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Informe",
           "description" : "Documento para comunicar información a otros, comunmente en respuesta a la solicitud de un tercero."
         }
       },
@@ -534,6 +552,12 @@
           "code" : "at0000.1.1",
           "text" : "Colposcopy clinical record",
           "description" : "일반적으로 다른 상대의 요청에 대한 응답으로, 다른 사람들과 정보를 통신하는 문서."
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "*Report(en)",
+          "description" : "일반적으로 다른 상대의 요청에 대한 응답으로, 다른 사람들과 정보를 통신하는 문서."
         }
       },
       "fi" : {
@@ -566,6 +590,12 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
           "text" : "Colposcopy clinical record",
+          "description" : "Asiakirja tiedon välittämiseksi muille, vastauksena yleensä toisen osapuolen pyyntöön."
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Raportti",
           "description" : "Asiakirja tiedon välittämiseksi muille, vastauksena yleensä toisen osapuolen pyyntöön."
         }
       },
@@ -600,6 +630,12 @@
           "code" : "at0000.1.1",
           "text" : "Colposcopy clinical record",
           "description" : "Documento per comunicare informazioni ad altri, comunemente in risposta ad una richiesta di un altro soggetto."
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Rapporto",
+          "description" : "Documento per comunicare informazioni ad altri, comunemente in risposta ad una richiesta di un altro soggetto."
         }
       },
       "nl" : {
@@ -632,6 +668,12 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
           "text" : "Colposcopy clinical record",
+          "description" : "Document om informatie met anderen te communiceren, vaak op verzoek van een andere partij."
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Rapportage",
           "description" : "Document om informatie met anderen te communiceren, vaak op verzoek van een andere partij."
         }
       },
@@ -666,6 +708,12 @@
           "code" : "at0000.1.1",
           "text" : "Colposcopy clinical record",
           "description" : "Dokument för att förmedla information till andra, vanligen som svar på en begäran från en annan part."
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Rapport",
+          "description" : "Dokument för att förmedla information till andra, vanligen som svar på en begäran från en annan part."
         }
       },
       "zh" : {
@@ -698,6 +746,12 @@
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
           "text" : "Colposcopy clinical record",
+          "description" : "用于交流信息的文件，通常是为了响应某一方的请求"
+        },
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "报告",
           "description" : "用于交流信息的文件，通常是为了响应某一方的请求"
         }
       }
@@ -28860,25 +28914,7 @@
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_CODED_TEXT",
                       "occurrences" : "1..1",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "defining_code",
-                        "children" : [ {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "rmTypeName" : "TERMINOLOGY_CODE",
-                          "occurrences" : "0..1",
-                          "terminologyId" : {
-                            "value" : "Treatment function code"
-                          },
-                          "constraint" : [ ],
-                          "selectedTerminologies" : [ "Treatment function code" ],
-                          "includedExternalTerminologyCodes" : [ {
-                            "terminologyId" : "Treatment function code",
-                            "code" : "502",
-                            "value" : "Gynaecology service"
-                          } ]
-                        } ]
-                      } ],
+                      "attributes" : [ ],
                       "attributeTuples" : [ ]
                     } ]
                   } ],
