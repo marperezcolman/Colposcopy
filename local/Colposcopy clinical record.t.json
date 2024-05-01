@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.2",
+      "sem_ver" : "1.0.3",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "f7e3bee503a42185c30d1b62747c35f1",
+      "MD5-CAM-1.0.1" : "e29fdce03d622f8d5116f3e532ff01f5",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -17960,23 +17960,23 @@
                               "selectedTerminologies" : [ "local_terms" ],
                               "includedExternalTerminologyCodes" : [ {
                                 "terminologyId" : "local_terms",
-                                "code" : "Yes",
+                                "code" : "1",
                                 "value" : "Yes"
                               }, {
                                 "terminologyId" : "local_terms",
-                                "code" : "No",
+                                "code" : "2",
                                 "value" : "No"
                               }, {
                                 "terminologyId" : "local_terms",
-                                "code" : "Uncertain",
+                                "code" : "3",
                                 "value" : "Uncertain"
                               }, {
                                 "terminologyId" : "local_terms",
-                                "code" : "Not stated",
+                                "code" : "4",
                                 "value" : "Not stated"
                               }, {
                                 "terminologyId" : "local_terms",
-                                "code" : "Unknown",
+                                "code" : "9",
                                 "value" : "Unknown or not recorded"
                               } ]
                             } ]
