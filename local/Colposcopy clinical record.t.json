@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.0.3",
+      "sem_ver" : "1.0.4",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "e29fdce03d622f8d5116f3e532ff01f5",
+      "MD5-CAM-1.0.1" : "a78f91565589378d772cfecb989d499f",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -14740,6 +14740,12 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "nodeId" : "at0004.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
           "nodeId" : "at0012.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -14780,6 +14786,12 @@
             "code" : "at0000.1",
             "text" : "Colposcopy details",
             "description" : "Colposcopy details DHCW"
+          },
+          "at0004.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004.1",
+            "text" : "Schiller iodine test normal?",
+            "description" : ""
           }
         }
       },
