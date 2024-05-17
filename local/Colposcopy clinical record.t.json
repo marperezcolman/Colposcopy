@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.1.1",
+      "sem_ver" : "1.2.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "38fc9717b1c426245f3fb31e5ab8f36a",
+      "MD5-CAM-1.0.1" : "3e4d403a8a866b2e28b5524a93f69af1",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -20862,25 +20862,25 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "SNOMED CT"
+                        "value" : "MRDS"
                       },
                       "constraint" : [ ],
-                      "selectedTerminologies" : [ "SNOMED CT" ],
+                      "selectedTerminologies" : [ "MRDS" ],
                       "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "SNOMED CT",
-                        "code" : "102877006",
+                        "terminologyId" : "MRDS",
+                        "code" : "1",
                         "value" : "Nulliparous"
                       }, {
-                        "terminologyId" : "SNOMED CT",
-                        "code" : "14209008",
+                        "terminologyId" : "MRDS",
+                        "code" : "2",
                         "value" : "Primiparous"
                       }, {
-                        "terminologyId" : "SNOMED CT",
-                        "code" : "28079008",
+                        "terminologyId" : "MRDS",
+                        "code" : "3",
                         "value" : "Multiparous"
                       }, {
-                        "terminologyId" : "SNOMED CT",
-                        "code" : "261665006",
+                        "terminologyId" : "MRDS",
+                        "code" : "UNK",
                         "value" : "Unknown or not recorded"
                       } ]
                     } ]
