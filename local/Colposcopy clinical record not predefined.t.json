@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.1.0",
+      "sem_ver" : "2.1.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "d810a5d618ca576861c207319599a83c",
+      "MD5-CAM-1.0.1" : "1dd3a6b68fa2270bfd8fcbe555207b2c",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -17166,20 +17166,7 @@
                             "children" : [ {
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_CODED_TEXT",
-                              "attributes" : [ {
-                                "@type" : "C_ATTRIBUTE",
-                                "rmAttributeName" : "defining_code",
-                                "children" : [ {
-                                  "@type" : "C_TERMINOLOGY_CODE",
-                                  "rmTypeName" : "TERMINOLOGY_CODE",
-                                  "occurrences" : "1..1",
-                                  "terminologyId" : {
-                                    "value" : "local"
-                                  },
-                                  "constraint" : [ "ac0.21" ],
-                                  "selectedTerminologies" : [ ]
-                                } ]
-                              } ],
+                              "attributes" : [ ],
                               "attributeTuples" : [ ]
                             } ]
                           } ],
@@ -17253,12 +17240,6 @@
             "text" : "HPV vaccine",
             "description" : "Details about a specified vaccine or grouping of vaccines relevant for the screening purpose.",
             "comment" : "Use separate instances of this CLUSTER to differentiate between specific medications or groupings of medication."
-          },
-          "ac0.21" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.21",
-            "description" : ""
           },
           "at0021.1" : {
             "@type" : "ARCHETYPE_TERM",
@@ -17751,6 +17732,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.95",
           "members" : [ "at0044" ]
+        },
+        "ac0.97" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.97",
+          "members" : [ "at0036", "at0037", "at0039" ]
         }
       }
     },
@@ -20695,7 +20681,19 @@
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_CODED_TEXT",
-                      "attributes" : [ ],
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "defining_code",
+                        "children" : [ {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "CODE_PHRASE",
+                          "occurrences" : "1..1",
+                          "terminologyId" : {
+                            "value" : "local"
+                          },
+                          "constraint" : [ "at0155", "at0157", "at0156", "at0158", "at0159", "at0160", "at0169", "at0163", "at0161", "at0162", "at0154", "at0167", "at0153", "at0152", "at0164", "at0165", "at0166" ]
+                        } ]
+                      } ],
                       "attributeTuples" : [ ]
                     } ]
                   } ],
@@ -25163,6 +25161,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
               "nodeId" : "at0011.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
