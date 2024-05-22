@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.2.0",
+      "sem_ver" : "2.2.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "ed9adaae9b1d5b0f5fc18ca807502d0d",
+      "MD5-CAM-1.0.1" : "813210b1b1d72074231b14533cd76dd1",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -19409,7 +19409,19 @@
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_CODED_TEXT",
-                          "attributes" : [ ],
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "defining_code",
+                            "children" : [ {
+                              "@type" : "C_TERMINOLOGY_CODE",
+                              "rmTypeName" : "CODE_PHRASE",
+                              "occurrences" : "1..1",
+                              "terminologyId" : {
+                                "value" : "local"
+                              },
+                              "constraint" : [ "at0031", "at0032", "at0033" ]
+                            } ]
+                          } ],
                           "attributeTuples" : [ ]
                         } ]
                       } ],
@@ -20687,19 +20699,7 @@
                     "children" : [ {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_CODED_TEXT",
-                      "attributes" : [ {
-                        "@type" : "C_ATTRIBUTE",
-                        "rmAttributeName" : "defining_code",
-                        "children" : [ {
-                          "@type" : "C_TERMINOLOGY_CODE",
-                          "rmTypeName" : "CODE_PHRASE",
-                          "occurrences" : "1..1",
-                          "terminologyId" : {
-                            "value" : "local"
-                          },
-                          "constraint" : [ "at0155", "at0157", "at0156", "at0158", "at0159", "at0160", "at0169", "at0163", "at0161", "at0162", "at0154", "at0167", "at0153", "at0152", "at0164", "at0165", "at0166" ]
-                        } ]
-                      } ],
+                      "attributes" : [ ],
                       "attributeTuples" : [ ]
                     } ]
                   } ],
@@ -21785,6 +21785,21 @@
         "ac0.190" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.190",
+          "members" : [ ]
+        },
+        "ac0.192" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.192",
+          "members" : [ "at0155", "at0157", "at0156", "at0158", "at0159", "at0160", "at0169", "at0163", "at0161", "at0162", "at0154", "at0167", "at0153", "at0152", "at0164", "at0165", "at0166" ]
+        },
+        "ac0.193" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.193",
+          "members" : [ ]
+        },
+        "ac0.194" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.194",
           "members" : [ ]
         }
       }
