@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "2.2.2",
+      "sem_ver" : "2.3.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "c2c4d602ac6ccdc2500a697cfdc5437e",
+      "MD5-CAM-1.0.1" : "2a203c54d9348551bb6f578f1e6dc41b",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -314,7 +314,7 @@
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
-          "text" : "Colposcopy clinical record - not predefined",
+          "text" : "Colposcopy clinical record",
           "description" : "Document to communicate information to others about any stand-alone procedure or operation performed."
         }
       },
@@ -4928,7 +4928,16 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0001.1",
-          "attributes" : [ ],
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -12894,10 +12903,10 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "1..1",
                       "terminologyId" : {
-                        "value" : "local"
+                        "value" : "WRTS-Colposcopy"
                       },
-                      "constraint" : [ "ac0.1" ],
-                      "selectedTerminologies" : [ ]
+                      "constraint" : [ "ac0.2" ],
+                      "selectedTerminologies" : [ "WRTS-Colposcopy" ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -13022,46 +13031,33 @@
             "code" : "at0021.1",
             "text" : "Not applicable - verbal consultation only",
             "description" : "Informed consent was not obtainable from either the patient or patient's advocate."
-          },
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.1",
-            "description" : ""
           }
         },
-        "ru" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          }
-        },
-        "de" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          }
-        },
-        "nb" : {
-          "ac0.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.1",
-            "description" : ""
-          }
+        "ru" : { },
+        "de" : { },
+        "nb" : { }
+      },
+      "termBindings" : {
+        "WRTS-Colposcopy" : {
+          "ac0.2" : "terminology://COLPOSCOPY"
         }
       },
-      "termBindings" : { },
       "terminologyExtracts" : { },
       "valueSets" : {
         "ac0.1" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.1",
           "members" : [ "at0005", "at0006" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0005", "at0006" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ ]
         }
       }
     },
@@ -14644,19 +14640,10 @@
                   "rmTypeName" : "TERMINOLOGY_CODE",
                   "occurrences" : "0..1",
                   "terminologyId" : {
-                    "value" : "local_terms"
+                    "value" : "WRTS-Colposcopy"
                   },
-                  "constraint" : [ ],
-                  "selectedTerminologies" : [ "local_terms" ],
-                  "includedExternalTerminologyCodes" : [ {
-                    "terminologyId" : "local_terms",
-                    "code" : "Yes",
-                    "value" : "Yes"
-                  }, {
-                    "terminologyId" : "local_terms",
-                    "code" : "No",
-                    "value" : "No"
-                  } ]
+                  "constraint" : [ "ac0.1" ],
+                  "selectedTerminologies" : [ "WRTS-Colposcopy" ]
                 } ]
               } ],
               "attributeTuples" : [ ]
@@ -15246,7 +15233,11 @@
           }
         }
       },
-      "termBindings" : { },
+      "termBindings" : {
+        "WRTS-Colposcopy" : {
+          "ac0.1" : "terminology://COLPOSCOPY"
+        }
+      },
       "terminologyExtracts" : { },
       "valueSets" : { }
     },
@@ -15989,6 +15980,18 @@
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_CODED_TEXT",
                               "occurrences" : "1..1",
+                              "defaultValue" : {
+                                "defining_code" : {
+                                  "terminology_id" : {
+                                    "value" : "SCT",
+                                    "@type" : "TERMINOLOGY_ID"
+                                  },
+                                  "code_string" : "169283005",
+                                  "@type" : "CODE_PHRASE"
+                                },
+                                "value" : "Medical photography (procedure)",
+                                "@type" : "DV_CODED_TEXT"
+                              },
                               "attributes" : [ {
                                 "@type" : "C_ATTRIBUTE",
                                 "rmAttributeName" : "defining_code",
@@ -16030,10 +16033,10 @@
                                   "rmTypeName" : "TERMINOLOGY_CODE",
                                   "occurrences" : "1..1",
                                   "terminologyId" : {
-                                    "value" : "local"
+                                    "value" : "WRTS-Colposcopy"
                                   },
-                                  "constraint" : [ "ac0.4" ],
-                                  "selectedTerminologies" : [ ]
+                                  "constraint" : [ "ac0.5" ],
+                                  "selectedTerminologies" : [ "WRTS-Colposcopy" ]
                                 } ]
                               } ],
                               "attributeTuples" : [ ]
@@ -16117,40 +16120,17 @@
             "text" : "Performed?",
             "description" : "Is there a history of the identified procedure?",
             "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
-          },
-          "ac0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "(Synthesized)",
-            "code" : "ac0.4",
-            "description" : ""
           }
         },
-        "nb" : {
-          "ac0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
-            "description" : ""
-          }
-        },
-        "de" : {
-          "ac0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
-            "description" : ""
-          }
-        },
-        "it" : {
-          "ac0.4" : {
-            "@type" : "ARCHETYPE_TERM",
-            "text" : "*(Synthesized) (en)",
-            "code" : "ac0.4",
-            "description" : ""
-          }
+        "nb" : { },
+        "de" : { },
+        "it" : { }
+      },
+      "termBindings" : {
+        "WRTS-Colposcopy" : {
+          "ac0.5" : "terminology://COLPOSCOPY"
         }
       },
-      "termBindings" : { },
       "terminologyExtracts" : { },
       "valueSets" : {
         "ac0.1" : {
@@ -16172,6 +16152,16 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.4",
           "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
+          "members" : [ "at0023", "at0024" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
+          "members" : [ ]
         }
       }
     },
@@ -17157,7 +17147,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.95" ],
+                                  "constraint" : [ "ac0.109" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -17180,12 +17170,13 @@
                                 "rmAttributeName" : "defining_code",
                                 "children" : [ {
                                   "@type" : "C_TERMINOLOGY_CODE",
-                                  "rmTypeName" : "CODE_PHRASE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
                                   "occurrences" : "1..1",
                                   "terminologyId" : {
-                                    "value" : "local"
+                                    "value" : "WRTS-Colposcopy"
                                   },
-                                  "constraint" : [ "at0036", "at0037", "at0039" ]
+                                  "constraint" : [ "ac0.110" ],
+                                  "selectedTerminologies" : [ "WRTS-Colposcopy" ]
                                 } ]
                               } ],
                               "attributeTuples" : [ ]
@@ -17268,15 +17259,19 @@
             "text" : "Vaccine name",
             "description" : "Name of the vaccination."
           },
-          "ac0.95" : {
+          "ac0.109" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.95",
+            "code" : "ac0.109",
             "description" : ""
           }
         }
       },
-      "termBindings" : { },
+      "termBindings" : {
+        "WRTS-Colposcopy" : {
+          "ac0.110" : "terminology://COLPOSCOPY"
+        }
+      },
       "terminologyExtracts" : { },
       "valueSets" : {
         "ac0.1" : {
@@ -17773,6 +17768,56 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.101",
           "members" : [ ]
+        },
+        "ac0.102" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.102",
+          "members" : [ "at0044" ]
+        },
+        "ac0.103" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.103",
+          "members" : [ "at0044" ]
+        },
+        "ac0.104" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.104",
+          "members" : [ "at0044" ]
+        },
+        "ac0.105" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.105",
+          "members" : [ "at0044" ]
+        },
+        "ac0.106" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.106",
+          "members" : [ "at0044" ]
+        },
+        "ac0.107" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.107",
+          "members" : [ "at0044" ]
+        },
+        "ac0.108" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.108",
+          "members" : [ "at0044" ]
+        },
+        "ac0.109" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.109",
+          "members" : [ "at0044" ]
+        },
+        "ac0.111" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.111",
+          "members" : [ "at0036", "at0037", "at0039" ]
+        },
+        "ac0.112" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.112",
+          "members" : [ ]
         }
       }
     },
@@ -17890,31 +17935,10 @@
                               "rmTypeName" : "TERMINOLOGY_CODE",
                               "occurrences" : "1..1",
                               "terminologyId" : {
-                                "value" : "local_terms"
+                                "value" : "WRTS-Colposcopy"
                               },
-                              "constraint" : [ ],
-                              "selectedTerminologies" : [ "local_terms" ],
-                              "includedExternalTerminologyCodes" : [ {
-                                "terminologyId" : "local_terms",
-                                "code" : "1",
-                                "value" : "Yes"
-                              }, {
-                                "terminologyId" : "local_terms",
-                                "code" : "2",
-                                "value" : "No"
-                              }, {
-                                "terminologyId" : "local_terms",
-                                "code" : "3",
-                                "value" : "Uncertain"
-                              }, {
-                                "terminologyId" : "local_terms",
-                                "code" : "4",
-                                "value" : "Not stated"
-                              }, {
-                                "terminologyId" : "local_terms",
-                                "code" : "9",
-                                "value" : "Unknown or not recorded"
-                              } ]
+                              "constraint" : [ "ac0.36" ],
+                              "selectedTerminologies" : [ "WRTS-Colposcopy" ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
@@ -18021,7 +18045,11 @@
           }
         }
       },
-      "termBindings" : { },
+      "termBindings" : {
+        "WRTS-Colposcopy" : {
+          "ac0.36" : "terminology://COLPOSCOPY"
+        }
+      },
       "terminologyExtracts" : { },
       "valueSets" : {
         "ac0.1" : {
@@ -18481,19 +18509,10 @@
                               "rmTypeName" : "TERMINOLOGY_CODE",
                               "occurrences" : "1..1",
                               "terminologyId" : {
-                                "value" : "MRDS"
+                                "value" : "WRTS-Colposcopy"
                               },
-                              "constraint" : [ ],
-                              "selectedTerminologies" : [ "MRDS" ],
-                              "includedExternalTerminologyCodes" : [ {
-                                "terminologyId" : "MRDS",
-                                "code" : "1",
-                                "value" : "Positive"
-                              }, {
-                                "terminologyId" : "MRDS",
-                                "code" : "2",
-                                "value" : "Negative"
-                              } ]
+                              "constraint" : [ "ac0.9" ],
+                              "selectedTerminologies" : [ "WRTS-Colposcopy" ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
@@ -18532,7 +18551,11 @@
         "es-ar" : { },
         "ar-sy" : { }
       },
-      "termBindings" : { },
+      "termBindings" : {
+        "WRTS-Colposcopy" : {
+          "ac0.9" : "terminology://COLPOSCOPY"
+        }
+      },
       "terminologyExtracts" : { },
       "valueSets" : {
         "ac0.1" : {
@@ -19496,6 +19519,7 @@
                         }, {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
                           "nodeId" : "at0005.1",
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
@@ -19513,7 +19537,7 @@
                                   "terminologyId" : {
                                     "value" : "local"
                                   },
-                                  "constraint" : [ "ac0.13" ],
+                                  "constraint" : [ "ac0.22" ],
                                   "selectedTerminologies" : [ ]
                                 } ]
                               } ],
@@ -19605,10 +19629,10 @@
             "text" : "Bleeding type",
             "description" : "Details about a specific symptom or sign or grouping of symptoms or signs relatevant for the screening purpose."
           },
-          "ac0.13" : {
+          "ac0.22" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.13",
+            "code" : "ac0.22",
             "description" : ""
           }
         },
@@ -19620,10 +19644,10 @@
             "description" : "*Answers to questions about symptoms or signs in a pre-defined screening questionnaire. (en)",
             "comment" : "*The answers may be self-reported. (en)"
           },
-          "ac0.13" : {
+          "ac0.22" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.13",
+            "code" : "ac0.22",
             "description" : ""
           }
         },
@@ -19635,10 +19659,10 @@
             "description" : "Spørsmål og tilhørende svar som brukes til å kartlegge symptomer eller sykdomstegn.",
             "comment" : "Svarene kan være selvrapporterte."
           },
-          "ac0.13" : {
+          "ac0.22" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.13",
+            "code" : "ac0.22",
             "description" : ""
           }
         },
@@ -19650,10 +19674,10 @@
             "description" : "Eine Reihe von Fragen und zugehörigen Antworten, die zum Screening auf Symptome oder Anzeichen verwendet werden.",
             "comment" : "Die Antworten können selbst berichtet werden."
           },
-          "ac0.13" : {
+          "ac0.22" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.13",
+            "code" : "ac0.22",
             "description" : ""
           }
         },
@@ -19665,10 +19689,10 @@
             "description" : "*Answers to questions about symptoms or signs in a pre-defined screening questionnaire. (en)",
             "comment" : "*The answers may be self-reported. (en)"
           },
-          "ac0.13" : {
+          "ac0.22" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.13",
+            "code" : "ac0.22",
             "description" : ""
           }
         },
@@ -19680,10 +19704,10 @@
             "description" : "Lista av frågor och tillhörande svarsalternativ, används för att screena efter symtom eller tecken.",
             "comment" : "Svaren kan vara självrapporterade."
           },
-          "ac0.13" : {
+          "ac0.22" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.13",
+            "code" : "ac0.22",
             "description" : ""
           }
         }
@@ -19785,6 +19809,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.21",
           "members" : [ "at0031", "at0032", "at0033" ]
+        },
+        "ac0.22" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.22",
+          "members" : [ "at0023" ]
         }
       }
     },
@@ -19996,27 +20025,10 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "0..1",
                       "terminologyId" : {
-                        "value" : "MRDS"
+                        "value" : "WRTS-Colposcopy"
                       },
-                      "constraint" : [ ],
-                      "selectedTerminologies" : [ "MRDS" ],
-                      "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "MRDS",
-                        "code" : "1",
-                        "value" : "Nulliparous"
-                      }, {
-                        "terminologyId" : "MRDS",
-                        "code" : "2",
-                        "value" : "Primiparous"
-                      }, {
-                        "terminologyId" : "MRDS",
-                        "code" : "3",
-                        "value" : "Multiparous"
-                      }, {
-                        "terminologyId" : "MRDS",
-                        "code" : "UNK",
-                        "value" : "Unknown or not recorded"
-                      } ]
+                      "constraint" : [ "ac0.1" ],
+                      "selectedTerminologies" : [ "WRTS-Colposcopy" ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -20496,7 +20508,11 @@
         "nb" : { },
         "pt" : { }
       },
-      "termBindings" : { },
+      "termBindings" : {
+        "WRTS-Colposcopy" : {
+          "ac0.1" : "terminology://COLPOSCOPY"
+        }
+      },
       "terminologyExtracts" : { },
       "valueSets" : { }
     },
@@ -20656,19 +20672,10 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "1..1",
                       "terminologyId" : {
-                        "value" : "MRDS"
+                        "value" : "WRTS-Colposcopy"
                       },
-                      "constraint" : [ ],
-                      "selectedTerminologies" : [ "MRDS" ],
-                      "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "MRDS",
-                        "code" : "1",
-                        "value" : "None (not current user)"
-                      }, {
-                        "terminologyId" : "MRDS",
-                        "code" : "User",
-                        "value" : "Current user"
-                      } ]
+                      "constraint" : [ "ac0.198" ],
+                      "selectedTerminologies" : [ "WRTS-Colposcopy" ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -20720,6 +20727,7 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
+                  "occurrences" : "0..0",
                   "nodeId" : "at0144.3",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -20737,7 +20745,7 @@
                           "terminologyId" : {
                             "value" : "local"
                           },
-                          "constraint" : [ "ac0.186" ],
+                          "constraint" : [ "ac0.199" ],
                           "selectedTerminologies" : [ ]
                         } ]
                       } ],
@@ -20930,10 +20938,10 @@
             "text" : "Other",
             "description" : "Narrative summary about the use of the specified type of contraception."
           },
-          "ac0.186" : {
+          "ac0.199" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "(Synthesized)",
-            "code" : "ac0.186",
+            "code" : "ac0.199",
             "description" : ""
           }
         },
@@ -20944,17 +20952,18 @@
             "text" : "Per type (3)",
             "description" : "Detaljer om bruken for en spesifikk type antikonsepsjon."
           },
-          "ac0.186" : {
+          "ac0.199" : {
             "@type" : "ARCHETYPE_TERM",
             "text" : "*(Synthesized) (en)",
-            "code" : "ac0.186",
+            "code" : "ac0.199",
             "description" : ""
           }
         }
       },
       "termBindings" : {
         "WRTS-Colposcopy" : {
-          "ac0.195" : "terminology://COLPOSCOPY"
+          "ac0.195" : "terminology://COLPOSCOPY",
+          "ac0.198" : "terminology://COLPOSCOPY"
         }
       },
       "terminologyExtracts" : { },
@@ -21828,6 +21837,11 @@
           "@type" : "VALUE_SET",
           "id" : "ac0.197",
           "members" : [ ]
+        },
+        "ac0.199" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.199",
+          "members" : [ "at0145" ]
         }
       }
     },
@@ -22003,31 +22017,10 @@
                       "rmTypeName" : "TERMINOLOGY_CODE",
                       "occurrences" : "1..1",
                       "terminologyId" : {
-                        "value" : "SNOMED CT"
+                        "value" : "WRTS-Colposcopy"
                       },
-                      "constraint" : [ ],
-                      "selectedTerminologies" : [ "SNOMED CT" ],
-                      "includedExternalTerminologyCodes" : [ {
-                        "terminologyId" : "SNOMED CT",
-                        "code" : "77176002",
-                        "value" : "Current smoker"
-                      }, {
-                        "terminologyId" : "SNOMED CT",
-                        "code" : "8517006",
-                        "value" : "Ex-smoker"
-                      }, {
-                        "terminologyId" : "SNOMED CT",
-                        "code" : "722499006",
-                        "value" : "Current vaper"
-                      }, {
-                        "terminologyId" : "SNOMED CT",
-                        "code" : "266919005",
-                        "value" : "Never smoked"
-                      }, {
-                        "terminologyId" : "SNOMED CT",
-                        "code" : "261665006",
-                        "value" : "Unknown or not recorded"
-                      } ]
+                      "constraint" : [ "ac0.39" ],
+                      "selectedTerminologies" : [ "WRTS-Colposcopy" ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -22202,31 +22195,10 @@
                               "rmTypeName" : "TERMINOLOGY_CODE",
                               "occurrences" : "1..1",
                               "terminologyId" : {
-                                "value" : "SNOMED CT"
+                                "value" : "WRTS-Colposcopy"
                               },
-                              "constraint" : [ ],
-                              "selectedTerminologies" : [ "SNOMED CT" ],
-                              "includedExternalTerminologyCodes" : [ {
-                                "terminologyId" : "SNOMED CT",
-                                "code" : "266920004",
-                                "value" : "Occasional less than 1 daily"
-                              }, {
-                                "terminologyId" : "SNOMED CT",
-                                "code" : "160603005",
-                                "value" : "Light 1-9 per day"
-                              }, {
-                                "terminologyId" : "SNOMED CT",
-                                "code" : "160604004",
-                                "value" : "Moderate 10-19 per day"
-                              }, {
-                                "terminologyId" : "SNOMED CT",
-                                "code" : "160605003",
-                                "value" : "Heavy 20-39 per day"
-                              }, {
-                                "terminologyId" : "SNOMED CT",
-                                "code" : "160606002",
-                                "value" : "Very heavy 40+ per day"
-                              } ]
+                              "constraint" : [ "ac0.40" ],
+                              "selectedTerminologies" : [ "WRTS-Colposcopy" ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
@@ -22966,7 +22938,12 @@
           }
         }
       },
-      "termBindings" : { },
+      "termBindings" : {
+        "WRTS-Colposcopy" : {
+          "ac0.39" : "terminology://COLPOSCOPY",
+          "ac0.40" : "terminology://COLPOSCOPY"
+        }
+      },
       "terminologyExtracts" : { },
       "valueSets" : {
         "ac0.1" : {
@@ -23364,12 +23341,13 @@
                             "rmAttributeName" : "defining_code",
                             "children" : [ {
                               "@type" : "C_TERMINOLOGY_CODE",
-                              "rmTypeName" : "CODE_PHRASE",
+                              "rmTypeName" : "TERMINOLOGY_CODE",
                               "occurrences" : "1..1",
                               "terminologyId" : {
-                                "value" : "local"
+                                "value" : "WRTS-Colposcopy"
                               },
-                              "constraint" : [ "at0031", "at0032", "at0033" ]
+                              "constraint" : [ "ac0.15" ],
+                              "selectedTerminologies" : [ "WRTS-Colposcopy" ]
                             } ]
                           } ],
                           "attributeTuples" : [ ]
@@ -23512,7 +23490,11 @@
         "de" : { },
         "nl" : { }
       },
-      "termBindings" : { },
+      "termBindings" : {
+        "WRTS-Colposcopy" : {
+          "ac0.15" : "terminology://COLPOSCOPY"
+        }
+      },
       "terminologyExtracts" : { },
       "valueSets" : {
         "ac0.1" : {
@@ -23578,6 +23560,16 @@
         "ac0.14" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.14",
+          "members" : [ ]
+        },
+        "ac0.16" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.16",
+          "members" : [ "at0031", "at0032", "at0033" ]
+        },
+        "ac0.17" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.17",
           "members" : [ ]
         }
       }
@@ -25283,11 +25275,6 @@
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "value",
                 "children" : [ {
-                  "@type" : "C_COMPLEX_OBJECT",
-                  "rmTypeName" : "DV_TEXT",
-                  "attributes" : [ ],
-                  "attributeTuples" : [ ]
-                }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_IDENTIFIER",
                   "defaultValue" : {
@@ -27074,7 +27061,7 @@
                     "children" : [ {
                       "@type" : "C_DATE_TIME",
                       "rmTypeName" : "DATE_TIME",
-                      "patternedConstraint" : "yyyy-mm-ddThh:mm:XX",
+                      "patternedConstraint" : "yyyy-mm-ddTXX:XX:XX",
                       "constraint" : [ ]
                     } ]
                   } ],
@@ -29788,7 +29775,19 @@
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_CODED_TEXT",
                       "occurrences" : "1..1",
-                      "attributes" : [ ],
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "defining_code",
+                        "children" : [ {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
+                          "terminologyId" : {
+                            "value" : "WRTS-Colposcopy"
+                          },
+                          "constraint" : [ "ac0.1" ],
+                          "selectedTerminologies" : [ "WRTS-Colposcopy" ]
+                        } ]
+                      } ],
                       "attributeTuples" : [ ]
                     } ]
                   } ],
@@ -30153,7 +30152,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Service request to go round nesting issue",
+            "text" : "Follow up request",
             "description" : "Request for a health-related service or activity to be delivered by a clinician, organisation or agency."
           }
         },
@@ -30206,7 +30205,11 @@
           }
         }
       },
-      "termBindings" : { },
+      "termBindings" : {
+        "WRTS-Colposcopy" : {
+          "ac0.1" : "terminology://COLPOSCOPY"
+        }
+      },
       "terminologyExtracts" : { },
       "valueSets" : { }
     },
