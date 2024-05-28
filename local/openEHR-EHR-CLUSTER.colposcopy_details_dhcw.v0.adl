@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"49c8c21379a9c7b2a61ea8dbddfa6566">
+		["MD5-CAM-1.0.1"] = <"fb5bf02fea850a970a1afad907c409a5">
 		["build_uid"] = <"2f1b3d44-78c4-3996-b5a6-49cd88c1885a">
 	>
 
@@ -50,7 +50,12 @@ definition
 					DV_CODED_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Punctation
+			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Punctation seen
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0013] occurrences matches {0..1} matches {    -- Type of punctation
 				value matches {
 					DV_CODED_TEXT matches {*}
 				}
@@ -65,7 +70,12 @@ definition
 					DV_CODED_TEXT matches {*}
 				}
 			}
-			ELEMENT[at0008] occurrences matches {0..1} matches {    -- Mosaic
+			ELEMENT[at0008] occurrences matches {0..1} matches {    -- Mosaic seen
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0014] occurrences matches {0..1} matches {    -- Type of mosaic
 				value matches {
 					DV_CODED_TEXT matches {*}
 				}
@@ -91,6 +101,10 @@ definition
 					DV_CODED_TEXT matches {*}
 				}
 			}
+			allow_archetype CLUSTER[at0015] occurrences matches {0..*} matches {    -- Additional details
+				include
+					archetype_id/value matches {/.*/}
+			}
 		}
 	}
 
@@ -107,7 +121,7 @@ ontology
 					description = <"">
 				>
 				["at0003"] = <
-					text = <"Punctation">
+					text = <"Punctation seen">
 					description = <"">
 				>
 				["at0004"] = <
@@ -127,7 +141,7 @@ ontology
 					description = <"">
 				>
 				["at0008"] = <
-					text = <"Mosaic">
+					text = <"Mosaic seen">
 					description = <"">
 				>
 				["at0009"] = <
@@ -144,6 +158,18 @@ ontology
 				>
 				["at0012"] = <
 					text = <"Lesion size (quadrants)">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"Type of punctation">
+					description = <"">
+				>
+				["at0014"] = <
+					text = <"Type of mosaic">
+					description = <"">
+				>
+				["at0015"] = <
+					text = <"Additional details">
 					description = <"">
 				>
 			>
