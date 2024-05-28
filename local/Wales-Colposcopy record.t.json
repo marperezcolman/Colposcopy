@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.0",
+      "sem_ver" : "3.0.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "899031484747c52717603ab9b2fe3d64",
+      "MD5-CAM-1.0.1" : "1cab2f96261235b937056005cc3cf532",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -4928,16 +4928,7 @@
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "nodeId" : "at0001.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_CODED_TEXT",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -22533,23 +22524,10 @@
                           "rmTypeName" : "TERMINOLOGY_CODE",
                           "occurrences" : "0..1",
                           "terminologyId" : {
-                            "value" : "local_terms"
+                            "value" : "WRTS-Colposcopy"
                           },
-                          "constraint" : [ ],
-                          "selectedTerminologies" : [ "local_terms" ],
-                          "includedExternalTerminologyCodes" : [ {
-                            "terminologyId" : "local_terms",
-                            "code" : "Y",
-                            "value" : "Yes"
-                          }, {
-                            "terminologyId" : "local_terms",
-                            "code" : "N",
-                            "value" : "No"
-                          }, {
-                            "terminologyId" : "local_terms",
-                            "code" : "UNK",
-                            "value" : "Unknown or not recorded"
-                          } ]
+                          "constraint" : [ "ac0.41" ],
+                          "selectedTerminologies" : [ "WRTS-Colposcopy" ]
                         } ]
                       } ],
                       "attributeTuples" : [ ]
@@ -22941,7 +22919,8 @@
       "termBindings" : {
         "WRTS-Colposcopy" : {
           "ac0.39" : "terminology://COLPOSCOPY",
-          "ac0.40" : "terminology://COLPOSCOPY"
+          "ac0.40" : "terminology://COLPOSCOPY",
+          "ac0.41" : "terminology://COLPOSCOPY"
         }
       },
       "terminologyExtracts" : { },
