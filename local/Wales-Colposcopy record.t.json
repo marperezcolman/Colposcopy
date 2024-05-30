@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.0.4",
+      "sem_ver" : "3.0.5",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "5824275a5749864a72ff7cbc92903b35",
+      "MD5-CAM-1.0.1" : "3a8be26ca6e1b54a51e132a2ac8fd4e0",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -17256,20 +17256,7 @@
                             "children" : [ {
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_CODED_TEXT",
-                              "attributes" : [ {
-                                "@type" : "C_ATTRIBUTE",
-                                "rmAttributeName" : "defining_code",
-                                "children" : [ {
-                                  "@type" : "C_TERMINOLOGY_CODE",
-                                  "rmTypeName" : "TERMINOLOGY_CODE",
-                                  "occurrences" : "1..1",
-                                  "terminologyId" : {
-                                    "value" : "WRTS-Colposcopy"
-                                  },
-                                  "constraint" : [ "ac0.110" ],
-                                  "selectedTerminologies" : [ "WRTS-Colposcopy" ]
-                                } ]
-                              } ],
+                              "attributes" : [ ],
                               "attributeTuples" : [ ]
                             } ]
                           } ],
@@ -17358,11 +17345,7 @@
           }
         }
       },
-      "termBindings" : {
-        "WRTS-Colposcopy" : {
-          "ac0.110" : "terminology://COLPOSCOPY"
-        }
-      },
+      "termBindings" : { },
       "terminologyExtracts" : { },
       "valueSets" : {
         "ac0.1" : {
