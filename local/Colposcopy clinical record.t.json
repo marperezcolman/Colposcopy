@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "1.4.0",
+      "sem_ver" : "1.5.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "f7d907af7c762b14c6cb86dc4de4d2ae",
+      "MD5-CAM-1.0.1" : "1255bd2a85395da76b3860b0cb73c054",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -314,7 +314,7 @@
         "at0000.1.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1.1",
-          "text" : "Colposcopy clinical record",
+          "text" : "(OLD) Colposcopy clinical record",
           "description" : "Document to communicate information to others about any stand-alone procedure or operation performed."
         }
       },
@@ -14170,7 +14170,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "49c8c21379a9c7b2a61ea8dbddfa6566"
+        "PARENT:MD5-CAM-1.0.1" : "fb5bf02fea850a970a1afad907c409a5"
       },
       "details" : {
         "en" : {
