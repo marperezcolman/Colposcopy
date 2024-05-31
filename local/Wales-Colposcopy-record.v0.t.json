@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.1.2",
+      "sem_ver" : "3.2.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "92f724682259b0aa159c10e89bef9c22",
+      "MD5-CAM-1.0.1" : "d5bc678714a1e5242cf586d36822e002",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -13130,7 +13130,7 @@
       },
       "termBindings" : {
         "WRTS-Colposcopy" : {
-          "ac0.2" : "https://wrdsservicessit.cymru.nhs.uk/wrdsrestfulservice/NRDS/ClientSet/COLPOSCOPY"
+          "ac0.2" : "https://wrdsservices.cymru.nhs.uk/wrdsrestfulservice/NRDS/ClientSet/COLPOSCOPY"
         }
       },
       "terminologyExtracts" : { },
@@ -15326,7 +15326,7 @@
       },
       "termBindings" : {
         "WRTS-Colposcopy" : {
-          "ac0.1" : "https://wrdsservicessit.cymru.nhs.uk/wrdsrestfulservice/NRDS/ClientSet/COLPOSCOPY"
+          "ac0.1" : "https://wrdsservices.cymru.nhs.uk/wrdsrestfulservice/NRDS/ClientSet/COLPOSCOPY"
         }
       },
       "terminologyExtracts" : { },
@@ -16219,7 +16219,7 @@
       },
       "termBindings" : {
         "WRTS-Colposcopy" : {
-          "ac0.5" : "https://wrdsservicessit.cymru.nhs.uk/wrdsrestfulservice/NRDS/ClientSet/COLPOSCOPY"
+          "ac0.5" : "https://wrdsservices.cymru.nhs.uk/wrdsrestfulservice/NRDS/ClientSet/COLPOSCOPY"
         }
       },
       "terminologyExtracts" : { },
@@ -17360,7 +17360,7 @@
       },
       "termBindings" : {
         "WRTS-Colposcopy" : {
-          "ac0.113" : "https://wrdsservicessit.cymru.nhs.uk/wrdsrestfulservice/NRDS/ClientSet/COLPOSCOPY"
+          "ac0.113" : "https://wrdsservices.cymru.nhs.uk/wrdsrestfulservice/NRDS/ClientSet/COLPOSCOPY"
         }
       },
       "terminologyExtracts" : { },
@@ -18148,7 +18148,7 @@
       },
       "termBindings" : {
         "WRTS-Colposcopy" : {
-          "ac0.36" : "https://wrdsservicessit.cymru.nhs.uk/wrdsrestfulservice/NRDS/ClientSet/COLPOSCOPY"
+          "ac0.36" : "https://wrdsservices.cymru.nhs.uk/wrdsrestfulservice/NRDS/ClientSet/COLPOSCOPY"
         }
       },
       "terminologyExtracts" : { },
@@ -18654,7 +18654,7 @@
       },
       "termBindings" : {
         "WRTS-Colposcopy" : {
-          "ac0.9" : "https://wrdsservicessit.cymru.nhs.uk/wrdsrestfulservice/NRDS/ClientSet/COLPOSCOPY"
+          "ac0.9" : "https://wrdsservices.cymru.nhs.uk/wrdsrestfulservice/NRDS/ClientSet/COLPOSCOPY"
         }
       },
       "terminologyExtracts" : { },
@@ -19816,7 +19816,7 @@
       },
       "termBindings" : {
         "WRTS-Colposcopy" : {
-          "ac0.23" : "https://wrdsservicessit.cymru.nhs.uk/wrdsrestfulservice/NRDS/ClientSet/COLPOSCOPY"
+          "ac0.23" : "https://wrdsservices.cymru.nhs.uk/wrdsrestfulservice/NRDS/ClientSet/COLPOSCOPY"
         }
       },
       "terminologyExtracts" : { },
@@ -20626,7 +20626,7 @@
       },
       "termBindings" : {
         "WRTS-Colposcopy" : {
-          "ac0.1" : "https://wrdsservicessit.cymru.nhs.uk/wrdsrestfulservice/NRDS/ClientSet/COLPOSCOPY"
+          "ac0.1" : "https://wrdsservices.cymru.nhs.uk/wrdsrestfulservice/NRDS/ClientSet/COLPOSCOPY"
         }
       },
       "terminologyExtracts" : { },
@@ -21078,8 +21078,8 @@
       },
       "termBindings" : {
         "WRTS-Colposcopy" : {
-          "ac0.198" : "https://wrdsservicessit.cymru.nhs.uk/wrdsrestfulservice/NRDS/ClientSet/COLPOSCOPY",
-          "ac0.195" : "https://wrdsservicessit.cymru.nhs.uk/wrdsrestfulservice/NRDS/ClientSet/COLPOSCOPY"
+          "ac0.198" : "https://wrdsservices.cymru.nhs.uk/wrdsrestfulservice/NRDS/ClientSet/COLPOSCOPY",
+          "ac0.195" : "https://wrdsservices.cymru.nhs.uk/wrdsrestfulservice/NRDS/ClientSet/COLPOSCOPY"
         }
       },
       "terminologyExtracts" : { },
@@ -23043,9 +23043,9 @@
       },
       "termBindings" : {
         "WRTS-Colposcopy" : {
-          "ac0.39" : "https://wrdsservicessit.cymru.nhs.uk/wrdsrestfulservice/NRDS/ClientSet/COLPOSCOPY",
-          "ac0.40" : "https://wrdsservicessit.cymru.nhs.uk/wrdsrestfulservice/NRDS/ClientSet/COLPOSCOPY",
-          "ac0.41" : "https://wrdsservicessit.cymru.nhs.uk/wrdsrestfulservice/NRDS/ClientSet/COLPOSCOPY"
+          "ac0.39" : "yhttps://wrdsservices.cymru.nhs.uk/wrdsrestfulservice/NRDS/ClientSet/COLPOSCOPY",
+          "ac0.40" : "https://wrdsservices.cymru.nhs.uk/wrdsrestfulservice/NRDS/ClientSet/COLPOSCOPY",
+          "ac0.41" : "https://wrdsservices.cymru.nhs.uk/wrdsrestfulservice/NRDS/ClientSet/COLPOSCOPY"
         }
       },
       "terminologyExtracts" : { },
@@ -30309,7 +30309,7 @@
       },
       "termBindings" : {
         "WRTS-Colposcopy" : {
-          "ac0.1" : "https://wrdsservicessit.cymru.nhs.uk/wrdsrestfulservice/NRDS/ClientSet/COLPOSCOPY"
+          "ac0.1" : "https://wrdsservices.cymru.nhs.uk/wrdsrestfulservice/NRDS/ClientSet/COLPOSCOPY"
         }
       },
       "terminologyExtracts" : { },
