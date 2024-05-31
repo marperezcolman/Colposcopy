@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.1.1",
+      "sem_ver" : "3.1.2",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "f332e206398b089c11e3b4d78c275a4a",
+      "MD5-CAM-1.0.1" : "e9621ff27f429bf40b7cab60d32a8926",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -23587,7 +23587,7 @@
             "code" : "at0028.1",
             "text" : "Confirmation with patient or carer",
             "description" : "Is there a history of any issues, problems or diagnoses relevant for the screening purpose?",
-            "comment" : "In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case."
+            "comment" : "https://wrdsservicessit.cymru.nhs.uk/wrdsrestfulservice/NRDS/ClientSet/COLPOSCOPY"
           }
         },
         "nb" : { },
