@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.8.7",
+      "sem_ver" : "0.9.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "4a04affd5a141a2a8e52cf51de2e0f6f",
+      "MD5-CAM-1.0.1" : "4ee41dd0e418ae4aaa2f244f8d1e95a5",
       "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
     },
     "details" : {
@@ -307,7 +307,7 @@
         "at0000.1" : {
           "@type" : "ARCHETYPE_TERM",
           "code" : "at0000.1",
-          "text" : "(2024) Colposcopy clinical record - Procedure",
+          "text" : "(OLD) Colposcopy clinical record - Procedure",
           "description" : "Document to communicate information to others, commonly in response to a request from another party."
         }
       },
@@ -4104,7 +4104,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "49c8c21379a9c7b2a61ea8dbddfa6566"
+        "PARENT:MD5-CAM-1.0.1" : "fb5bf02fea850a970a1afad907c409a5"
       },
       "details" : {
         "en" : {
