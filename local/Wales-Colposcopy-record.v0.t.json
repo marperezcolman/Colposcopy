@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.4.0",
+      "sem_ver" : "3.5.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "0d127f13554b88f0224ebc880f3a77ec",
+      "MD5-CAM-1.0.1" : "054f82372d281b3a7a9ac664581a172c",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -25108,7 +25108,29 @@
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "DV_CODED_TEXT",
                       "occurrences" : "1..1",
-                      "attributes" : [ ],
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "defining_code",
+                        "children" : [ {
+                          "@type" : "C_TERMINOLOGY_CODE",
+                          "rmTypeName" : "TERMINOLOGY_CODE",
+                          "occurrences" : "0..1",
+                          "terminologyId" : {
+                            "value" : "SNOMED CT"
+                          },
+                          "constraint" : [ ],
+                          "selectedTerminologies" : [ "SNOMED CT" ],
+                          "includedExternalTerminologyCodes" : [ {
+                            "terminologyId" : "SNOMED CT",
+                            "code" : "419069000",
+                            "value" : "Appointment not available"
+                          }, {
+                            "terminologyId" : "SNOMED CT",
+                            "code" : "185243000",
+                            "value" : "Seen in colposcopy clinic"
+                          } ]
+                        } ]
+                      } ],
                       "attributeTuples" : [ ]
                     } ]
                   } ],
@@ -25116,7 +25138,6 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
-                  "occurrences" : "1..1",
                   "nodeId" : "at0148.1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -25133,7 +25154,6 @@
                 }, {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "ELEMENT",
-                  "occurrences" : "1..1",
                   "nodeId" : "at0135.1",
                   "attributes" : [ {
                     "@type" : "C_ATTRIBUTE",
@@ -25450,7 +25470,7 @@
           "at0121.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0121.1",
-            "text" : "Specialty",
+            "text" : "Appointment",
             "description" : "The name of the single service or activity requested.",
             "comment" : "Coding of the 'Service name' with a coding system is desirable, if available. For example: 'referral' to an endocrinologist for diabetes management."
           },
@@ -27137,7 +27157,6 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
-              "occurrences" : "0..0",
               "nodeId" : "at0011.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -27394,6 +27413,13 @@
             "text" : "Referral reason",
             "description" : "Reason that the activity or care pathway step for the identified service was carried out.",
             "comment" : "For example: the reason for the cancellation or suspension of the service. It is not necessary to record the reason for each pathway step that is expected. Rather this data element is intended to capture the reason for any divergence from a typical service provision process, such as 'Postponed' due to 'Patient had a fever', or a scheduled provision as part of a series may be 'Cancelled' due to 'Patient changed their mind'. Note: The clinical indication for triggering the service provision process may be recorded using the INSTRUCTION.service_request archetype."
+          },
+          "at0011.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011.1",
+            "text" : "Specialty",
+            "description" : "Identification of the clinical service carried out.",
+            "comment" : "For example: 'Sarcoma MDT meeting' or 'Physiotherapy referral'. Coding of the specific service name with a terminology is preferred, where possible."
           }
         },
         "pt-br" : { },
