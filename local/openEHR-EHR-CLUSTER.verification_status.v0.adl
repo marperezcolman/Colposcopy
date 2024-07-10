@@ -1,0 +1,73 @@
+archetype (adl_version=1.4; uid=5e446cea-9e72-4c57-9aaa-293255832f5f)
+	openEHR-EHR-CLUSTER.verification_status.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::en]>
+
+description
+	original_author = <
+		["date"] = <"2024-07-04">
+		["name"] = <"John Meredith">
+		["organisation"] = <"Digital Health and Care Wales">
+		["email"] = <"john.meredith@wales.nhs.uk">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To augment a clinical data item to provide additional status attributes e.g. entered in error or refuted. ">
+			keywords = <"verification, status", ...>
+			use = <"Use this archetype to provide additional metadata attributes for a data point. For example, where an observation is required to be visible but struck through (i.e. a user has refuted an observation but still wants it visible to support clinical or diagnostic processes). ">
+			misuse = <"Not to be used in lieu of a logical record delete or to circumvent medico-legal compliant operations.
+Not to be used as a replacement for status related data elements that are contained within hosting archetypes, for example Adverse Reaction Risk Verification status. ">
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"a9ef6ed419ecbe001edfd66ee891c63d">
+		["build_uid"] = <"60308e93-16b8-312c-ab6f-dbdbb28c5400">
+	>
+
+definition
+	CLUSTER[at0000] matches {    -- Verification status
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {    -- Status
+				value matches {
+					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Comment
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Verification status">
+					description = <"Assertion about status of the entry. ">
+				>
+				["at0001"] = <
+					text = <"Status">
+					description = <"A coded entry to support the status of a data point.">
+					comment = <"May be aligned to a standardised code system e.g. http://hl7.org/fhir/resource-status. ">
+				>
+				["at0002"] = <
+					text = <"Comment">
+					description = <"Additional comments associated with the status.">
+				>
+			>
+		>
+	>
