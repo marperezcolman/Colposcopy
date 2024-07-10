@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.5.2",
+      "sem_ver" : "3.5.3",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "022072adb36a118113b2bcbdbec43048",
+      "MD5-CAM-1.0.1" : "f918a9f6c8162894e76848fe6292f667",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -7994,7 +7994,7 @@
           "at0045.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0045.1",
-            "text" : "Clinical notes or comment",
+            "text" : "Clinical notes and comments",
             "description" : "Additional narrative about the specimen not captured in other fields.",
             "fhir_mapping" : "Specimen.note"
           }
@@ -16494,13 +16494,13 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Clinical note/comments",
+            "text" : "Clinical notes and comments",
             "description" : "Narrative summary or overview about a patient, specifically from the perspective of a healthcare provider, and with or without associated interpretations."
           },
           "at0002.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.1",
-            "text" : "Clinical note/comments",
+            "text" : "Clinical notes and comments",
             "description" : "The summary, assessment, conclusions or evaluation of the clinical findings."
           }
         },
@@ -24273,7 +24273,7 @@
           "at0002.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.1",
-            "text" : "Clinical notes andcomments",
+            "text" : "Clinical notes and comments",
             "description" : "The summary, assessment, conclusions or evaluation of the clinical findings."
           }
         },
