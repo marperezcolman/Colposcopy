@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.5.3",
+      "sem_ver" : "3.6.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "f918a9f6c8162894e76848fe6292f667",
+      "MD5-CAM-1.0.1" : "74d5cdeca448560d4dc153cde8d1cd41",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -5922,6 +5922,23 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..1",
+              "nodeId" : "at0006.3",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_CODED_TEXT",
+                  "occurrences" : "1..1",
+                  "attributes" : [ ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            }, {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
               "nodeId" : "at0006.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -6091,6 +6108,13 @@
             "text" : "Complicações (2)",
             "description" : "Detalhes sobre alguma complicação decorrente do procedimento",
             "comment" : "Utilize este elemento de dados para gravar termos simples ou complicações . Se as condições de gravação de complicação são mais complexas, é aconselhado usar de um arquétipo CLUSTER específico dentro do campo \"Detalhes do Procedimento\" neste arquétipo e este elemento de dados torna-se redundante."
+          },
+          "at0006.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Complicações (3)",
+            "description" : "Detalhes sobre alguma complicação decorrente do procedimento",
+            "comment" : "Utilize este elemento de dados para gravar termos simples ou complicações . Se as condições de gravação de complicação são mais complexas, é aconselhado usar de um arquétipo CLUSTER específico dentro do campo \"Detalhes do Procedimento\" neste arquétipo e este elemento de dados torna-se redundante."
           }
         },
         "sl" : {
@@ -6098,6 +6122,13 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006.1",
             "text" : "*Complication(en) (2)",
+            "description" : "*Details about any complication arising from the procedure.(en)",
+            "comment" : "*Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. (en)"
+          },
+          "at0006.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "*Complication(en) (3)",
             "description" : "*Details about any complication arising from the procedure.(en)",
             "comment" : "*Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. (en)"
           }
@@ -6112,7 +6143,7 @@
           "at0006.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006.1",
-            "text" : "Complications",
+            "text" : "Complications list",
             "description" : "Details about any complication arising from the procedure.",
             "comment" : "Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. Examples: Hematuria after a kidney biopsy, tissue irritation after insertion of intravenous catheter."
           },
@@ -6120,6 +6151,13 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006.2",
             "text" : "Other complication",
+            "description" : "Details about any complication arising from the procedure.",
+            "comment" : "Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. Examples: Hematuria after a kidney biopsy, tissue irritation after insertion of intravenous catheter."
+          },
+          "at0006.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006.3",
+            "text" : "Complications at visit",
             "description" : "Details about any complication arising from the procedure.",
             "comment" : "Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. Examples: Hematuria after a kidney biopsy, tissue irritation after insertion of intravenous catheter."
           }
@@ -6131,6 +6169,13 @@
             "text" : "*Complication(en) (2)",
             "description" : "*Details about any complication arising from the procedure.(en)",
             "comment" : "*Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. (en)"
+          },
+          "at0006.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "*Complication(en) (3)",
+            "description" : "*Details about any complication arising from the procedure.(en)",
+            "comment" : "*Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. (en)"
           }
         },
         "ru" : {
@@ -6138,6 +6183,13 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006.1",
             "text" : "*Complication(en) (2)",
+            "description" : "*Details about any complication arising from the procedure.(en)",
+            "comment" : "*Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. (en)"
+          },
+          "at0006.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "*Complication(en) (3)",
             "description" : "*Details about any complication arising from the procedure.(en)",
             "comment" : "*Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. (en)"
           }
@@ -6149,6 +6201,13 @@
             "text" : "Komplikasjon (2)",
             "description" : "Detaljer om komplikasjoner oppstått under gjennomføring av prosedyren.",
             "comment" : "Bruk dette dataelementet til å registrere enkle termer eller prekoordinerte komplikasjoner. Dersom registreringskravene for komplikasjoner er mer komplekse er det anbefalt å bruke en spesifikk CLUSTER-arketype i SLOTet \"Prosedyredetaljer\" i denne arketypen, og i disse tilfellene blir dette dataelementet overflødig. Eksempler: Hematuri etter nyrebiopsi, vevsirritasjon etter innleggelse av venekateter."
+          },
+          "at0006.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Komplikasjon (3)",
+            "description" : "Detaljer om komplikasjoner oppstått under gjennomføring av prosedyren.",
+            "comment" : "Bruk dette dataelementet til å registrere enkle termer eller prekoordinerte komplikasjoner. Dersom registreringskravene for komplikasjoner er mer komplekse er det anbefalt å bruke en spesifikk CLUSTER-arketype i SLOTet \"Prosedyredetaljer\" i denne arketypen, og i disse tilfellene blir dette dataelementet overflødig. Eksempler: Hematuri etter nyrebiopsi, vevsirritasjon etter innleggelse av venekateter."
           }
         },
         "es" : {
@@ -6156,6 +6215,13 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006.1",
             "text" : "Complicación (2)",
+            "description" : "Detalles de cualquier complicación surgida durante la ejecución del procedimiento",
+            "comment" : "*Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. (en)"
+          },
+          "at0006.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Complicación (3)",
             "description" : "Detalles de cualquier complicación surgida durante la ejecución del procedimiento",
             "comment" : "*Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. (en)"
           }
@@ -6167,6 +6233,13 @@
             "text" : "Komplikationen (2)",
             "description" : "Details zu allen Komplikationen, die sich aus der Prozedur ergeben haben.",
             "comment" : "Verwenden Sie dieses Datenelement, um einfache Begriffe oder präkoordinierte Komplikationen zu erfassen. Wenn die Anforderungen an die Erfassung der Komplikationen komplexer sind, wird die Verwendung eines spezifischen CLUSTER-Archetyps innerhalb des Slots \"Details zur Prozedur\" in diesem Archetyp empfohlen. Dieses Datenelement wird dann redundant. Beispiele: Hämaturie nach einer Nierenbiopsie, Reizungen des Gewebes nach dem Legen eines intravenösen Katheters."
+          },
+          "at0006.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Komplikationen (3)",
+            "description" : "Details zu allen Komplikationen, die sich aus der Prozedur ergeben haben.",
+            "comment" : "Verwenden Sie dieses Datenelement, um einfache Begriffe oder präkoordinierte Komplikationen zu erfassen. Wenn die Anforderungen an die Erfassung der Komplikationen komplexer sind, wird die Verwendung eines spezifischen CLUSTER-Archetyps innerhalb des Slots \"Details zur Prozedur\" in diesem Archetyp empfohlen. Dieses Datenelement wird dann redundant. Beispiele: Hämaturie nach einer Nierenbiopsie, Reizungen des Gewebes nach dem Legen eines intravenösen Katheters."
           }
         },
         "pt-pt" : {
@@ -6174,6 +6247,13 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006.1",
             "text" : "Complicação (2)",
+            "description" : "Detalhes sobre qualquer complicação decorrente do procedimento.",
+            "comment" : "Use esse elemento de dados para registar termos simples ou complicações pré-ordenadas. Se os requisitos para a complicação de gravação forem mais complexos, o uso de um arquétipo CLUSTER específico dentro do SLOT 'Detalhe do procedimento' neste arquétipo é recomendado e esse elemento de dados torna-se redundante. Exemplos: Hematúria após biópsia renal, irritação tecidular após inserção de cateter intravenoso."
+          },
+          "at0006.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Complicação (3)",
             "description" : "Detalhes sobre qualquer complicação decorrente do procedimento.",
             "comment" : "Use esse elemento de dados para registar termos simples ou complicações pré-ordenadas. Se os requisitos para a complicação de gravação forem mais complexos, o uso de um arquétipo CLUSTER específico dentro do SLOT 'Detalhe do procedimento' neste arquétipo é recomendado e esse elemento de dados torna-se redundante. Exemplos: Hematúria após biópsia renal, irritação tecidular após inserção de cateter intravenoso."
           }
@@ -6185,6 +6265,13 @@
             "text" : "Komplikation (2)",
             "description" : "Detaljer om eventuella komplikationer som uppstår från proceduren",
             "comment" : "Använd detta dataelement för att dokumentera enkla termer eller förkoordinerade komplikationer. Om kraven för dokumentation av komplikationen är mer komplexa rekommenderas användning av ett specifikt CLUSTER i öppningen \"Procedur detaljer\", då blir detta dataelement överflödigt. \r\nExempel: Hematuri efter njurbiopsi, vävnadsirritation efter införande av intravenös kateter."
+          },
+          "at0006.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Komplikation (3)",
+            "description" : "Detaljer om eventuella komplikationer som uppstår från proceduren",
+            "comment" : "Använd detta dataelement för att dokumentera enkla termer eller förkoordinerade komplikationer. Om kraven för dokumentation av komplikationen är mer komplexa rekommenderas användning av ett specifikt CLUSTER i öppningen \"Procedur detaljer\", då blir detta dataelement överflödigt. \r\nExempel: Hematuri efter njurbiopsi, vävnadsirritation efter införande av intravenös kateter."
           }
         },
         "ca" : {
@@ -6192,6 +6279,13 @@
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0006.1",
             "text" : "Complicació (2)",
+            "description" : "Detalls de qualsevol complicació sorgida durant lexecució del procediment.",
+            "comment" : "Utilitzeu aquest element de dades per registrar termes senzills o complicacions precoordinades. Si els requisits per registrar complicacions són més complexos, aleshores es recomana l'ús d'un arquetip de tipus CLUSTER específic, dins del SLOT 'Detalls del procediment' d'aquest arquetip. Exemples: hematúria després d'una biòpsia de ronyó, irritació del teixit després de la inserció d'un catèter intravenós."
+          },
+          "at0006.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Complicació (3)",
             "description" : "Detalls de qualsevol complicació sorgida durant lexecució del procediment.",
             "comment" : "Utilitzeu aquest element de dades per registrar termes senzills o complicacions precoordinades. Si els requisits per registrar complicacions són més complexos, aleshores es recomana l'ús d'un arquetip de tipus CLUSTER específic, dins del SLOT 'Detalls del procediment' d'aquest arquetip. Exemples: hematúria després d'una biòpsia de ronyó, irritació del teixit després de la inserció d'un catèter intravenós."
           }
