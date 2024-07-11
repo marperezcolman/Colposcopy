@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.6.0",
+      "sem_ver" : "3.6.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "74d5cdeca448560d4dc153cde8d1cd41",
+      "MD5-CAM-1.0.1" : "cd416037d85ef10d1581a4d99963ecd4",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -10486,7 +10486,7 @@
           "at0003.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0003.1",
-            "text" : "Vaginal lesion seen",
+            "text" : "Lesion seen",
             "description" : "Narrative description of the overall findings observed during the physical examination."
           },
           "at0012.1" : {
