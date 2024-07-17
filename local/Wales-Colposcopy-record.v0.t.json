@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.7.0",
+      "sem_ver" : "3.7.1",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "951dced5c323dcc442e0d3331c910850",
+      "MD5-CAM-1.0.1" : "6d8f08dbe977e04fb54047388c4f7e32",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -13535,15 +13535,7 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : {
-          "at0001.1" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0001.1",
-            "text" : "Not done",
-            "description" : "Statement to explicity record that the examination was not performed.",
-            "comment" : "Record as True if the examination was not performed."
-          }
-        },
+        "en" : { },
         "de" : { }
       },
       "termBindings" : { },
@@ -31097,7 +31089,23 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "a9ef6ed419ecbe001edfd66ee891c63d"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To augment a clinical data item to provide additional status attributes e.g. entered in error or refuted. ",
+          "keywords" : [ "verification, status" ],
+          "use" : "Use this archetype to provide additional metadata attributes for a data point. For example, where an observation is required to be visible but struck through (i.e. a user has refuted an observation but still wants it visible to support clinical or diagnostic processes). ",
+          "misuse" : "Not to be used in lieu of a logical record delete or to circumvent medico-legal compliant operations.\nNot to be used as a replacement for status related data elements that are contained within hosting archetypes, for example Adverse Reaction Risk Verification status. ",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.verification_status.v0",
     "differential" : true,
