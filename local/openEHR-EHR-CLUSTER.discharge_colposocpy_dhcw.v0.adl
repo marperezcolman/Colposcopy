@@ -26,7 +26,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"0ba02bc513236829a82a727099929982">
+		["MD5-CAM-1.0.1"] = <"c0240ae7950c55b73b474d6c3fff1e9b">
 		["build_uid"] = <"5473c640-2e61-330b-84d9-e3e8c06e81a8">
 	>
 
@@ -46,6 +46,11 @@ definition
 			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Months until next screening test
 				value matches {
 					DV_CODED_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Other
+				value matches {
+					DV_TEXT matches {*}
 				}
 			}
 		}
@@ -69,6 +74,10 @@ ontology
 				>
 				["at0003"] = <
 					text = <"Months until next screening test">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Other">
 					description = <"">
 				>
 			>
