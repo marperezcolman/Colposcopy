@@ -22,9 +22,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "3.9.0",
+      "sem_ver" : "4.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "71074eeedbe5eff3075ca850e953a8e0",
+      "MD5-CAM-1.0.1" : "aac752f536a8b8dc016b7001e290bb2f",
       "PARENT:MD5-CAM-1.0.1" : "2A789520F48E91960C4825733C8BA68F"
     },
     "details" : {
@@ -8977,9 +8977,18 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0015.1",
-          "attributes" : [ ],
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -9311,6 +9320,7 @@
                 "rmAttributeName" : "property",
                 "children" : [ {
                   "@type" : "C_TERMINOLOGY_CODE",
+                  "occurrences" : "0..1",
                   "terminologyId" : {
                     "value" : "openehr"
                   },
@@ -9321,32 +9331,22 @@
                 "@type" : "C_ATTRIBUTE_TUPLE",
                 "members" : [ {
                   "@type" : "C_ATTRIBUTE",
-                  "rmAttributeName" : "magnitude",
+                  "rmAttributeName" : "units",
                   "children" : [ ]
                 }, {
                   "@type" : "C_ATTRIBUTE",
-                  "rmAttributeName" : "units",
+                  "rmAttributeName" : "magnitude",
                   "children" : [ ]
                 } ],
                 "tuples" : [ {
                   "@type" : "C_PRIMITIVE_TUPLE",
                   "members" : [ {
-                    "@type" : "C_REAL",
-                    "constraint" : [ {
-                      "lower" : 0.0,
-                      "lowerIncluded" : true,
-                      "upperIncluded" : false,
-                      "lowerUnbounded" : false,
-                      "upperUnbounded" : true
-                    } ]
-                  }, {
                     "@type" : "C_STRING",
+                    "rmTypeName" : "STRING",
                     "constraint" : [ "mm2" ]
-                  } ]
-                }, {
-                  "@type" : "C_PRIMITIVE_TUPLE",
-                  "members" : [ {
+                  }, {
                     "@type" : "C_REAL",
+                    "rmTypeName" : "REAL",
                     "constraint" : [ {
                       "lower" : 0.0,
                       "lowerIncluded" : true,
@@ -9354,14 +9354,16 @@
                       "lowerUnbounded" : false,
                       "upperUnbounded" : true
                     } ]
-                  }, {
+                  } ]
+                }, {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
                     "@type" : "C_STRING",
+                    "rmTypeName" : "STRING",
                     "constraint" : [ "cm2" ]
-                  } ]
-                }, {
-                  "@type" : "C_PRIMITIVE_TUPLE",
-                  "members" : [ {
+                  }, {
                     "@type" : "C_REAL",
+                    "rmTypeName" : "REAL",
                     "constraint" : [ {
                       "lower" : 0.0,
                       "lowerIncluded" : true,
@@ -9369,14 +9371,33 @@
                       "lowerUnbounded" : false,
                       "upperUnbounded" : true
                     } ]
-                  }, {
-                    "@type" : "C_STRING",
-                    "constraint" : [ "[sin_i]" ]
                   } ]
                 }, {
                   "@type" : "C_PRIMITIVE_TUPLE",
                   "members" : [ {
+                    "@type" : "C_STRING",
+                    "rmTypeName" : "STRING",
+                    "constraint" : [ "[sin_i]" ]
+                  }, {
                     "@type" : "C_REAL",
+                    "rmTypeName" : "REAL",
+                    "constraint" : [ {
+                      "lower" : 0.0,
+                      "lowerIncluded" : true,
+                      "upperIncluded" : false,
+                      "lowerUnbounded" : false,
+                      "upperUnbounded" : true
+                    } ]
+                  } ]
+                }, {
+                  "@type" : "C_PRIMITIVE_TUPLE",
+                  "members" : [ {
+                    "@type" : "C_STRING",
+                    "rmTypeName" : "STRING",
+                    "constraint" : [ "%{Body}" ]
+                  }, {
+                    "@type" : "C_REAL",
+                    "rmTypeName" : "REAL",
                     "constraint" : [ {
                       "lower" : 0.0,
                       "upper" : 100.0,
@@ -9385,9 +9406,6 @@
                       "lowerUnbounded" : false,
                       "upperUnbounded" : false
                     } ]
-                  }, {
-                    "@type" : "C_STRING",
-                    "constraint" : [ "%{Body}" ]
                   } ]
                 } ]
               } ]
@@ -9450,6 +9468,13 @@
             "code" : "at0007.1",
             "text" : "Extent Other (specify)",
             "description" : "Additional narrative about the examination findings, not captured in other fields."
+          },
+          "at0015.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0015.1",
+            "text" : "Lesion size (quadrants)",
+            "description" : "Identification of the shape of the lesion.",
+            "comment" : "'Shape' should be coded with a terminology, where possible. For example 'pedunculated' or 'circular'. In some use cases known as 'shape morphology' or 'secondary morphology'."
           }
         },
         "pt-br" : { },
@@ -14554,6 +14579,7 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
           "nodeId" : "at0012.1",
           "attributes" : [ {
             "@type" : "C_ATTRIBUTE",
@@ -15082,6 +15108,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
               "nodeId" : "at0006.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -15348,6 +15375,7 @@
             }, {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "ELEMENT",
+              "occurrences" : "0..0",
               "nodeId" : "at0006.2",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
